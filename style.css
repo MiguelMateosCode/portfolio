@@ -312,3 +312,20 @@ iframe{
     z-index: 10; /* Asegúrate de que el overlay esté sobre el contenido de la card */
   border-radius:0px 0px 8px 8px;
 }
+
+.chip-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* Espacio entre chips */
+}
+
+.chip {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 16px;
+    background-color: #CCF2FF;
+    border-radius: 80px;
+    text-transform: uppercase;
+    cursor: pointer;
+    white-space: nowrap; /* Evita que el texto se divida en líneas */
+}
