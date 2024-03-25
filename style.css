@@ -283,5 +283,5 @@ iframe{
   border-radius:8px;
 }
 .card{
-  border-radius:8px !important;
+  border-radius:0px 0px 8px 8px !important;
 }
