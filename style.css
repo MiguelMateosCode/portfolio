@@ -217,7 +217,7 @@ img{
 img:hover, img:focus{
   outline: 0 !important; /* Quita el contorno */
   outline-offset: 0 !important;
-  box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.5) !important;
+  /*box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.5) !important;*/
 }
 /* Anulando el hover y focus específicamente para .img-portada */
 .img-portada:hover, .img-portada:focus, .img-profile:hover {
