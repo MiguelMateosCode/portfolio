@@ -113,12 +113,17 @@ h2{
   letter-spacing:var(--letter-spacing-wide) !important;
   line-height: var(--line-height-heading) !important;
 }
+.main-content{
+  max-width:768px;
+}
 
 /* Repetir para h2, h3, h4, h5, h6 con sus respectivas tamaños de fuente */
 
 p {
   margin-top: var(--spacing-medium);
   margin-bottom: var(--spacing-medium);
+  font-size:var(--font-size-base) !important;
+  letter-spacing:var(--letter-spacing-wide) !important;
 }
 
 
@@ -206,26 +211,69 @@ img{
     -webkit-appearance: none;
     appearance: none;
 }
+img:hover, img:focus{
+  outline: 0; /* Quita el contorno */
+  outline-offset: 0;
+  box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.5);
+}
+/* Anulando el hover y focus específicamente para .img-portada */
+.img-portada:hover, .img-portada:focus {
+    box-shadow: none; /* Elimina el box-shadow aplicado en el hover y focus */
+    outline: none; /* Asegura que no haya contorno en el hover y focus */
+}
+.sidebar {
+    min-height: 100vh; /* Establece la altura mínima para que sea al menos tan alto como la ventana del navegador */
+    flex: 1; /* Permite que la barra lateral se expanda y contraiga según el contenido */
+}
+
+.sidebar-sticky {
+    position: -webkit-sticky; /* Para Safari */
+    position: sticky;
+    top: 0; /* Establece la barra lateral para que se quede en la parte superior */
+    height: auto; /* Permite que la altura se ajuste automáticamente al contenido */
+    overflow-y: auto; /* Agrega desplazamiento si el contenido es más largo que la pantalla */
+}
+
+.nav-item {
+    margin-bottom: 0.5rem; /* Espaciado entre elementos de la lista */
+}
+
+.nav-section {
+    color: var(--secondary-color) !important;
+    text-decoration: none !important;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.25em;
+    text-decoration-skip-ink: none;
+   position: relative;
+  font-size:var( --font-size-base);
+  
+}
+
+.nav-section:hover {
+  text-decoration: underline !important;
+    text-decoration-thickness: 4px !important;
+    color: #003078;
+}
+
+.nav-section:focus,
+.nav-section:active {
+    outline: 0;
+    color: #0b0c0c;
+    box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.5);
+    text-decoration: none;
+}
+
+.sidebar-bg{
+  background-color:white;
+border-right:1px solid black;
+border-bottom:none;
+}
 
 .caption-xl {
-  font-size:var(--font-size-sm);
-  font-weight: var( --font-weight-medium);
-  letter-spacing:var(--letter-spacing-wide);
-  display: block;
-  margin-bottom: 5px;
-  color: var(--secondary-color);
-}
-.role-info {
-    color: #007bff; /* Azul */
-    font-weight: bold;
-}
-
-.client-info {
-    color: #28a745; /* Verde */
-    font-weight: bold;
-}
-
-.card-text strong {
-    font-weight: bolder;
+  font-size:var(--font-size-sm) !important;
+  font-weight: var( --font-weight-medium) !important;
+  letter-spacing:var(--letter-spacing-wide) !important;
+  display: block !important;
+  color: var(--secondary-color) !important;
 }
 
