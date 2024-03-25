@@ -1,12 +1,12 @@
+
 document.addEventListener("DOMContentLoaded", () => {
     // Suavizar el desplazamiento para enlaces internos
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
+        anchor.addEventListener('click', function (e) {
             e.preventDefault();
-            const targetElement = document.querySelector(this.getAttribute('href'));
-            if (targetElement) {
-                targetElement.scrollIntoView({ behavior: 'smooth' });
-            }
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
         });
     });
 
@@ -26,17 +26,16 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // Escuchar cambios en el estado de pantalla completa para mostrar/ocultar el botón de cerrar
-    document.addEventListener('fullscreenchange', () => {
-        const closeButton = document.getElementById('closeFullscreen');
+    document.addEventListener('fullscreenchange', (event) => {
         if (document.fullscreenElement) {
-            if (closeButton) closeButton.style.display = 'block';
+            document.getElementById('closeFullscreen').style.display = 'block';
         } else {
-            if (closeButton) closeButton.style.display = 'none';
+            document.getElementById('closeFullscreen').style.display = 'none';
         }
     });
 
     // Función para salir de pantalla completa
-    const closeFullscreen = () => {
+    function closeFullscreen() {
         if (document.exitFullscreen) {
             document.exitFullscreen();
         } else if (document.mozCancelFullScreen) { // Firefox
@@ -46,11 +45,6 @@ document.addEventListener("DOMContentLoaded", () => {
         } else if (document.msExitFullscreen) { // IE/Edge
             document.msExitFullscreen();
         }
-    };
-
-    // Asegurarse de que el botón de cerrar existe antes de añadirle el evento
-    const closeButton = document.getElementById('closeFullscreen');
-    if (closeButton) {
-        closeButton.addEventListener('click', closeFullscreen);
     }
+
 });
