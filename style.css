@@ -310,4 +310,5 @@ iframe{
     font-size: var(--font-size-xxl); /* Tamaño del texto */
     font-weight: bold;
     z-index: 10; /* Asegúrate de que el overlay esté sobre el contenido de la card */
+  border-radius:0px 0px 8px 8px;
 }
