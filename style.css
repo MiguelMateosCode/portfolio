@@ -220,7 +220,7 @@ img:hover, img:focus{
   box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.5);
 }
 /* Anulando el hover y focus específicamente para .img-portada */
-.img-portada:hover, .img-portada:focus {
+.img-portada:hover, .img-portada:focus, .img-profile:hover {
     box-shadow: none; /* Elimina el box-shadow aplicado en el hover y focus */
     outline: none; /* Asegura que no haya contorno en el hover y focus */
 }
@@ -284,4 +284,8 @@ iframe{
 }
 .card{
   border-radius:0px 0px 8px 8px !important;
+}
+.img-profile{
+  max-width:240px;
+  margin-left: -20px;
 }
