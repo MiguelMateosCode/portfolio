@@ -282,3 +282,6 @@ border-bottom:none;
 iframe{
   border-radius:8px;
 }
+.card{
+  border-radius:8px !important;
+}
