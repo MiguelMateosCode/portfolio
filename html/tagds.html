@@ -1,1 +1,152 @@
 
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Case Study: The Adecco Group Design System</title>
+      <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+      <header>
+         <nav class="container-fluid">
+            <div class="row">
+               <div class="col">
+                  <div class="nav-content">
+                     <span class="logo">M.</span>
+                     <ul class="nav-list">
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <div class="container-fluid">
+         <div class="row">
+            <!-- Barra de navegación lateral fija -->
+            <nav class="col-md-2 d-none d-md-block sidebar-bg sidebar pl-4" role="navigation">
+               <div class="sidebar-sticky pt-3">
+                  <ul class="nav flex-column">
+                     <li class="nav-item mb-4"><a class="nav-section" href="#introduccion">Introducción</a></li>
+                     <li class="nav-item mb-4"><a class="nav-section" href="#proceso">Proceso</a></li>
+                     <li class="nav-item mb-4"><a class="nav-section" href="#componente">Time Picker</a></li>
+                     <li class="nav-item mb-4"><a class="nav-section" href="#resultados-impacto">Resultados</a></li>
+                     <li class="nav-item mb-4"><a class="nav-section" href="#conclusion">Conclusion</a></li>
+                   
+                  </ul>
+               </div>
+            </nav>
+            <!-- Contenido principal -->
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-5">
+               <img src="https://i.imgur.com/E5LZwPg.png" class="img-fluid w-100 img-portada" alt="Imagen 2">
+
+               <div class="spacer-xl"></div>
+               <section class="main-content border-bottom">
+                  <p class="caption-xl">THE ADECCO GROUP</p>
+                  <h1>The Adecco Group Design System</h1>
+                  <h2>Sistema de diseño multi-marca que incluye todas las plataformas digitales del Grupo Adecco.</h2>
+                 <div class="spacer-xl"></div>
+               </section>
+               <div class="spacer-xl"></div>
+               <section id="introduccion" class="main-content">
+                  <h3>Introducción</h3>
+                 <p><strong>Contexto y Objetivos</strong></p> <p>En el corazón de la transformación digital de The Adecco Group, se identificó la necesidad de crear un Sistema de Diseño unificado, denominado TAG DS, con el objetivo de estandarizar los componentes de UI/UX a través de todas las plataformas digitales. El objetivo principal era mejorar la cohesión visual, la usabilidad y la accesibilidad, facilitando al mismo tiempo el desarrollo de productos digitales de las distintas marcas como Adecco, Akkodis o LHH.</p>
+                  <div class="spacer-l"></div>
+                 <img src="https://i.imgur.com/uNLanO6.png" class="img-fluid w-100 img-fullscreen" alt="Imagen 2">
+                 <div class="spacer-l"></div>
+                  <p><strong>Desafíos</strong></p>
+                 <p>Uno de los principales desafíos fue la diversidad de las interfaces de usuario existentes, que habían sido desarrolladas de manera aislada por diferentes equipos, resultando en una falta de coherencia y estándares de accesibilidad variables. Además, realizar una auditoría exhaustiva de las plataformas existentes resultó especialmente difícil, ya que cada una estaba construida de manera diferente. Esta variabilidad presentó un obstáculo significativo para entender el estado actual y planificar la integración del Sistema de Diseño de manera cohesiva.</p>
+                  <p><strong>Mi Rol</strong></p> <p>Como <i>Product Designer </i>y <i>Design System Contributor</i>, mi tarea fue coordinar el esfuerzo colaborativo entre diseñadores, desarrolladores y partes interesadas para construir a los primeros pasos para la creación del sistema de diseño, desde la fase de <i>Discovery</i> hasta la última fase de <i>Construct</i> con la documentación y publicación en Zeroheight asegurando que cumpliera con los objetivos de diseño y negocio.</p>
+
+               </section>
+               <section id="proceso" class="main-content">
+                  <h3>Proceso de Diseño</h3>
+                  <p><strong>Investigación y Análisis</strong></p>
+                  <div class="spacer-l"></div>
+                 <img src="https://i.imgur.com/CXCsGj9.png" class="img-fluid w-100 img-fullscreen" alt="Imagen 2">
+                 <div class="spacer-l"></div>
+                 <p>El proceso comenzó con una fase exhaustiva de investigación y análisis, donde se realizaron entrevistas con stakeholders, análisis de los sistemas de diseño de competidores y talleres con las <i>User Personas</i> que definió el equipo de <i>Research</i> para comprender sus necesidades y <i>pain points</i>.</p>
+                 
+              <p><strong>Definición de Principios de Diseño</strong></p>
+                  <div class="spacer-l"></div>
+                 <img src="https://i.imgur.com/bJD5Szi.png" class="img-fluid w-100 img-fullscreen" alt="Imagen 2">
+                 <div class="spacer-l"></div>
+                 <p>Se establecieron principios de diseño centrados en la accesibilidad, la reutilización y la simplicidad. Estos principios fueron cruciales en la creación de todos los componentes, incluido el Time Picker, asegurando que fueran intuitivos y accesibles para todos los usuarios.</p>
+                  <p><strong>Herramientas y Tecnologías</strong></p> <p>Se utilizó Figma para la colaboración en diseño y prototipado, Zeroheight para la documentación de componentes y Storybook para documentar y compartir los componentes del sistema con los desarrolladores.</p>
+               </section>
+               <section id="componente" class="main-content">
+                  <h3>
+                  Creación del Componente Time Picker</h2>
+                  <div class="spacer-l"></div>
+<img src=" https://i.imgur.com/CN6t4xQ.gif" class="img-fluid w-50" alt="Imagen 2">
+           
+                 <div class="spacer-l"></div>
+                  <p><strong>Justificación del Componente</strong></p> 
+                  
+                 <p>El Time Picker fue diseñado para resolver la necesidad de una entrada de tiempo eficiente y accesible en aplicaciones de gestión de tiempo y programación. La falta de coherencia en las soluciones de entrada de tiempo anteriores había resultado en una experiencia de usuario fragmentada.</p>
+                  <p><strong>Proceso de Diseño y Desarrollo</strong></p>
+                  <div class="spacer-l"></div>
+                 <img src="https://i.imgur.com/juJrOcU.png" class="img-fluid w-100" alt="Imagen 2">
+           
+                 <div class="spacer-l"></div>
+                 <p>El diseño del Time Picker comenzó con bocetos iniciales y wireframes, seguidos de prototipos interactivos en Figma. Se realizaron pruebas de usabilidad para recoger feedback, lo que llevó a varias iteraciones de diseño para mejorar la facilidad de uso y la accesibilidad. La colaboración estrecha con desarrolladores aseguró una implementación técnica eficaz y coherente con el diseño.</p>
+                  <p><strong>Integración y Estándares</strong></p>
+                 
+                 <p>El componente fue rigurosamente probado para asegurar su compatibilidad con los estándares de accesibilidad WCAG y su integración fluida con otros componentes del sistema de diseño, manteniendo la cohesión visual y funcional.</p>
+                    <div class="spacer-l"></div>
+  <img src="https://i.imgur.com/b9BpqNQ.png" class="img-fluid w-100 img-fullscreen" alt="Imagen 2">
+                 <caption><small>La estructura del componente</small></caption>
+                 <div class="spacer-l"></div>
+               </section>
+               <section id="resultados-impacto" class="main-content">
+                  <h3>Resultados e Impacto</h3>
+                  <p><strong>Adopción y Feedback</strong></p>
+            
+                 <p> Desde su lanzamiento, el TAG DS ha sido ampliamente adoptado por los equipos de producto, con el Time Picker recibiendo elogios por su facilidad de uso y accesibilidad. El sistema de diseño ha facilitado la coherencia de la interfaz de usuario a través de las plataformas y ha acelerado el desarrollo de nuevos productos. El <i>Usability Measurement Score</i> a aumentado de un 45% con la primera versión de sistema de diseño TAG DS V.0 hasta un 72% con la última versión TAG DS V.1</p>
+                  <div class="spacer-l"></div>
+  <img src="https://i.imgur.com/i83jYwO.png" class="img-fluid w-100 img-fullscreen" alt="Imagen 2">
+                 <caption><small>Usability Measurement Score de TAG DS</small></caption>
+                 <div class="spacer-l"></div>
+                  <p><strong>Lecciones Aprendidas</strong></p>
+            
+              <p>El proceso subrayó la importancia de la colaboración interdisciplinaria y el feedback de los usuarios en el desarrollo de sistemas de diseño. También se aprendió que la documentación clara y accesible es clave para la adopción y el mantenimiento del sistema.</p>
+            <p><strong>Futuro del Sistema de Diseño</strong></p><p>Basándonos en el feedback continuo, el sistema de diseño está en constante evolución, con planes para expandir su biblioteca de componentes y mejorar las guías de diseño para adaptarse a las nuevas tecnologías y necesidades de los usuarios.</p>
+               </section>
+               <section id="conclusion" class="main-content">
+                  <h3>Conclusión</h3>
+               
+                  <p>La creación del Sistema de Diseño de The Adecco Group ha sido una jornada de colaboración, innovación y aprendizaje. A través de la creación de componentes como el Time Picker, hemos establecido un nuevo estándar de diseño y desarrollo en la empresa, demostrando el poder de un sistema de diseño bien ejecutado para transformar la experiencia del usuario y facilitar el desarrollo de productos.</p>
+                   <div class="spacer-l"></div>
+                 <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6953658660300419072" height="360" width="100%" frameborder="0" allowfullscreen="" title="Publicación integrada" class="bg-light border border-dark"></iframe>
+                 <caption><small>Publicación en Linkedin del lanzamiento de TAG DS</small></caption>
+                 <div class="spacer-l"></div>
+               </section>
+               <div class="spacer-xxl"></div>
+               <section class="border-top border-dark">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-12 col-md-6 p-2">
+                           <h2 class="">Looking for my resume?</h2>
+                           <a href="#" class="mr-5">Download PDF</a>
+                           <a href="#">Visit linkedin</a>
+                        </div>
+                        <div class="col-12 col-md-6 p-2">
+                           <h2 class="">Want to connect?</h2>
+                           <a href="#" class="mr-5">Email</a>
+                           <a href="#">Linkedin</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="spacer-xl"></div>
+               </section>
+            </main>
+         </div>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   </body>
+</html>
