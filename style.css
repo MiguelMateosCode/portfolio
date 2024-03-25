@@ -1,0 +1,231 @@
+/* Definición de variables CSS para tipografía y accesibilidad */
+:root {
+  /* Colores */
+  --primary-color: #1d4289;
+  --secondary-color: #6c757d;
+  --success-color: #28a745;
+  --danger-color: #dc3545;
+  --warning-color: #ffc107;
+  --info-color: #17a2b8;
+  --light-color: #f8f9fa;
+  --dark-color: #343a40;
+  --background-color: #fff;
+
+  /* Espaciado */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-xxl: 48px;
+
+  /* Grid */
+  --grid-gutter-width: 16px;
+  
+ /* Colores de Texto */
+  --text-color: #212529; /* Color de texto de alto contraste */
+  --text-color-secondary: #6c757d; /* Color de texto secundario para menos énfasis */
+  --heading-color: #000; /* Color de texto para encabezados, preferiblemente oscuro para mayor contraste */
+  
+  /* Tamaños de Fuente */
+  --font-size-base: 1rem; /* 16px */
+  --font-size-sm: 0.875rem; /* 14px */
+  --font-size-lg: 1.125rem; /* 18px */
+  --font-size-xl: 1.25rem; /* 20px */
+  --font-size-xxl: 1.5rem; /* 24px */
+  --font-size-h1: 2.5rem; /* 40px */
+  --font-size-h2: 2rem; /* 32px */
+  --font-size-h3: 1.75rem; /* 28px */
+  --font-size-h4: 1.5rem; /* 24px */
+  --font-size-h5: 1.25rem; /* 20px */
+  --font-size-h6: 1rem; /* 16px */
+
+  /* Pesos de Fuente */
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --font-weight-bolder: 800; /* Para encabezados o donde se necesite más énfasis */
+
+  /* Alturas de Línea */
+  --line-height-base: 1.5; /* Para texto base y párrafos */
+  --line-height-heading: 1.3; /* Para encabezados, un poco más apretado */
+
+  /* Espaciado */
+  --spacing-small: 8px; /* Espaciado pequeño para márgenes y paddings */
+  --spacing-medium: 16px; /* Espaciado medio, por ejemplo, entre párrafos */
+  --spacing-large: 24px; /* Espaciado grande, por ejemplo, entre secciones */
+ --spacing-xlarge: 64px;
+  --spacing-xxlarge: 96px; 
+  /* Otros */
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide: 0.05em; /* Para encabezados o elementos que requieren más respiración */
+
+  /* Radio de Bordes */
+  --border-radius-sm: 2px;
+  --border-radius-md: 4px;
+  --border-radius-lg: 8px;
+  --border-radius-circle: 50%;
+  --border-radius-pill: 50rem;
+
+  /* Sombra */
+  --box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+  /* Z Index */
+  --zindex-dropdown: 1000;
+  --zindex-sticky: 1020;
+  --zindex-fixed: 1030;
+  --zindex-modal-backdrop: 1040;
+  --zindex-modal: 1050;
+  --zindex-popover: 1060;
+  --zindex-tooltip: 1070;
+
+  /* Familia de Fuente */
+  --font-family-primary: 'Roboto', Helvetica, Arial, sans-serif;
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+  --font-family-secondary:"Martel Sans", sans-serif;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif !important;
+  color: var(--text-color) !important;
+  font-size: var(--font-size-base) !important;
+  line-height: var(--line-height-base) !important;
+}
+
+h1, h2, h3, h4, h5 {
+font-family:var(--font-family-primary) !important;
+  color: var(--heading-color) !important;
+  font-weight: var(--font-weight-bold) !important;
+  line-height: var(--line-height-heading) !important;
+  margin-top: var(--spacing-large) !important;
+  margin-bottom: var(--spacing-medium) !important;
+  letter-spacing: var(--letter-spacing-wide) !important;
+}
+
+h1 {
+  font-size: var(--font-size-h1) !important;
+}
+
+h2{
+  font-size:var(--font-size-lg) !important;
+  font-weight: var(--font-weight-normal) !important;
+  letter-spacing:var(--letter-spacing-wide) !important;
+  line-height: var(--line-height-heading) !important;
+}
+
+/* Repetir para h2, h3, h4, h5, h6 con sus respectivas tamaños de fuente */
+
+p {
+  margin-top: var(--spacing-medium);
+  margin-bottom: var(--spacing-medium);
+}
+
+
+nav{
+    padding:16px;
+  border-bottom: 1px solid black;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+  flex-grow: 1;
+  font-family:var(--font-family-primary);
+  font-size:var(--font-size-xl);
+  color:var(--text-color);
+  font-weight:var(--font-weight-bolder);
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li {
+  padding: 0 15px; /* Ajusta el espaciado entre elementos de la lista según necesites */
+}
+
+.nav-list a {
+  text-decoration: none !important;
+  color: var(--text-color) !important; /* Asumiendo que tienes esta variable definida */
+}
+
+.nav-list a.active,
+.nav-list a[aria-current="page"] {
+  font-weight: var(--font-weight-bold) !important;
+  text-decoration: underline !important; /* Visual cue que no depende del color */
+  text-decoration-thickness: max(4px) !important;
+   -webkit-text-decoration-skip-ink: none;
+  text-underline-offset: var(--spacing-small) !important;
+}
+
+.spacer-xxl{
+  margin: var(--spacing-xxlarge) 0px;
+}
+
+.spacer-xl{
+  margin: var(--spacing-xlarge) 0px;
+}
+
+.spacer-l{
+  margin: var(--spacing-large) 0px;
+}
+
+a {
+  color: #1d70b8 !important;
+  text-decoration: underline !important;
+  text-decoration-thickness: auto;
+  text-decoration-thickness: 1px !important;
+  text-underline-offset: 0.25em !important;
+  text-decoration-skip-ink: none;
+}
+
+a:hover {
+  text-decoration-thickness: 4px !important;
+  color: #003078 !important;
+}
+
+a:focus,
+a:active {
+  outline: 0;
+  color: #0b0c0c !important;
+  /*background-color: rgba(0, 123, 255, 0.25);*/
+  box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.5);
+  text-decoration: none;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+img{
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.caption-xl {
+  font-size:var(--font-size-sm);
+  font-weight: var( --font-weight-medium);
+  letter-spacing:var(--letter-spacing-wide);
+  display: block;
+  margin-bottom: 5px;
+  color: var(--secondary-color);
+}
+.role-info {
+    color: #007bff; /* Azul */
+    font-weight: bold;
+}
+
+.client-info {
+    color: #28a745; /* Verde */
+    font-weight: bold;
+}
+
+.card-text strong {
+    font-weight: bolder;
+}
+
