@@ -279,4 +279,6 @@ border-bottom:none;
   display: block !important;
   color: var(--secondary-color) !important;
 }
-
+iframe{
+  border-radius:8px;
+}
