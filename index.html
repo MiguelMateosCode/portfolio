@@ -3,140 +3,175 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Miguel's Portfolio</title>
+      
+      <!-- SEO Meta Tags -->
+      <title>Miguel Mateos - Product Designer | Design Systems Specialist</title>
+      <meta name="description" content="Product Designer specialized in Design Systems. Creating end-to-end solutions with focus on accessibility and usability at The Adecco Group.">
+      <meta name="keywords" content="Product Designer, Design Systems, UX/UI, Accessibility, The Adecco Group, Portfolio">
+      <meta name="author" content="Miguel Mateos">
+      
+      <!-- Open Graph / Facebook -->
+      <meta property="og:type" content="website">
+      <meta property="og:url" content="https://miguelmatescode.github.io/portfolio/">
+      <meta property="og:title" content="Miguel Mateos - Product Designer | Design Systems Specialist">
+      <meta property="og:description" content="Product Designer specialized in Design Systems. Creating end-to-end solutions with focus on accessibility and usability.">
+      <meta property="og:image" content="https://i.imgur.com/dpuwyiW.png">
+      
+      <!-- Twitter -->
+      <meta property="twitter:card" content="summary_large_image">
+      <meta property="twitter:url" content="https://miguelmatescode.github.io/portfolio/">
+      <meta property="twitter:title" content="Miguel Mateos - Product Designer | Design Systems Specialist">
+      <meta property="twitter:description" content="Product Designer specialized in Design Systems. Creating end-to-end solutions with focus on accessibility and usability.">
+      <meta property="twitter:image" content="https://i.imgur.com/dpuwyiW.png">
+      
+      <!-- Favicon -->
       <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+      
+      <!-- Preconnect for Performance -->
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
-      <!-- Incluir CSS de Bootstrap -->
+      
+      <!-- Bootstrap CSS -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
       <link rel="stylesheet" href="style.css">
    </head>
    <body>
       <header>
-         <nav class="container-fluid">
+         <nav class="container-fluid" aria-label="Main navigation">
             <div class="row">
                <div class="col">
                   <div class="nav-content">
-                     <span class="logo">M.</span>
+                     <span class="logo" aria-label="Miguel Mateos Logo">M.</span>
                      <ul class="nav-list">
                         <li><a href="#Home" aria-current="page">Home</a></li>
-                       <li><a href="html/about.html">About</a></li>
+                        <li><a href="html/about.html">About</a></li>
                      </ul>
                   </div>
                </div>
             </div>
          </nav>
       </header>
+      
       <main>
          <div class="spacer-xxl"></div>
-         <section class="container mt-5">
+         
+         <!-- Hero Section -->
+         <section class="container mt-5" aria-labelledby="hero-heading">
             <div class="row">
                <div class="col-md-8">
                   <p class="caption-xl">MIGUEL MATEOS</p>
-                  <h1>Product Designer specialized in Design Systems.</h1>
+                  <h1 id="hero-heading">Product Designer specialized in Design Systems.</h1>
                </div>
             </div>
             <div class="row">
                <div class="col-sm">
-                  <h2>Specialize in creating complete <i>end-to-end</i> solutions. Currently, I'm enhancing user experiences at The Adecco Group, thanks to an innovative design system that improves accessibility and usability.</h2>
+                  <h2>Specialize in creating complete <em>end-to-end</em> solutions. Currently, I'm enhancing user experiences at The Adecco Group, thanks to an innovative design system that improves accessibility and usability.</h2>
                </div>
             </div>
          </section>
-         <section>
+         
+         <!-- Case Studies Section -->
+         <section aria-labelledby="case-studies-heading">
             <div class="spacer-xl"></div>
             <div class="container">
-               <h3>Case Studies</h3>
+               <h3 id="case-studies-heading">Case Studies</h3>
                <div class="row">
                   <div class="col-12 col-md-6 p-2">
-                     <a href="html/tagds.html" class="text-reset text-decoration-none " aria-label="Ver detalles del proyecto" data-target="page1">
-                        <div class="card border border-dark">
-                           <img src="https://i.imgur.com/dpuwyiW.png" class="card-img-top img-fluid w-100 img-portada" alt="Descripción breve de la imagen para accesibilidad">
+                     <a href="html/tagds.html" class="text-reset text-decoration-none" aria-label="View The Adecco Group Design System project details">
+                        <article class="card border border-dark">
+                           <img src="https://i.imgur.com/dpuwyiW.png" class="card-img-top img-fluid w-100 img-portada" alt="The Adecco Group Design System interface preview showing design components and system architecture" loading="lazy">
                            <div class="card-body">
-                              <h5 class="card-title">The Adecco Group Design System</h5>
-                              
+                              <h4 class="card-title">The Adecco Group Design System</h4>
                               <p class="card-text">Client: The Adecco Group</p>
                            </div>
-                        </div>
+                        </article>
                      </a>
                   </div>
                   <div class="col-12 col-md-6 p-2">
-                     <a href="html/connect.html" class="text-reset text-decoration-none " aria-label="Ver detalles del proyecto">
-                        <div class="card border border-dark">
-                           <img src="https://i.imgur.com/lAVPYUg.png" class="card-img-top img-fluid w-100 img-portada" alt="Descripción breve de la imagen para accesibilidad">
+                     <a href="html/connect.html" class="text-reset text-decoration-none" aria-label="View Adecco Connect project details">
+                        <article class="card border border-dark">
+                           <img src="https://i.imgur.com/lAVPYUg.png" class="card-img-top img-fluid w-100 img-portada" alt="Adecco Connect application interface showing the main dashboard and user interaction flow" loading="lazy">
                            <div class="card-body">
-                              <h5 class="card-title">Adecco Connect</h5>
-                              
-                               <p class="card-text">Client: The Adecco Group</p>
+                              <h4 class="card-title">Adecco Connect</h4>
+                              <p class="card-text">Client: The Adecco Group</p>
                            </div>
-                        </div>
+                        </article>
                      </a>
                   </div>
                </div>
                <div class="row">
                   <div class="col-12 col-md-6 p-2">
-                     <a href="html/guuk.html" class="text-reset text-decoration-none " aria-label="Ver detalles del proyecto">
-                        <div class="card border border-dark">
-                           <img src="https://i.imgur.com/Og1O52X.png" class="card-img-top img-fluid w-100 img-portada" alt="Descripción breve de la imagen para accesibilidad">
+                     <a href="html/guuk.html" class="text-reset text-decoration-none" aria-label="View Guuk Official Website project details">
+                        <article class="card border border-dark">
+                           <img src="https://i.imgur.com/Og1O52X.png" class="card-img-top img-fluid w-100 img-portada" alt="Guuk official website homepage design featuring modern layout and brand identity" loading="lazy">
                            <div class="card-body">
-                              <h5 class="card-title">Oficial Web Guuk</h5>
-                              
+                              <h4 class="card-title">Oficial Web Guuk</h4>
                               <p class="card-text">Client: Guuk</p>
                            </div>
-                        </div>
+                        </article>
                      </a>
                   </div>
-                         <div class="col-12 col-md-6 p-2 ">
-    <div class="text-reset text-decoration-none disabled-link" aria-label="Ver detalles del proyecto">
-        <div class="card border border-dark">
-            <img src="https://i.imgur.com/dYFyZpQ.png" class="card-img-top img-fluid w-100 img-portada" alt="Descripción breve de la imagen para accesibilidad">
-            <div class="card-body">
-                <h5 class="card-title">Financial Crime</h5>
-                <p class="card-text">Cliente: Schoders</p>
-            </div>
-            <div class="coming-soon-overlay">COMING SOON</div>
-        </div>
-    </div>
-</div>
+                  <div class="col-12 col-md-6 p-2">
+                     <div class="text-reset text-decoration-none disabled-link" aria-label="Financial Crime project - Coming soon" role="article" aria-disabled="true">
+                        <article class="card border border-dark">
+                           <img src="https://i.imgur.com/dYFyZpQ.png" class="card-img-top img-fluid w-100 img-portada" alt="Financial Crime project preview - Coming soon" loading="lazy">
+                           <div class="card-body">
+                              <h4 class="card-title">Financial Crime</h4>
+                              <p class="card-text">Client: Schroders</p>
+                           </div>
+                           <div class="coming-soon-overlay" aria-live="polite">COMING SOON</div>
+                        </article>
+                     </div>
+                  </div>
                </div>
             </div>
          </section>
-         <section>
+         
+         <!-- Latest Posts Section -->
+         <section aria-labelledby="latest-posts-heading">
             <div class="spacer-xxl"></div>
             <div class="container">
-               <h3>Last post</h3>
+               <h3 id="latest-posts-heading">Last post</h3>
                <div class="row">
-                    <div class="col-md-6 col-lg-6 p-2">
-                <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7145064263533989888" height="400" width="100%" frameborder="0" allowfullscreen="" title="Publicación integrada" class="bg-light border border-dark"></iframe>
-            </div>
                   <div class="col-md-6 col-lg-6 p-2">
-               <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7141366277339615232" height="400" width="100%" frameborder="0" allowfullscreen="" title="Publicación integrada" class="bg-light border border-dark"></iframe>
-            </div>
-               
+                     <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7145064263533989888" height="400" width="100%" frameborder="0" allowfullscreen="" title="LinkedIn post about design systems and user experience" class="bg-light border border-dark"></iframe>
+                  </div>
+                  <div class="col-md-6 col-lg-6 p-2">
+                     <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7141366277339615232" height="400" width="100%" frameborder="0" allowfullscreen="" title="LinkedIn post about product design best practices" class="bg-light border border-dark"></iframe>
+                  </div>
                </div>
             </div>
          </section>
+         
          <div class="spacer-xxl"></div>
-         <section class="border-top border-dark">
+         
+         <!-- Contact Section -->
+         <section class="border-top border-dark" aria-labelledby="contact-heading">
             <div class="container">
+               <h2 class="sr-only" id="contact-heading">Get in touch</h2>
                <div class="row">
                   <div class="col-12 col-md-6 p-2">
-                     <h2 class="">Looking for my resume?</h2>
-                     <a href="00.CV- Miguel Mateos - EN.pdf" class="mr-5" target="_blank">Download PDF</a>
-                     <a href="https://www.linkedin.com/in/miguel-mateos/" target="_blank" >Visit linkedin</a>
+                     <h3>Looking for my resume?</h3>
+                     <a href="00.CV- Miguel Mateos - EN.pdf" class="mr-5" target="_blank" rel="noopener noreferrer" aria-label="Download Miguel Mateos resume in PDF format">Download PDF</a>
+                     <a href="https://www.linkedin.com/in/miguel-mateos/" target="_blank" rel="noopener noreferrer" aria-label="Visit Miguel Mateos LinkedIn profile">Visit LinkedIn</a>
                   </div>
                   <div class="col-12 col-md-6 p-2">
-                     <h2 >Want to connect?</h2>
-                     <a  href="https://www.linkedin.com/in/miguel-mateos/" target="_blank">Linkedin</a>
+                     <h3>Want to connect?</h3>
+                     <a href="https://www.linkedin.com/in/miguel-mateos/" target="_blank" rel="noopener noreferrer" aria-label="Connect with Miguel Mateos on LinkedIn">LinkedIn</a>
                   </div>
                </div>
             </div>
          </section>
+         
          <div class="spacer-xxl"></div>
       </main>
-      <footer>
+      
+      <footer role="contentinfo">
+         <!-- Footer content can be added here -->
       </footer>
-      <!-- Opcional: Incluir JS de Bootstrap -->
+      
+      <!-- Bootstrap JS -->
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
