@@ -1,6 +1,8 @@
-/* Definición de variables CSS para tipografía y accesibilidad */
+/* ============================================
+   VARIABLES CSS - Sistema de Diseño
+   ============================================ */
 :root {
-  /* Colores */
+  /* Colores Base */
   --primary-color: #1d4289;
   --secondary-color: #6c757d;
   --success-color: #28a745;
@@ -11,23 +13,28 @@
   --dark-color: #343a40;
   --background-color: #fff;
 
-  /* Espaciado */
+  /* Colores de Texto (WCAG AA compliant) */
+  --text-color: #212529;
+  --text-color-secondary: #6c757d;
+  --heading-color: #000;
+  --link-color: #1d70b8;
+  --link-hover-color: #003078;
+  --link-active-color: #0b0c0c;
+
+  /* Espaciado Consistente */
   --space-xs: 4px;
   --space-sm: 8px;
   --space-md: 16px;
   --space-lg: 24px;
   --space-xl: 32px;
   --space-xxl: 48px;
+  --space-xxxl: 64px;
+  --space-xxxxl: 96px;
 
   /* Grid */
   --grid-gutter-width: 16px;
   
- /* Colores de Texto */
-  --text-color: #212529; /* Color de texto de alto contraste */
-  --text-color-secondary: #6c757d; /* Color de texto secundario para menos énfasis */
-  --heading-color: #000; /* Color de texto para encabezados, preferiblemente oscuro para mayor contraste */
-  
-  /* Tamaños de Fuente */
+  /* Tamaños de Fuente - Sistema Tipográfico Escalable */
   --font-size-base: 1rem; /* 16px */
   --font-size-sm: 0.875rem; /* 14px */
   --font-size-lg: 1.125rem; /* 18px */
@@ -45,33 +52,41 @@
   --font-weight-normal: 400;
   --font-weight-medium: 500;
   --font-weight-bold: 700;
-  --font-weight-bolder: 800; /* Para encabezados o donde se necesite más énfasis */
+  --font-weight-bolder: 800;
 
   /* Alturas de Línea */
-  --line-height-base: 1.5; /* Para texto base y párrafos */
-  --line-height-heading: 1.3; /* Para encabezados, un poco más apretado */
+  --line-height-base: 1.5;
+  --line-height-heading: 1.3;
+  --line-height-tight: 1.2;
 
-  /* Espaciado */
-  --spacing-small: 8px; /* Espaciado pequeño para márgenes y paddings */
-  --spacing-medium: 16px; /* Espaciado medio, por ejemplo, entre párrafos */
-  --spacing-large: 24px; /* Espaciado grande, por ejemplo, entre secciones */
- --spacing-xlarge: 64px;
-  --spacing-xxlarge: 96px; 
-  /* Otros */
+  /* Letter Spacing */
   --letter-spacing-normal: 0;
-  --letter-spacing-wide: 0.05em; /* Para encabezados o elementos que requieren más respiración */
+  --letter-spacing-wide: 0.05em;
+
+  /* Familia de Fuente */
+  --font-family-primary: 'Roboto', Helvetica, Arial, sans-serif;
+  --font-family-secondary: "Martel Sans", sans-serif;
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
 
   /* Radio de Bordes */
   --border-radius-sm: 2px;
   --border-radius-md: 4px;
   --border-radius-lg: 8px;
+  --border-radius-xl: 16px;
   --border-radius-circle: 50%;
   --border-radius-pill: 50rem;
 
-  /* Sombra */
-  --box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  /* Bordes */
+  --border-width: 1px;
+  --border-color: #000;
 
-  /* Z Index */
+  /* Sombras */
+  --box-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --box-shadow-lg: 0 4px 8px rgba(0, 0, 0, 0.15);
+  --focus-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.5);
+
+  /* Z-Index Scale */
   --zindex-dropdown: 1000;
   --zindex-sticky: 1020;
   --zindex-fixed: 1030;
@@ -80,59 +95,120 @@
   --zindex-popover: 1060;
   --zindex-tooltip: 1070;
 
-  /* Familia de Fuente */
-  --font-family-primary: 'Roboto', Helvetica, Arial, sans-serif;
-  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
-  --font-family-secondary:"Martel Sans", sans-serif;
+  /* Transiciones */
+  --transition-base: all 0.2s ease-in-out;
+  --transition-fast: all 0.15s ease-in-out;
+  --transition-slow: all 0.3s ease-in-out;
 }
+
+/* ============================================
+   RESET Y BASE STYLES
+   ============================================ */
 html {
   scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-  font-family: 'Helvetica Neue', Arial, sans-serif !important;
-  color: var(--text-color) !important;
-  font-size: var(--font-size-base) !important;
-  line-height: var(--line-height-base) !important;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: var(--text-color);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
 }
 
-h1, h2, h3, h4, h5 {
-font-family:var(--font-family-primary) !important;
-  color: var(--heading-color) !important;
-  font-weight: var(--font-weight-bold) !important;
-  line-height: var(--line-height-heading) !important;
-  margin-top: var(--spacing-large) !important;
-  margin-bottom: var(--spacing-medium) !important;
-  letter-spacing: var(--letter-spacing-wide) !important;
+/* ============================================
+   TIPOGRAFÍA
+   ============================================ */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-primary);
+  color: var(--heading-color);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-heading);
+  margin-top: var(--space-lg);
+  margin-bottom: var(--space-md);
+  letter-spacing: var(--letter-spacing-wide);
 }
 
 h1 {
-  font-size: var(--font-size-h1) !important;
+  font-size: var(--font-size-h1);
+  margin-top: 0;
 }
 
-h2{
-  font-size:var(--font-size-lg) !important;
-  font-weight: var(--font-weight-normal) !important;
-  letter-spacing:var(--letter-spacing-wide) !important;
-  line-height: var(--line-height-heading) !important;
-}
-.main-content{
-  max-width:768px;
+h2 {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-normal);
+  letter-spacing: var(--letter-spacing-wide);
+  line-height: var(--line-height-heading);
 }
 
-/* Repetir para h2, h3, h4, h5, h6 con sus respectivas tamaños de fuente */
+h3 {
+  font-size: var(--font-size-h3);
+}
+
+h4 {
+  font-size: var(--font-size-h4);
+}
+
+h5 {
+  font-size: var(--font-size-h5);
+}
+
+h6 {
+  font-size: var(--font-size-h6);
+}
 
 p {
-  margin-top: var(--spacing-medium);
-  margin-bottom: var(--spacing-medium);
-  font-size:var(--font-size-base) !important;
-  letter-spacing:var(--letter-spacing-wide) !important;
+  margin-top: var(--space-md);
+  margin-bottom: var(--space-md);
+  font-size: var(--font-size-base);
+  letter-spacing: var(--letter-spacing-wide);
 }
 
+/* Enfatizar con semántica */
+em, i {
+  font-style: italic;
+}
 
-nav{
-    padding:16px;
-  border-bottom: 1px solid black;
+strong, b {
+  font-weight: var(--font-weight-bold);
+}
+
+/* ============================================
+   ACCESIBILIDAD - Screen Reader Only
+   ============================================ */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}
+
+/* ============================================
+   NAVEGACIÓN
+   ============================================ */
+nav {
+  padding: var(--space-md);
+  border-bottom: var(--border-width) solid var(--border-color);
+  background-color: var(--background-color);
 }
 
 .nav-content {
@@ -141,12 +217,12 @@ nav{
   align-items: center;
 }
 
-.logo{
+.logo {
   flex-grow: 1;
-  font-family:var(--font-family-primary);
-  font-size:var(--font-size-xl);
-  color:var(--text-color);
-  font-weight:var(--font-weight-bolder);
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-xl);
+  color: var(--text-color);
+  font-weight: var(--font-weight-bolder);
 }
 
 .nav-list {
@@ -154,178 +230,363 @@ nav{
   display: flex;
   margin: 0;
   padding: 0;
+  gap: var(--space-md);
 }
 
 .nav-list li {
-  padding: 0 15px; /* Ajusta el espaciado entre elementos de la lista según necesites */
+  padding: 0;
 }
 
 .nav-list a {
-  text-decoration: none !important;
-  color: var(--text-color) !important; /* Asumiendo que tienes esta variable definida */
+  text-decoration: none;
+  color: var(--text-color);
+  transition: var(--transition-base);
+  padding: var(--space-sm);
+  display: inline-block;
+}
+
+.nav-list a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+  text-underline-offset: var(--space-sm);
 }
 
 .nav-list a.active,
 .nav-list a[aria-current="page"] {
-  font-weight: var(--font-weight-bold) !important;
-  text-decoration: underline !important; /* Visual cue que no depende del color */
-  text-decoration-thickness: max(4px) !important;
-   -webkit-text-decoration-skip-ink: none;
-  text-underline-offset: var(--spacing-small) !important;
-}
-
-.spacer-xxl{
-  margin: var(--spacing-xxlarge) 0px;
-}
-
-.spacer-xl{
-  margin: var(--spacing-xlarge) 0px;
-}
-
-.spacer-l{
-  margin: var(--spacing-large) 0px;
-}
-
-a {
-  color: #1d70b8 !important;
-  text-decoration: underline !important;
-  text-decoration-thickness: auto;
-  text-decoration-thickness: 1px !important;
-  text-underline-offset: 0.25em !important;
+  font-weight: var(--font-weight-bold);
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
   text-decoration-skip-ink: none;
+  text-underline-offset: var(--space-sm);
+}
+
+.nav-list a:focus {
+  outline: 2px solid var(--link-active-color);
+  outline-offset: 2px;
+  box-shadow: var(--focus-shadow);
+}
+
+/* ============================================
+   LINKS - Accesibilidad mejorada
+   ============================================ */
+a {
+  color: var(--link-color);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.25em;
+  text-decoration-skip-ink: none;
+  transition: var(--transition-base);
 }
 
 a:hover {
-  text-decoration-thickness: 4px !important;
-  color: #003078 !important;
+  text-decoration-thickness: 4px;
+  color: var(--link-hover-color);
 }
 
-a:focus,
-a:active {
-  outline: 0;
-  color: #0b0c0c !important;
-  /*background-color: rgba(0, 123, 255, 0.25);*/
-  box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.5);
+a:focus {
+  outline: 2px solid var(--link-active-color);
+  outline-offset: 2px;
+  color: var(--link-active-color);
+  box-shadow: var(--focus-shadow);
   text-decoration: none;
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
-}
-img{
-    -webkit-appearance: none !important;
-    appearance: none !important;
-}
-img:hover, img:focus{
-  outline: 0 !important; /* Quita el contorno */
-  outline-offset: 0 !important;
-  /*box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.5) !important;*/
-}
-/* Anulando el hover y focus específicamente para .img-portada */
-.img-portada:hover, .img-portada:focus, .img-profile:hover {
-    box-shadow: none; /* Elimina el box-shadow aplicado en el hover y focus */
-    outline: none; /* Asegura que no haya contorno en el hover y focus */
-}
-.sidebar {
-    min-height: 100vh; /* Establece la altura mínima para que sea al menos tan alto como la ventana del navegador */
-    flex: 1; /* Permite que la barra lateral se expanda y contraiga según el contenido */
 }
 
-.sidebar-sticky {
-    position: -webkit-sticky; /* Para Safari */
-    position: sticky;
-    top: 0; /* Establece la barra lateral para que se quede en la parte superior */
-    height: auto; /* Permite que la altura se ajuste automáticamente al contenido */
-    overflow-y: auto; /* Agrega desplazamiento si el contenido es más largo que la pantalla */
+a:active {
+  color: var(--link-active-color);
 }
 
-.nav-item {
-    margin-bottom: 0.5rem; /* Espaciado entre elementos de la lista */
+/* Links en tarjetas - Mantener apariencia neutra */
+.text-reset {
+  color: inherit;
+  text-decoration: none;
 }
 
-.nav-section {
-    color: var(--secondary-color) !important;
-    text-decoration: none !important;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 0.25em;
-    text-decoration-skip-ink: none;
-   position: relative;
-  font-size:var( --font-size-base);
-  
+.text-reset:hover {
+  color: inherit;
 }
 
-.nav-section:hover {
-  text-decoration: underline !important;
-    text-decoration-thickness: 4px !important;
-    color: #003078;
+/* ============================================
+   IMÁGENES
+   ============================================ */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
-.nav-section:focus,
-.nav-section:active {
-    outline: 0;
-    color: #0b0c0c;
-    box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.5);
-    text-decoration: none;
+.img-portada,
+.img-profile {
+  transition: var(--transition-base);
 }
 
-.sidebar-bg{
-  background-color:white;
-border-right:1px solid black;
-border-bottom:none;
+.img-portada:focus,
+.img-profile:focus {
+  outline: 2px solid var(--link-color);
+  outline-offset: 4px;
 }
 
-.caption-xl {
-  font-size:var(--font-size-sm) !important;
-  font-weight: var( --font-weight-medium) !important;
-  letter-spacing:var(--letter-spacing-wide) !important;
-  display: block !important;
-  color: var(--secondary-color) !important;
-}
-iframe{
-  border-radius:8px;
-}
-.card{
-  border-radius:0px 0px 8px 8px !important;
-}
-.img-profile{
-  max-width:320px;
+.img-profile {
+  max-width: 320px;
   margin-left: -20px;
 }
+
+/* ============================================
+   CARDS
+   ============================================ */
+.card {
+  border-radius: 0 0 var(--border-radius-lg) var(--border-radius-lg);
+  transition: var(--transition-base);
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover {
+  box-shadow: var(--box-shadow-lg);
+  transform: translateY(-2px);
+}
+
+.card:focus-within {
+  outline: 2px solid var(--link-color);
+  outline-offset: 2px;
+  box-shadow: var(--focus-shadow);
+}
+
+.card-body {
+  padding: var(--space-md);
+}
+
+.card-title {
+  margin-bottom: var(--space-sm);
+}
+
+.card-text {
+  color: var(--text-color-secondary);
+  font-size: var(--font-size-sm);
+}
+
+/* Card deshabilitada - Coming Soon */
 .disabled-link {
-    position: relative;
-    display: block;
-    color: #999; /* Color gris para indicar que está deshabilitado */
-    pointer-events: none; /* Evita que el enlace sea clickable */
+  position: relative;
+  display: block;
+  color: var(--text-color-secondary);
+  pointer-events: none;
+  opacity: 0.6;
 }
 
 .coming-soon-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
-    color: white; /* Texto blanco para contraste */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: var(--font-size-xxl); /* Tamaño del texto */
-    font-weight: bold;
-    z-index: 10; /* Asegúrate de que el overlay esté sobre el contenido de la card */
-  border-radius:0px 0px 8px 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--font-size-xxl);
+  font-weight: var(--font-weight-bold);
+  z-index: 10;
+  border-radius: 0 0 var(--border-radius-lg) var(--border-radius-lg);
 }
 
+/* ============================================
+   ESPACIADORES
+   ============================================ */
+.spacer-xxl {
+  margin: var(--space-xxxxl) 0;
+}
+
+.spacer-xl {
+  margin: var(--space-xxxl) 0;
+}
+
+.spacer-l {
+  margin: var(--space-lg) 0;
+}
+
+/* ============================================
+   UTILIDADES
+   ============================================ */
+.caption-xl {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--letter-spacing-wide);
+  display: block;
+  color: var(--text-color-secondary);
+  text-transform: uppercase;
+}
+
+.main-content {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+/* ============================================
+   SIDEBAR (para páginas internas)
+   ============================================ */
+.sidebar {
+  min-height: 100vh;
+  flex: 1;
+}
+
+.sidebar-sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  height: auto;
+  overflow-y: auto;
+}
+
+.sidebar-bg {
+  background-color: var(--background-color);
+  border-right: var(--border-width) solid var(--border-color);
+  border-bottom: none;
+}
+
+.nav-item {
+  margin-bottom: var(--space-sm);
+}
+
+.nav-section {
+  color: var(--text-color-secondary);
+  text-decoration: none;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.25em;
+  text-decoration-skip-ink: none;
+  position: relative;
+  font-size: var(--font-size-base);
+  transition: var(--transition-base);
+  display: block;
+  padding: var(--space-sm);
+}
+
+.nav-section:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+  color: var(--link-hover-color);
+}
+
+.nav-section:focus {
+  outline: 2px solid var(--link-active-color);
+  outline-offset: 2px;
+  color: var(--link-active-color);
+  box-shadow: var(--focus-shadow);
+  text-decoration: none;
+}
+
+/* ============================================
+   IFRAMES (LinkedIn embeds)
+   ============================================ */
+iframe {
+  border-radius: var(--border-radius-lg);
+  border: var(--border-width) solid var(--border-color);
+}
+
+/* ============================================
+   CHIPS / TAGS
+   ============================================ */
 .chip-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px; /* Espacio entre chips */
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
 }
 
 .chip {
-    display: inline-flex;
-    align-items: center;
-    padding: 4px 16px;
-    background-color: #CCF2FF;
-    border-radius: 80px;
-    text-transform: uppercase;
-    cursor: pointer;
-    white-space: nowrap; /* Evita que el texto se divida en líneas */
+  display: inline-flex;
+  align-items: center;
+  padding: var(--space-xs) var(--space-md);
+  background-color: #CCF2FF;
+  border-radius: 80px;
+  text-transform: uppercase;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  cursor: default;
+  white-space: nowrap;
+  transition: var(--transition-base);
+}
+
+.chip:hover {
+  background-color: #99E5FF;
+}
+
+/* ============================================
+   RESPONSIVE - Mobile First
+   ============================================ */
+@media (max-width: 767.98px) {
+  :root {
+    --font-size-h1: 2rem; /* 32px en móvil */
+    --font-size-h2: 1.5rem; /* 24px en móvil */
+    --font-size-h3: 1.25rem; /* 20px en móvil */
+  }
+
+  .nav-list {
+    gap: var(--space-sm);
+  }
+
+  .img-profile {
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .spacer-xxl {
+    margin: var(--space-xl) 0;
+  }
+
+  .spacer-xl {
+    margin: var(--space-lg) 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  nav {
+    padding: var(--space-sm);
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: var(--space-xs);
+  }
+}
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+@media print {
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  .nav-list,
+  iframe {
+    display: none;
+  }
+}
+
+/* ============================================
+   MOTION - Respetar preferencias del usuario
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ============================================
+   HIGH CONTRAST MODE - Windows
+   ============================================ */
+@media (prefers-contrast: high) {
+  a:focus {
+    outline: 3px solid;
+  }
+
+  .card {
+    border: 2px solid;
+  }
 }
