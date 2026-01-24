@@ -1,1 +1,217 @@
 
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <!-- SEO Meta Tags -->
+      <title>Smowltech Platform Improvements - Case Study by Miguel Mateos</title>
+      <meta name="description" content="Case study of Smowltech platform improvements. Redesigning live monitoring workflows, scaling an accessible design system, and streamlining incident review for a proctoring SaaS.">
+      <meta name="keywords" content="Smowltech, Case Study, SaaS, Proctoring, Product Design, UX Design, Accessibility, WCAG, Design System, Dashboard, Miguel Mateos">
+      <meta name="author" content="Miguel Mateos">
+      
+      <!-- Open Graph / Facebook -->
+      <meta property="og:type" content="article">
+      <meta property="og:url" content="https://miguelmatescode.github.io/portfolio/html/smowltech.html">
+      <meta property="og:title" content="Smowltech Platform Improvements - Case Study">
+      <meta property="og:description" content="How I improved Smowltech's proctoring SaaS: clearer live monitoring, stronger accessibility, and faster incident review workflows.">
+      <meta property="og:image" content="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1600&q=80">
+      
+      <!-- Twitter -->
+      <meta property="twitter:card" content="summary_large_image">
+      <meta property="twitter:url" content="https://miguelmatescode.github.io/portfolio/html/smowltech.html">
+      <meta property="twitter:title" content="Smowltech Platform Improvements - Case Study">
+      <meta property="twitter:description" content="How I improved Smowltech's proctoring SaaS: clearer live monitoring, stronger accessibility, and faster incident review workflows.">
+      <meta property="twitter:image" content="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1600&q=80">
+      
+      <!-- Favicon -->
+      <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+      
+      <!-- Bootstrap CSS -->
+      <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="../style.css">
+   </head>
+   <body>
+      <a href="#main-content" class="sr-only sr-only-focusable">Skip to main content</a>
+      
+      <header>
+         <nav class="container-fluid" aria-label="Main navigation">
+            <div class="row">
+               <div class="col">
+                  <div class="nav-content">
+                     <a href="../index.html" class="logo" aria-label="Miguel Mateos Logo - Return to home">M.</a>
+                     <ul class="nav-list">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../html/about.html">About</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </nav>
+      </header>
+      
+      <div class="container-fluid">
+         <div class="row">
+            <!-- Sidebar Navigation -->
+            <nav class="col-md-2 d-none d-md-block sidebar-bg sidebar pl-4" aria-label="Case study sections">
+               <div class="sidebar-sticky pt-3">
+                  <ul class="nav flex-column">
+                     <li class="nav-item mb-4">
+                        <a class="nav-section" href="#introduccion">Introduction</a>
+                     </li>
+                     <li class="nav-item mb-4">
+                        <a class="nav-section" href="#proceso">Process</a>
+                     </li>
+                     <li class="nav-item mb-4">
+                        <a class="nav-section" href="#solucion">Solution</a>
+                     </li>
+                     <li class="nav-item mb-4">
+                        <a class="nav-section" href="#resultados">Results</a>
+                     </li>
+                     <li class="nav-item mb-4">
+                        <a class="nav-section" href="#conclusion">Conclusion</a>
+                     </li>
+                  </ul>
+               </div>
+            </nav>
+            
+            <!-- Main Content -->
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-5" id="main-content">
+               <figure>
+                  <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=2000&q=80" 
+                       class="img-fluid w-100 img-portada" 
+                       alt="Abstract technology background representing a secure online monitoring platform"
+                       loading="eager">
+               </figure>
+
+               <div class="spacer-xl"></div>
+               
+               <!-- Hero Section -->
+               <section class="main-content border-bottom">
+                  <p class="caption-xl">SMOWLTECH</p>
+                  <h1>Smowltech Platform</h1>
+                  <p class="h2">Improving live monitoring, accessibility, and incident review workflows for a proctoring SaaS</p>
+                  <div class="spacer-xl"></div>
+               </section>
+               
+               <div class="spacer-xl"></div>
+               
+               <!-- Introduction Section -->
+               <section id="introduccion" class="main-content">
+                  <h2>Introduction</h2>
+                  
+                  <h3>Context and Objectives</h3>
+                  <p>Smowltech provides online proctoring solutions used by universities and training platforms. The product includes live monitoring, technical status signals (camera, audio, lock tools), and a review flow for incidents generated during exams. My role focused on improving usability and accessibility across key workflows, while scaling UI consistency through a shared design system.</p>
+                  
+                  <div class="spacer-l"></div>
+                  
+                  <h3>Challenges</h3>
+                  <p>Operators needed to make fast decisions under pressure, but the UI contained dense information, inconsistent patterns, and accessibility gaps. This increased cognitive load during live exams and slowed down incident review afterwards.</p>
+                  
+                  <div class="spacer-l"></div>
+                  
+                  <figure>
+                     <img src="https://images.unsplash.com/photo-1562813733-b31f71025d54?auto=format&fit=crop&w=2000&q=80" 
+                          class="img-fluid w-100 img-fullscreen" 
+                          alt="Abstract dashboard-like background representing complex operational workflows"
+                          loading="lazy">
+                  </figure>
+                  
+                  <div class="spacer-l"></div>
+                  
+                  <p>The goal was to make critical monitoring signals easier to scan, reduce errors, and ensure core flows were accessible (keyboard, focus visibility, contrast, and assistive technology friendly) without slowing the product down.</p>
+               </section>
+               
+               <!-- Process Section -->
+               <section id="proceso" class="main-content">
+                  <h2>Design Process</h2>
+                  
+                  <h3>Research and Analysis</h3>
+                  <p>I worked with product and engineering to map the most critical moments during an exam (live monitoring) and the highest-friction steps after an exam (incident review). We audited current UI patterns, gathered operator pain points, and validated requirements against accessibility best practices (keyboard navigation, focus management, contrast, and clear status messaging).</p>
+               </section>
+               
+               <!-- Solution Section -->
+               <section id="solucion" class="main-content">
+                  <h2>Solution</h2>
+                  <div class="spacer-l"></div>
+                  
+                  <figure>
+                     <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=2000&q=80" 
+                          class="img-fluid w-100 img-fullscreen" 
+                          alt="Analytics interface representing clearer hierarchy and faster scanning of key signals"
+                          loading="lazy">
+                  </figure>
+                  
+                  <div class="spacer-l"></div>
+                  
+                  <h3>Improvement of User Experience</h3>
+                  <div class="spacer-l"></div>
+                  
+                  <p>I introduced clearer information hierarchy for live monitoring (what matters now vs. what can wait), standardized components through the design system, and strengthened accessibility basics (visible focus, consistent labels, predictable keyboard order, and readable status messaging). For incident review, the goal was to make evidence easier to interpret and quicker to act on.</p>
+                  
+                  <div class="spacer-l"></div>
+               </section>
+               
+               <!-- Results Section -->
+               <section id="resultados" class="main-content">
+                  <h2>Results and Impact</h2>
+                  
+                  <p>The improvements reduced cognitive load for operators, made core flows more consistent, and increased accessibility coverage across key screens. Internally, shared components and patterns improved design-to-dev handoff and helped teams iterate faster without re-solving the same UI problems.</p>
+               
+                  <h3>Lessons Learned</h3>
+                  <p>Operational products need ruthless prioritization of “what matters right now.” Accessibility and usability become dramatically easier to maintain when patterns are standardized and validated early (instead of fixed later). Tight collaboration with engineering was essential to keep changes safe and incremental.</p>
+                  
+                  <div class="spacer-l"></div>
+               </section>
+        
+               <!-- Conclusion Section -->
+               <section id="conclusion" class="main-content">
+                  <h2>Conclusion</h2>
+                  
+                  <p>This case study highlights how improving hierarchy, consistency, and accessibility can make high-pressure workflows safer and faster. By strengthening the foundations (design system + accessibility practices) and targeting the most critical moments (live monitoring + incident review), Smowltech can scale features while keeping the experience usable for everyone.</p>
+                  
+                  <div class="spacer-l"></div>
+               </section>
+               
+               <div class="spacer-xxl"></div>
+               
+               <!-- Contact Section -->
+               <section class="border-top border-dark" aria-labelledby="contact-heading">
+                  <div class="container">
+                     <h2 class="sr-only" id="contact-heading">Get in touch</h2>
+                     <div class="row">
+                        <div class="col-12 col-md-6 p-2">
+                           <h3>Looking for my resume?</h3>
+                           <a href="../00.CV- Miguel Mateos - EN.pdf" 
+                              class="mr-5" 
+                              target="_blank" 
+                              rel="noopener noreferrer"
+                              aria-label="Download Miguel Mateos resume in PDF format">Download PDF</a>
+                           <a href="https://www.linkedin.com/in/miguel-mateos/" 
+                              target="_blank" 
+                              rel="noopener noreferrer"
+                              aria-label="Visit Miguel Mateos LinkedIn profile">Visit LinkedIn</a>
+                        </div>
+                        <div class="col-12 col-md-6 p-2">
+                           <h3>Want to connect?</h3>
+                           <a href="https://www.linkedin.com/in/miguel-mateos/" 
+                              target="_blank" 
+                              rel="noopener noreferrer"
+                              aria-label="Connect with Miguel Mateos on LinkedIn">LinkedIn</a>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               
+               <div class="spacer-xxl"></div>
+            </main>
+         </div>
+      </div>
+      
+      <!-- Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   </body>
+</html>
