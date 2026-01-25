@@ -1,1 +1,15 @@
 
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "lang_es": "Cambiar a castellano",
+    "lang_en": "Cambiar a inglés"
+  },
+  "home": {
+    "hero_title": "Diseñador de Producto especializado en Sistemas de Diseño.",
+    "case_studies": "Casos de estudio",
+    "last_post": "Últimos posts",
+    "coming_soon": "PRÓXIMAMENTE"
+  }
+}
