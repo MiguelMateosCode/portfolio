@@ -32,7 +32,8 @@
       "t017": "¿Quieres conectar?",
       "t018": "LinkedIn",
       "a001": "Cambiar a castellano",
-      "a002": "Cambiar a inglés"
+      "a002": "Cambiar a inglés",
+      "hero_desc": "Especializado en crear soluciones completas de principio a fin. Actualmente mejoro la experiencia de usuario en The Adecco Group mediante un sistema de diseño innovador que refuerza la accesibilidad y la usabilidad."
     },
     "about": {
       "t001": "Un poco sobre mí",
@@ -53,7 +54,9 @@
       "t016": "¿Quieres conectar?",
       "t017": "LinkedIn",
       "a001": "Cambiar a castellano",
-      "a002": "Cambiar a inglés"
+      "a002": "Cambiar a inglés",
+      "goal_p": "Mi objetivo actual es reforzar mis habilidades en accesibilidad y visualización de datos para aportar insights accionables e inclusivos a nuestros proyectos. Recientemente he obtenido una certificación en accesibilidad, lo que refuerza mi compromiso con esta área. A largo plazo, me centro en mejorar los procesos internos del equipo de diseño para ser más eficiente, aumentar mi seniority y mejorar mi oficio.",
+      "life_p": "Me encanta la naturaleza y dedico mi tiempo libre a actividades que me mantienen en contacto con ella. El surf me revitaliza con la energía del mar, y la montaña me permite descubrir lugares a los que pocos han llegado. También disfruto viajando en mi furgoneta. Y, sobre todo, me encanta explorar y probar los sabores locales de cada destino. Para mí, estas experiencias son más que hobbies: son un estilo de vida que cuida mi bienestar físico y mental, aportándome equilibrio y felicidad."
     },
     "connect": {
       "t001": "Saltar al contenido principal",
@@ -234,5 +237,8 @@
       "a001": "Cambiar a castellano",
       "a002": "Cambiar a inglés"
     }
+  },
+  "common": {
+    "video_fallback": "Tu navegador no admite vídeo HTML5. Descarga el vídeo en su lugar."
   }
 }

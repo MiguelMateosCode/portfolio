@@ -32,7 +32,8 @@
       "t017": "Want to connect?",
       "t018": "LinkedIn",
       "a001": "Switch to Spanish",
-      "a002": "Switch to English"
+      "a002": "Switch to English",
+      "hero_desc": "Specialized in creating complete end-to-end solutions. I’m currently improving user experiences at The Adecco Group through an innovative design system that strengthens accessibility and usability."
     },
     "about": {
       "t001": "A bit about me",
@@ -53,7 +54,9 @@
       "t016": "Want to connect?",
       "t017": "LinkedIn",
       "a001": "Switch to Spanish",
-      "a002": "Switch to English"
+      "a002": "Switch to English",
+      "goal_p": "My current goal is to strengthen my skills in accessibility and data visualization to bring actionable insights and inclusivity to our projects. Recently, I earned an accessibility certification, reinforcing my commitment to this field. Long term, I focus on improving internal design processes to work more efficiently, grow my seniority, and refine my craft.",
+      "life_p": "I love nature and spend my free time in activities that keep me close to it. Surfing revitalizes me with the energy of the sea, and the mountains let me discover places few people reach. I also enjoy travelling in my van. And above all, I love exploring and tasting the local flavors of each destination. For me, these experiences are more than hobbies—they’re a lifestyle that supports my physical and mental well-being, bringing balance and happiness."
     },
     "connect": {
       "t001": "Skip to main content",
@@ -234,5 +237,8 @@
       "a001": "Switch to Spanish",
       "a002": "Switch to English"
     }
+  },
+  "common": {
+    "video_fallback": "Your browser doesn’t support HTML5 video. Download the video instead."
   }
 }
