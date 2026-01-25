@@ -590,3 +590,8 @@ iframe {
     border: 2px solid;
   }
 }
+
+/* --- Language switch --- */
+.lang-switch{display:flex;gap:8px;align-items:center;}
+.lang-btn{border:1px solid #000;background:transparent;padding:6px 10px;border-radius:6px;font-weight:600;}
+.lang-btn[aria-pressed="true"]{background:#000;color:#fff;}

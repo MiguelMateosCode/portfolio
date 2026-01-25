@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="es">
 <head>
 <meta charset="utf-8"/><link as="image" href="https://i.imgur.com/dpuwyiW.png" rel="preload"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
@@ -39,9 +39,13 @@
 <div class="nav-content">
 <span aria-label="Miguel Mateos Logo" class="logo">M.</span>
 <ul class="nav-list">
-<li><a aria-current="page" href="#Home">Home</a></li>
-<li><a href="html/about.html">About</a></li>
+<li><a aria-current="page" href="#Home" data-i18n="nav.home">Inicio</a></li>
+<li><a href="html/about.html" data-i18n="nav.about">Sobre mí</a></li>
 </ul>
+<div class="lang-switch" role="group" aria-label="Language">
+<button class="lang-btn" type="button" data-lang="es" aria-pressed="true" data-i18n-attr="aria-label:nav.lang_es">ES</button>
+<button class="lang-btn" type="button" data-lang="en" aria-pressed="false" data-i18n-attr="aria-label:nav.lang_en">EN</button>
+</div>
 </div>
 </div>
 </div>
@@ -54,7 +58,7 @@
 <div class="row">
 <div class="col-md-8">
 <p class="caption-xl">MIGUEL MATEOS</p>
-<h1 id="hero-heading">Product Designer specialized in Design Systems.</h1>
+<h1 id="hero-heading" data-i18n="home.hero_title">Diseñador de Producto especializado en Sistemas de Diseño.</h1>
 </div>
 </div>
 <div class="row">
@@ -67,7 +71,7 @@
 <section aria-labelledby="case-studies-heading">
 <div class="spacer-xl"></div>
 <div class="container">
-<h3 id="case-studies-heading">Case Studies</h3>
+<h3 id="case-studies-heading" data-i18n="home.case_studies">Casos de estudio</h3>
 <div class="row">
 <div class="col-12 col-md-6 p-2">
 <a aria-label="View The Adecco Group Design System project details" class="text-reset text-decoration-none" href="html/tagds.html">
@@ -125,7 +129,7 @@
 <h4 class="card-title">Financial Crime</h4>
 <p class="card-text">Client: Schroders</p>
 </div>
-<div aria-live="polite" class="coming-soon-overlay">COMING SOON</div>
+<div aria-live="polite" class="coming-soon-overlay" data-i18n="home.coming_soon">PRÓXIMAMENTE</div>
 </article>
 </div>
 </div>
@@ -137,7 +141,7 @@
 <h4 class="card-title">New Case Study</h4>
 <p class="card-text">Coming soon</p>
 </div>
-<div aria-live="polite" class="coming-soon-overlay">COMING SOON</div>
+<div aria-live="polite" class="coming-soon-overlay" data-i18n="home.coming_soon">PRÓXIMAMENTE</div>
 </article>
 </div>
 </div>
@@ -148,7 +152,7 @@
 <section aria-labelledby="latest-posts-heading">
 <div class="spacer-xxl"></div>
 <div class="container">
-<h3 id="latest-posts-heading">Last post</h3>
+<h3 id="latest-posts-heading" data-i18n="home.last_post">Últimos posts</h3>
 <div class="row">
 <div class="col-md-6 col-lg-6 p-2">
 <iframe allowfullscreen="" class="bg-light border border-dark" frameborder="0" height="400" src="https://www.linkedin.com/embed/feed/update/urn:li:share:7145064263533989888" title="LinkedIn post about design systems and user experience" width="100%"></iframe>
@@ -186,5 +190,7 @@
 <script defer="defer" src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script defer="defer" src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
 <script defer="defer" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script defer src="i18n.js"></script>
+<script defer src="script.js"></script>
 </body>
 </html>
