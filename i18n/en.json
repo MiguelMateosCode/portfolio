@@ -1,0 +1,14 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "lang_es": "Switch to Spanish",
+    "lang_en": "Switch to English"
+  },
+  "home": {
+    "hero_title": "Product Designer specialized in Design Systems.",
+    "case_studies": "Case Studies",
+    "last_post": "Last post",
+    "coming_soon": "COMING SOON"
+  }
+}
