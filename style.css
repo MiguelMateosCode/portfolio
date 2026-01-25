@@ -612,3 +612,51 @@ iframe {
 .skip-link:focus{
   transform: translateY(0);
 }
+
+
+/* Responsive navigation */
+@media (max-width: 640px) {
+  /* Keep header usable on small screens without changing desktop layout */
+  nav.container-fluid .nav-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 10px;
+  }
+
+  nav.container-fluid .logo {
+    flex: 1 1 auto;
+  }
+
+  nav.container-fluid .lang-switch {
+    flex: 0 0 auto;
+    display: flex;
+    gap: 10px;
+  }
+
+  nav.container-fluid .nav-list {
+    flex: 1 0 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 18px;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav.container-fluid .nav-list li {
+    margin: 0;
+  }
+
+  nav.container-fluid .lang-btn {
+    min-width: 44px; /* touch target */
+    min-height: 44px;
+  }
+}
+
+@media (max-width: 380px) {
+  nav.container-fluid .nav-list {
+    justify-content: flex-start;
+  }
+}
