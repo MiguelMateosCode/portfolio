@@ -244,7 +244,8 @@
   "index": {
     "hero": {
       "title": "Diseñador de Producto",
-      "subtitle": "Especializado en UX, Accesibilidad y Sistemas de Diseño"
+      "subtitle": "Especializado en UX, Accesibilidad y Sistemas de Diseño",
+      "description": "Me especializo en crear soluciones end-to-end completas. Actualmente mejoro la experiencia de usuario en The Adecco Group gracias a un sistema de diseño innovador que mejora la accesibilidad y la usabilidad."
     }
   }
 }
