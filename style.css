@@ -64,8 +64,8 @@
   --letter-spacing-wide: 0.05em;
 
   /* Familia de Fuente */
-  --font-family-primary: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-  --font-family-secondary: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  --font-family-primary: 'Roboto', Helvetica, Arial, sans-serif;
+  --font-family-secondary: "Martel Sans", sans-serif;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
 
   /* Radio de Bordes */
@@ -111,7 +111,7 @@ html {
 }
 
 body {
-  font-family: var(--font-family-primary);
+  font-family: 'Helvetica Neue', Arial, sans-serif;
   color: var(--text-color);
   font-size: var(--font-size-base);
   line-height: var(--line-height-base);
@@ -589,76 +589,4 @@ iframe {
   .card {
     border: 2px solid;
   }
-}
-
-
-/* ============================================
-   LAYOUT UTILITIES (Bootstrap-free)
-   (Replacements for the small subset of Bootstrap classes used in this site)
-   ============================================ */
-.container,
-.container-fluid {
-  width: 100%;
-  padding-left: var(--space-md);
-  padding-right: var(--space-md);
-}
-
-.container {
-  max-width: 1140px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: calc(var(--space-sm) * -1);
-  margin-right: calc(var(--space-sm) * -1);
-}
-
-.col,
-[class*="col-"] {
-  padding-left: var(--space-sm);
-  padding-right: var(--space-sm);
-  flex: 1 0 0%;
-}
-
-.col-12 { flex: 0 0 100%; max-width: 100%; }
-.col-sm { flex: 1 0 0%; }
-
-/* Spacing utilities */
-.p-2 { padding: var(--space-sm) !important; }
-.mt-5 { margin-top: var(--space-xxl) !important; }
-.mr-5 { margin-right: var(--space-xxl) !important; }
-
-/* Borders */
-.border { border: var(--border-width) solid var(--border-color) !important; }
-.border-dark { border-color: var(--border-color) !important; }
-.border-top { border-top: var(--border-width) solid var(--border-color) !important; }
-.border-bottom { border-bottom: var(--border-width) solid var(--border-color) !important; }
-
-/* Background */
-.bg-light { background-color: var(--light-color) !important; }
-
-/* Sizing */
-.w-100 { width: 100% !important; }
-.img-fluid { max-width: 100%; height: auto; }
-
-/* Text decorations */
-.text-decoration-none { text-decoration: none !important; }
-
-/* Responsive columns (md >= 768px, lg >= 992px) */
-@media (min-width: 768px) {
-  .col-md-6 { flex: 0 0 50%; max-width: 50%; }
-  .col-md-8 { flex: 0 0 66.6667%; max-width: 66.6667%; }
-}
-
-@media (min-width: 992px) {
-  .col-lg-6 { flex: 0 0 50%; max-width: 50%; }
-}
-
-/* Link list blocks */
-.link-list {
-  margin: 0;
-  padding-left: var(--space-lg);
 }
