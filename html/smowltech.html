@@ -28,7 +28,7 @@
 <link as="style" href="../style.css" onload="this.onload=null;this.rel='stylesheet'" rel="preload"/><noscript><link href="../style.css" rel="stylesheet"/></noscript>
 </head>
 <body>
-<a class="sr-only sr-only-focusable" data-i18n="smowltech.t001" href="#main-content">Saltar al contenido principal</a>
+<a class="sr-only sr-only-focusable" data-i18n="pages.smowltech.t001" href="#main-content">Saltar al contenido principal</a>
 <header>
 <nav aria-label="Main navigation" class="container-fluid">
 <div class="row">
@@ -37,11 +37,11 @@
 <span aria-label="Miguel Mateos Logo" class="logo">M.</span>
 <ul class="nav-list">
 <li><a data-i18n="nav.home" href="../index.html#Home">Inicio</a></li>
-<li><a data-i18n="nav.about" href="about.html">Sobre mí</a></li>
+<li><a data-i18n="nav.about" href="./about.html">Sobre mí</a></li>
 </ul>
 <div aria-label="Language" class="lang-switch" role="group">
-<button aria-pressed="true" class="lang-btn" data-i18n-attr="aria-label:nav.lang_es" data-lang="es" type="button">ES</button>
-<button aria-pressed="false" class="lang-btn" data-i18n-attr="aria-label:nav.lang_en" data-lang="en" type="button">EN</button>
+<button aria-label="Cambiar a castellano" class="lang-btn" data-i18n-attr="aria-label:nav.lang_es,aria-label:pages.smowltech.a001" data-lang="es" type="button">ES</button>
+<button aria-label="Cambiar a inglés" class="lang-btn" data-i18n-attr="aria-label:nav.lang_en,aria-label:pages.smowltech.a002" data-lang="en" type="button">EN</button>
 </div>
 </div>
 </div>
@@ -55,19 +55,19 @@
 <div class="sidebar-sticky pt-3">
 <ul class="nav flex-column">
 <li class="nav-item mb-4">
-<a class="nav-section" data-i18n="smowltech.t005" href="#introduccion">Introducción</a>
+<a class="nav-section" data-i18n="pages.smowltech.t002" href="#introduccion">Introducción</a>
 </li>
 <li class="nav-item mb-4">
-<a class="nav-section" data-i18n="smowltech.t006" href="#proceso">Proceso</a>
+<a class="nav-section" data-i18n="pages.smowltech.t003" href="#proceso">Proceso</a>
 </li>
 <li class="nav-item mb-4">
-<a class="nav-section" data-i18n="smowltech.t007" href="#solucion">Solución</a>
+<a class="nav-section" data-i18n="pages.smowltech.t004" href="#solucion">Solución</a>
 </li>
 <li class="nav-item mb-4">
-<a class="nav-section" data-i18n="smowltech.t008" href="#resultados">Resultados</a>
+<a class="nav-section" data-i18n="pages.smowltech.t005" href="#resultados">Resultados</a>
 </li>
 <li class="nav-item mb-4">
-<a class="nav-section" data-i18n="smowltech.t009" href="#conclusion">Conclusión</a>
+<a class="nav-section" data-i18n="pages.smowltech.t006" href="#conclusion">Conclusión</a>
 </li>
 </ul>
 </div>
@@ -80,74 +80,74 @@
 <div class="spacer-xl"></div>
 <!-- Hero Section -->
 <section class="main-content border-bottom">
-<p class="caption-xl" data-i18n="smowltech.t010">SMOWLTECH</p>
-<h1 data-i18n="smowltech.t011">Plataforma Smowltech</h1>
-<p class="h2" data-i18n="smowltech.t012">Mejorando monitorización en vivo, accesibilidad y flujos de revisión de incidencias en un SaaS de proctoring</p>
+<p class="caption-xl" data-i18n="pages.smowltech.t007">SMOWLTECH</p>
+<h1 data-i18n="pages.smowltech.t008">Plataforma Smowltech</h1>
+<p class="h2" data-i18n="pages.smowltech.t009">Mejorando live monitoring, accesibilidad y flujos de revisión de incidencias en un SaaS de proctoring</p>
 <div class="spacer-xl"></div>
 </section>
 <div class="spacer-xl"></div>
 <!-- Introduction Section -->
 <section class="main-content" id="introduccion">
-<h2 data-i18n="smowltech.t013">Introducción</h2>
-<h3 data-i18n="smowltech.t014">Contexto y objetivos</h3>
-<p>Smowltech provides online proctoring solutions used by universities and training platforms. The product includes live monitoring, technical status signals (camera, audio, lock tools), and a review flow for incidents generated during exams. My role focused on improving usability and accessibility across key workflows, while scaling UI consistency through a shared design system.</p>
+<h2 data-i18n="pages.smowltech.t010">Introducción</h2>
+<h3 data-i18n="pages.smowltech.t011">Contexto y objetivos</h3>
+<p data-i18n="pages.smowltech.t012">Smowltech ofrece soluciones de proctoring online usadas por universidades y plataformas de formación. El producto incluye live monitoring, señales de estado técnico (cámara, audio, herramientas de lock) y un flujo de revisión de incidencias generadas durante exámenes. Mi rol se centró en mejorar usabilidad y accesibilidad en flujos clave, mientras escalaba la consistencia de UI mediante un sistema de diseño compartido.</p>
 <div class="spacer-l"></div>
-<h3 data-i18n="smowltech.t015">Retos</h3>
-<p>Operators needed to make fast decisions under pressure, but the UI contained dense information, inconsistent patterns, and accessibility gaps. This increased cognitive load during live exams and slowed down incident review afterwards.</p>
+<h3 data-i18n="pages.smowltech.t013">Retos</h3>
+<p data-i18n="pages.smowltech.t014">Las personas operadoras necesitaban tomar decisiones rápidas bajo presión, pero la UI contenía información densa, patrones inconsistentes y gaps de accesibilidad. Esto incrementaba la carga cognitiva durante los exámenes en vivo y ralentizaba la revisión de incidencias después.</p>
 <div class="spacer-l"></div>
 <figure>
 <img alt="Abstract dashboard-like background representing complex operational workflows" class="img-fluid w-100 img-fullscreen" decoding="async" height="900" loading="lazy" src="https://images.unsplash.com/photo-1562813733-b31f71025d54?auto=format&amp;fit=crop&amp;w=2000&amp;q=80" style="height:auto;" width="1600"/>
 </figure>
 <div class="spacer-l"></div>
-<p>The goal was to make critical monitoring signals easier to scan, reduce errors, and ensure core flows were accessible (keyboard, focus visibility, contrast, and assistive technology friendly) without slowing the product down.</p>
+<p data-i18n="pages.smowltech.t015">El objetivo fue hacer que las señales críticas de monitorización fueran más fáciles de escanear, reducir errores y asegurar que los flujos clave fueran accesibles (teclado, visibilidad de foco, contraste y compatibilidad con tecnologías de asistencia) sin ralentizar el producto.</p>
 </section>
 <!-- Process Section -->
 <section class="main-content" id="proceso">
-<h2 data-i18n="smowltech.t016">Proceso de diseño</h2>
-<h3 data-i18n="smowltech.t017">Investigación y análisis</h3>
-<p>I worked with product and engineering to map the most critical moments during an exam (live monitoring) and the highest-friction steps after an exam (incident review). We audited current UI patterns, gathered operator pain points, and validated requirements against accessibility best practices (keyboard navigation, focus management, contrast, and clear status messaging).</p>
+<h2 data-i18n="pages.smowltech.t016">Proceso de diseño</h2>
+<h3 data-i18n="pages.smowltech.t017">Investigación y análisis</h3>
+<p data-i18n="pages.smowltech.t018">Trabajé con producto e ingeniería para mapear los momentos más críticos durante un examen (live monitoring) y los pasos con más fricción tras el examen (revisión de incidencias). Auditamos patrones de UI actuales, recogimos pain points de operadores y validamos requisitos frente a buenas prácticas de accesibilidad (navegación por teclado, gestión del foco, contraste y mensajes de estado claros).</p>
 </section>
 <!-- Solution Section -->
 <section class="main-content" id="solucion">
-<h2 data-i18n="smowltech.t018">Solución</h2>
+<h2 data-i18n="pages.smowltech.t019">Solución</h2>
 <div class="spacer-l"></div>
 <figure>
 <img alt="Analytics interface representing clearer hierarchy and faster scanning of key signals" class="img-fluid w-100 img-fullscreen" decoding="async" height="900" loading="lazy" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&amp;fit=crop&amp;w=2000&amp;q=80" style="height:auto;" width="1600"/>
 </figure>
 <div class="spacer-l"></div>
-<h3 data-i18n="smowltech.t019">Mejora de la experiencia de usuario</h3>
+<h3 data-i18n="pages.smowltech.t020">Mejora de la experiencia de usuario</h3>
 <div class="spacer-l"></div>
-<p>I introduced clearer information hierarchy for live monitoring (what matters now vs. what can wait), standardized components through the design system, and strengthened accessibility basics (visible focus, consistent labels, predictable keyboard order, and readable status messaging). For incident review, the goal was to make evidence easier to interpret and quicker to act on.</p>
+<p data-i18n="pages.smowltech.t021">Introduje una jerarquía de información más clara en el live monitoring (lo que importa ahora vs. lo que puede esperar), estandaricé componentes mediante el sistema de diseño y reforcé bases de accesibilidad (foco visible, etiquetas consistentes, orden de teclado predecible y mensajes de estado legibles). En la revisión de incidencias, el objetivo fue que la evidencia fuera más fácil de interpretar y más rápida de accionar.</p>
 <div class="spacer-l"></div>
 </section>
 <!-- Results Section -->
 <section class="main-content" id="resultados">
-<h2 data-i18n="smowltech.t020">Resultados e impacto</h2>
-<p>The improvements reduced cognitive load for operators, made core flows more consistent, and increased accessibility coverage across key screens. Internally, shared components and patterns improved design-to-dev handoff and helped teams iterate faster without re-solving the same UI problems.</p>
-<h3 data-i18n="smowltech.t021">Aprendizajes</h3>
-<p>Operational products need ruthless prioritization of “what matters right now.” Accessibility and usability become dramatically easier to maintain when patterns are standardized and validated early (instead of fixed later). Tight collaboration with engineering was essential to keep changes safe and incremental.</p>
+<h2 data-i18n="pages.smowltech.t022">Resultados e impacto</h2>
+<p data-i18n="pages.smowltech.t023">Las mejoras redujeron la carga cognitiva de operadores, hicieron los flujos clave más consistentes y aumentaron la cobertura de accesibilidad en pantallas principales. Internamente, componentes y patrones compartidos mejoraron el handoff diseño-desarrollo y ayudaron a iterar más rápido sin resolver una y otra vez los mismos problemas de UI.</p>
+<h3 data-i18n="pages.smowltech.t024">Aprendizajes</h3>
+<p data-i18n="pages.smowltech.t025">Los productos operativos necesitan una priorización implacable de “lo que importa ahora”. La accesibilidad y la usabilidad son mucho más fáciles de mantener cuando los patrones se estandarizan y validan pronto (en lugar de arreglarlos después). La colaboración estrecha con ingeniería fue esencial para hacer cambios seguros e incrementales.</p>
 <div class="spacer-l"></div>
 </section>
 <!-- Conclusion Section -->
 <section class="main-content" id="conclusion">
-<h2 data-i18n="smowltech.t022">Conclusión</h2>
-<p>This case study highlights how improving hierarchy, consistency, and accessibility can make high-pressure workflows safer and faster. By strengthening the foundations (design system + accessibility practices) and targeting the most critical moments (live monitoring + incident review), Smowltech can scale features while keeping the experience usable for everyone.</p>
+<h2 data-i18n="pages.smowltech.t026">Conclusión</h2>
+<p data-i18n="pages.smowltech.t027">Este case study muestra cómo mejorar jerarquía, consistencia y accesibilidad puede hacer flujos de alta presión más seguros y rápidos. Reforzando la base (sistema de diseño + prácticas de accesibilidad) y atacando los momentos más críticos (live monitoring + revisión de incidencias), Smowltech puede escalar funcionalidades manteniendo una experiencia usable para todas las personas.</p>
 <div class="spacer-l"></div>
 </section>
 <div class="spacer-xxl"></div>
 <!-- Contact Section -->
 <section aria-labelledby="contact-heading" class="border-top border-dark">
 <div class="container">
-<h2 class="sr-only" data-i18n="smowltech.t023" id="contact-heading">Contacto</h2>
+<h2 class="sr-only" data-i18n="pages.smowltech.t028" id="contact-heading">Contacta conmigo</h2>
 <div class="row">
 <div class="col-12 col-md-6 p-2">
-<h3 data-i18n="smowltech.t024">¿Buscas mi CV?</h3>
-<a aria-label="Download Miguel Mateos resume in PDF format" class="mr-5" data-i18n="smowltech.t025" href="../00.CV- Miguel Mateos - EN.pdf" rel="noopener noreferrer" target="_blank">Descargar PDF</a>
-<a aria-label="Visit Miguel Mateos LinkedIn profile" data-i18n="smowltech.t026" href="https://www.linkedin.com/in/miguel-mateos/" rel="noopener noreferrer" target="_blank">Visitar LinkedIn</a>
+<h3 data-i18n="pages.smowltech.t029">¿Buscas mi CV?</h3>
+<a aria-label="Download Miguel Mateos resume in PDF format" class="mr-5" data-i18n="pages.smowltech.t030" href="../00.CV- Miguel Mateos - EN.pdf" rel="noopener noreferrer" target="_blank">Descargar PDF</a>
+<a aria-label="Visit Miguel Mateos LinkedIn profile" data-i18n="pages.smowltech.t031" href="https://www.linkedin.com/in/miguel-mateos/" rel="noopener noreferrer" target="_blank">Visitar LinkedIn</a>
 </div>
 <div class="col-12 col-md-6 p-2">
-<h3 data-i18n="smowltech.t027">¿Conectamos?</h3>
-<a aria-label="Connect with Miguel Mateos on LinkedIn" data-i18n="smowltech.t028" href="https://www.linkedin.com/in/miguel-mateos/" rel="noopener noreferrer" target="_blank">LinkedIn</a>
+<h3 data-i18n="pages.smowltech.t032">¿Quieres conectar?</h3>
+<a aria-label="Connect with Miguel Mateos on LinkedIn" data-i18n="pages.smowltech.t033" href="https://www.linkedin.com/in/miguel-mateos/" rel="noopener noreferrer" target="_blank">LinkedIn</a>
 </div>
 </div>
 </div>
@@ -160,5 +160,5 @@
 <script defer="defer" src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script defer="defer" src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
 <script defer="defer" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script src="i18n.js"></script></body>
+<script src="../i18n.js"></script></body>
 </html>
