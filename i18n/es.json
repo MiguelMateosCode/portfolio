@@ -240,5 +240,11 @@
   },
   "common": {
     "video_fallback": "Tu navegador no admite vídeo HTML5. Descarga el vídeo en su lugar."
+  },
+  "index": {
+    "hero": {
+      "title": "Diseñador de Producto",
+      "subtitle": "Especializado en UX, Accesibilidad y Sistemas de Diseño"
+    }
   }
 }

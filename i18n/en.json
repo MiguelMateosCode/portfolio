@@ -240,5 +240,11 @@
   },
   "common": {
     "video_fallback": "Your browser doesn’t support HTML5 video. Download the video instead."
+  },
+  "index": {
+    "hero": {
+      "title": "Product Designer",
+      "subtitle": "Specialized in UX, Accessibility and Design Systems"
+    }
   }
 }
