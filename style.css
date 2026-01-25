@@ -700,3 +700,56 @@ iframe {
     margin: 0;
   }
 }
+
+
+/* Responsive navigation grid fix */
+@media (max-width: 575.98px) {
+  /* Force a stable 2-row header: logo + language on first row, links on second */
+  nav.container-fluid .nav-content {
+    display: grid !important;
+    grid-template-columns: 1fr auto !important;
+    grid-template-areas:
+      "logo lang"
+      "links links" !important;
+    align-items: center !important;
+    row-gap: 10px !important;
+  }
+
+  nav.container-fluid .logo {
+    grid-area: logo !important;
+  }
+
+  nav.container-fluid .lang-switch {
+    grid-area: lang !important;
+    display: flex !important;
+    gap: 10px !important;
+    justify-self: end !important;
+  }
+
+  nav.container-fluid .nav-list {
+    grid-area: links !important;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    gap: 18px !important;
+    justify-content: flex-end !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  nav.container-fluid .nav-list li {
+    margin: 0 !important;
+  }
+
+  nav.container-fluid .lang-btn {
+    min-width: 44px !important;
+    min-height: 44px !important;
+  }
+}
+
+@media (max-width: 380px) {
+  nav.container-fluid .nav-list {
+    justify-content: flex-start !important;
+  }
+}
