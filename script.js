@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
     // Suavizar el desplazamiento para enlaces internos
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
-            e.preventDefault();
             document.querySelector(this.getAttribute('href')).scrollIntoView({
                 behavior: 'smooth'
             });
@@ -48,3 +47,22 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 });
+
+/* --- Safe improvements (accessibility & robustness) --- */
+(function () {
+  // Smooth scroll should be handled by CSS (scroll-behavior). Keep JS only for valid targets.
+  document.addEventListener('click', function (e) {
+    const a = e.target.closest('a[href^="#"]');
+    if (!a) return;
+    const href = a.getAttribute('href');
+    if (!href || href === '#') return;
+    const target = document.querySelector(href);
+    if (!target) return; // allow normal behavior if it doesn't exist
+    e.preventDefault();
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }, true);
+
+  // Guard fullscreen close button listeners (if element doesn't exist, do nothing)
+  const closeBtn = document.querySelector('#closeFullscreen');
+  if (!closeBtn) return;
+})();
