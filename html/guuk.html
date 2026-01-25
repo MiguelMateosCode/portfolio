@@ -28,17 +28,21 @@
 <link as="style" href="../style.css" onload="this.onload=null;this.rel='stylesheet'" rel="preload"/><noscript><link href="../style.css" rel="stylesheet"/></noscript>
 </head>
 <body>
-<a class="sr-only sr-only-focusable" data-i18n="guuk.txt.001" href="#main-content">Saltar al contenido principal</a>
+<a class="sr-only sr-only-focusable" data-i18n="guuk.t001" href="#main-content">Saltar al contenido principal</a>
 <header>
 <nav aria-label="Main navigation" class="container-fluid">
 <div class="row">
 <div class="col">
 <div class="nav-content">
-<a aria-label="Miguel Mateos Logo - Return to home" class="logo" href="../index.html">M.</a>
+<span aria-label="Miguel Mateos Logo" class="logo">M.</span>
 <ul class="nav-list">
-<li data-i18n="guuk.txt.002">Inicio</li>
-<li data-i18n="guuk.txt.004">Sobre mí</li>
+<li><a data-i18n="nav.home" href="../index.html#Home">Inicio</a></li>
+<li><a data-i18n="nav.about" href="about.html">Sobre mí</a></li>
 </ul>
+<div aria-label="Language" class="lang-switch" role="group">
+<button aria-pressed="true" class="lang-btn" data-i18n-attr="aria-label:nav.lang_es" data-lang="es" type="button">ES</button>
+<button aria-pressed="false" class="lang-btn" data-i18n-attr="aria-label:nav.lang_en" data-lang="en" type="button">EN</button>
+</div>
 </div>
 </div>
 </div>
@@ -50,11 +54,21 @@
 <nav aria-label="Case study sections" class="col-md-2 d-none d-md-block sidebar-bg sidebar pl-4">
 <div class="sidebar-sticky pt-3">
 <ul class="nav flex-column">
-<li class="nav-item mb-4" data-i18n="guuk.txt.006">Introducción</li>
-<li class="nav-item mb-4" data-i18n="guuk.txt.008">Proceso</li>
-<li class="nav-item mb-4" data-i18n="guuk.txt.010">Solución</li>
-<li class="nav-item mb-4" data-i18n="guuk.txt.012">Resultados</li>
-<li class="nav-item mb-4" data-i18n="guuk.txt.014">Conclusión</li>
+<li class="nav-item mb-4">
+<a class="nav-section" data-i18n="guuk.t005" href="#introduccion">Introducción</a>
+</li>
+<li class="nav-item mb-4">
+<a class="nav-section" data-i18n="guuk.t006" href="#proceso">Proceso</a>
+</li>
+<li class="nav-item mb-4">
+<a class="nav-section" data-i18n="guuk.t007" href="#solucion">Solución</a>
+</li>
+<li class="nav-item mb-4">
+<a class="nav-section" data-i18n="guuk.t008" href="#resultados">Resultados</a>
+</li>
+<li class="nav-item mb-4">
+<a class="nav-section" data-i18n="guuk.t009" href="#conclusion">Conclusión</a>
+</li>
 </ul>
 </div>
 </nav>
@@ -66,74 +80,74 @@
 <div class="spacer-xl"></div>
 <!-- Hero Section -->
 <section class="main-content border-bottom">
-<p class="caption-xl">GUUK</p>
-<h1 data-i18n="guuk.txt.016">Sitio comercial de Guuk</h1>
-<p class="h2" data-i18n="guuk.txt.017">Rediseñando el sitio comercial de Guuk: mejorando la navegación y la atención al cliente en el sector de las telecomunicaciones</p>
+<p class="caption-xl" data-i18n="guuk.t010">GUUK</p>
+<h1 data-i18n="guuk.t011">Web comercial de Guuk</h1>
+<p class="h2" data-i18n="guuk.t012">Rediseño de la web comercial de Guuk: mejorando navegación y atención al cliente en el sector telecomunicaciones</p>
 <div class="spacer-xl"></div>
 </section>
 <div class="spacer-xl"></div>
 <!-- Introduction Section -->
 <section class="main-content" id="introduccion">
-<h2 data-i18n="guuk.txt.018">Introducción</h2>
-<h3 data-i18n="guuk.txt.019">Contexto y objetivos</h3>
-<p data-i18n="guuk.txt.020">Guuk, parte del grupo de telecomunicaciones MásMóvil, afrontaba el reto de rediseñar su web comercial para alinearla con su nueva imagen de marca y mejorar la implicación y la experiencia de las personas usuarias. Mi rol liderando el rediseño consistió en renovar la interfaz y la experiencia del sitio, poniendo el foco en un diseño visual atractivo, navegación intuitiva e interacciones fluidas. Entendiendo la identidad de marca y el público objetivo de Guuk, diseñé layouts, recursos gráficos y elementos interactivos para aumentar el engagement y la satisfacción.</p>
+<h2 data-i18n="guuk.t013">Introducción</h2>
+<h3 data-i18n="guuk.t014">Contexto y objetivos</h3>
+<p>Guuk, part of the Más Móvil telecommunications group, faced the challenge of redesigning its commercial website to align with its new brand image and enhance customer engagement and experience. My role in leading the redesign involved revamping the user interface and website experience, focusing on creating visually appealing designs, intuitive navigation, and smooth interactions for visitors. Understanding Guuk's brand identity and target audience, I designed compelling layouts, graphics, and interactive elements to boost user engagement and satisfaction.</p>
 <div class="spacer-l"></div>
-<h3 data-i18n="guuk.txt.021">Retos</h3>
-<p data-i18n="guuk.txt.022">El equipo de atención al cliente de Guuk recibía un gran volumen de llamadas por consultas básicas y necesitaba un canal secundario en la web para resolver dudas. Esto aliviaría el único canal disponible en ese momento: el teléfono.</p>
+<h3 data-i18n="guuk.t015">Retos</h3>
+<p>Guuk's customer service team was receiving a high volume of calls from customers for basic issues and needed a secondary channel on the website to address inquiries. This would relieve the only available channel at that time, which was the telephone channel.</p>
 <div class="spacer-l"></div>
 <figure>
 <img alt="Analysis of customer service pain points showing high call volume for basic inquiries" class="img-fluid w-100 img-fullscreen" decoding="async" height="900" loading="lazy" src="https://i.imgur.com/dtLhReQ.png" style="height:auto;" width="1600"/>
 </figure>
 <div class="spacer-l"></div>
-<p data-i18n="guuk.txt.023">El objetivo era crear una nueva sección dentro de la web, con una arquitectura de información bien estructurada, para que las personas usuarias encontraran respuestas a sus preguntas lo más rápido posible.</p>
+<p data-i18n="guuk.t016">El objetivo era crear una nueva sección dentro de la web con una arquitectura de información bien estructurada para que los clientes encontraran respuestas lo antes posible.</p>
 </section>
 <!-- Process Section -->
 <section class="main-content" id="proceso">
-<h2 data-i18n="guuk.txt.024">Proceso de diseño</h2>
-<h3 data-i18n="guuk.txt.025">Investigación y análisis</h3>
-<p data-i18n="guuk.txt.026">El primer paso consistió en recopilar las preguntas más frecuentes para optimizar el espacio de la web y permitir que las personas usuarias encontraran soluciones rápidamente. Se decidió implementar una búsqueda dinámica, incorporando un buscador dentro de una sección de Preguntas Frecuentes (FAQ), mejorando así la experiencia. Esto permitió a las visitas localizar información específica de forma ágil y adaptada a sus necesidades.</p>
+<h2 data-i18n="guuk.t017">Proceso de diseño</h2>
+<h3 data-i18n="guuk.t018">Investigación y análisis</h3>
+<p>The first step involved gathering all the common questions to optimize space on the website, enabling customers to quickly find solutions to their problems. A decision was made to implement a dynamic search engine, including a search box in a Frequently Asked Questions (FAQ) section, thereby enhancing the user experience. This allowed visitors to swiftly find specific information tailored to their needs.</p>
 </section>
 <!-- Solution Section -->
 <section class="main-content" id="solucion">
-<h2 data-i18n="guuk.txt.027">Solución</h2>
+<h2 data-i18n="guuk.t019">Solución</h2>
 <div class="spacer-l"></div>
 <figure>
 <img alt="Redesigned FAQ section featuring dynamic search functionality and improved information architecture" class="img-fluid w-100 img-fullscreen" decoding="async" height="900" loading="lazy" src="https://i.imgur.com/tcrQjuP.png" style="height:auto;" width="1600"/>
 </figure>
 <div class="spacer-l"></div>
-<h3 data-i18n="guuk.txt.028">Mejora de la experiencia de usuario</h3>
+<h3 data-i18n="guuk.t020">Mejora de la experiencia de usuario</h3>
 <div class="spacer-l"></div>
-<p data-i18n="guuk.txt.029">Al incorporar un buscador en las FAQ, facilitamos que las personas usuarias ahorraran tiempo, mejoraran la navegación y accedieran a respuestas relevantes sin tener que desplazarse por una lista larga de preguntas y respuestas. Esta solución aumentó la autonomía para resolver dudas y también ayudó a reducir la carga del servicio telefónico de atención al cliente.</p>
+<p>By incorporating a search engine into the FAQs, we made it easier for users to save time, improve their navigation, and easily access relevant answers without scrolling through a long list of questions and answers. This solution not only enhanced user autonomy in resolving queries but also helped reduce the load on the telephone customer service.</p>
 <div class="spacer-l"></div>
 </section>
 <!-- Results Section -->
 <section class="main-content" id="resultados">
-<h2 data-i18n="guuk.txt.030">Resultados e impacto</h2>
-<p data-i18n="guuk.txt.031">El lanzamiento de la nueva sección de FAQ con búsqueda dinámica mejoró de forma notable la capacidad de las personas usuarias para encontrar soluciones por sí mismas, y más rápido. Esto incrementó la satisfacción, reflejada en una reducción de llamadas por consultas básicas, liberando recursos para casos más complejos. Además, este enfoque centrado en la persona usuaria reforzó la imagen de marca de Guuk como una compañía que valora y facilita la experiencia de sus clientes.</p>
-<h3 data-i18n="guuk.txt.032">Aprendizajes</h3>
-<p data-i18n="guuk.txt.033">Este proyecto puso de relieve la importancia de entender en profundidad necesidades y comportamientos para diseñar soluciones efectivas que no solo resuelven retos inmediatos, sino que también aportan a objetivos a largo plazo. La colaboración entre equipos y la integración del feedback de usuarios fueron claves para el éxito.</p>
+<h2 data-i18n="guuk.t021">Resultados e impacto</h2>
+<p>The launch of the new FAQ section with dynamic search significantly improved customers' ability to find solutions on their own, quickly. This enhancement led to a notable increase in customer satisfaction, evidenced by fewer support calls for basic inquiries, thus freeing up resources for more complex questions. Moreover, this user-centric approach has strengthened Guuk's brand image as one that values and facilitates its customers' experience.</p>
+<h3 data-i18n="guuk.t022">Aprendizajes</h3>
+<p>This project emphasized the importance of deeply understanding user needs and behaviors to design effective solutions that not only address immediate challenges but also contribute to the long-term goals of the company. Collaboration between teams and integrating user feedback were key to the project's success.</p>
 <div class="spacer-l"></div>
 </section>
 <!-- Conclusion Section -->
 <section class="main-content" id="conclusion">
-<h2 data-i18n="guuk.txt.034">Conclusión</h2>
-<p data-i18n="guuk.txt.035">El rediseño de la web comercial de Guuk muestra el impacto transformador de un enfoque de diseño sistemático y colaborativo en la experiencia y la relación marca‑cliente. Al mejorar la navegación y el acceso a la información mediante una sección de FAQ dinámica, Guuk estableció un nuevo estándar de atención al cliente en el sector, reforzando su compromiso con la innovación y la satisfacción. Este proyecto no solo mejoró la experiencia, sino que también supuso un cambio relevante en el enfoque de Guuk hacia el diseño y desarrollo de soluciones digitales.</p>
+<h2 data-i18n="guuk.t023">Conclusión</h2>
+<p>The redesign of Guuk's commercial website showcases the transformative impact of a systematic and collaborative design approach on user experience and brand-customer relationship. By enhancing site navigation and information access through a dynamic FAQ section, Guuk has set a new customer service standard in the telecommunications sector, emphasizing its commitment to innovation and customer satisfaction. This project not only improved user experience but also marked a significant shift in Guuk's approach to digital solution design and development.</p>
 <div class="spacer-l"></div>
 </section>
 <div class="spacer-xxl"></div>
 <!-- Contact Section -->
 <section aria-labelledby="contact-heading" class="border-top border-dark">
 <div class="container">
-<h2 class="sr-only" data-i18n="guuk.txt.036" id="contact-heading">Contacto</h2>
+<h2 class="sr-only" data-i18n="guuk.t024" id="contact-heading">Contacto</h2>
 <div class="row">
 <div class="col-12 col-md-6 p-2">
-<h3 data-i18n="guuk.txt.037">¿Buscas mi CV?</h3>
-<a aria-label="Download Miguel Mateos resume in PDF format" class="mr-5" data-i18n="guuk.txt.038" href="../00.CV- Miguel Mateos - EN.pdf" rel="noopener noreferrer" target="_blank">Descargar PDF</a>
-<a aria-label="Visit Miguel Mateos LinkedIn profile" data-i18n="guuk.txt.039" href="https://www.linkedin.com/in/miguel-mateos/" rel="noopener noreferrer" target="_blank">Ver LinkedIn</a>
+<h3 data-i18n="guuk.t025">¿Buscas mi CV?</h3>
+<a aria-label="Download Miguel Mateos resume in PDF format" class="mr-5" data-i18n="guuk.t026" href="../00.CV- Miguel Mateos - EN.pdf" rel="noopener noreferrer" target="_blank">Descargar PDF</a>
+<a aria-label="Visit Miguel Mateos LinkedIn profile" data-i18n="guuk.t027" href="https://www.linkedin.com/in/miguel-mateos/" rel="noopener noreferrer" target="_blank">Visitar LinkedIn</a>
 </div>
 <div class="col-12 col-md-6 p-2">
-<h3 data-i18n="guuk.txt.040">¿Hablamos?</h3>
-<a aria-label="Connect with Miguel Mateos on LinkedIn" data-i18n="guuk.txt.041" href="https://www.linkedin.com/in/miguel-mateos/" rel="noopener noreferrer" target="_blank">LinkedIn</a>
+<h3 data-i18n="guuk.t028">¿Conectamos?</h3>
+<a aria-label="Connect with Miguel Mateos on LinkedIn" data-i18n="guuk.t029" href="https://www.linkedin.com/in/miguel-mateos/" rel="noopener noreferrer" target="_blank">LinkedIn</a>
 </div>
 </div>
 </div>
@@ -146,5 +160,5 @@
 <script defer="defer" src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script defer="defer" src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
 <script defer="defer" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
+<script src="i18n.js"></script></body>
 </html>
