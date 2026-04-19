@@ -31,7 +31,7 @@ function setTextPreserve(el, value) {
 async function setLang(lang) {
   if (!supported.includes(lang)) lang = "es";
 
-  const dict = await fetch(`${BASE_PATH}i18n/${lang}.json`, { cache: "no-store" })
+  const dict = await fetch(`${BASE_PATH}i18n/${lang}.json`)
     .then((r) => r.json());
 
   document.documentElement.lang = lang;
