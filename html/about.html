@@ -1,138 +1,177 @@
 <!DOCTYPE html>
-
 <html lang="es">
 <head>
-<meta charset="utf-8"/><link as="image" href="https://i.imgur.com/CXUsVBd.gif" rel="preload"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta charset="utf-8" />
+<link as="image" href="https://i.imgur.com/CXUsVBd.gif" rel="preload" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <!-- SEO Meta Tags -->
 <title>About Miguel Mateos - Product Designer &amp; Accessibility Advocate</title>
-<meta content="Sobre Miguel Mateos: experiencia, enfoque de diseño centrado en usuario y accesibilidad." name="description"/>
-<meta content="Miguel Mateos, Product Designer, About, Design Systems, Accessibility, UX/UI, The Adecco Group" name="keywords"/>
-<meta content="Miguel Mateos" name="author"/>
-<!-- Open Graph / Facebook -->
-<meta content="profile" property="og:type"/>
-<meta content="https://miguelmatescode.github.io/portfolio/html/about.html" property="og:url"/>
-<meta content="About Miguel Mateos - Product Designer" property="og:title"/>
-<meta content="Product Designer at The Adecco Group specializing in Design Systems and accessibility. Passionate about nature, surfing, and mountains." property="og:description"/>
-<meta content="https://i.imgur.com/CXUsVBd.gif" property="og:image"/>
+<meta name="description" content="Sobre Miguel Mateos: experiencia, enfoque de diseño centrado en usuario y accesibilidad." />
+<meta name="keywords" content="Miguel Mateos, Product Designer, About, Design Systems, Accessibility, UX/UI, The Adecco Group" />
+<meta name="author" content="Miguel Mateos" />
+<!-- Open Graph -->
+<meta property="og:type" content="profile" />
+<meta property="og:url" content="https://miguelmatescode.github.io/portfolio/html/about.html" />
+<meta property="og:title" content="About Miguel Mateos - Product Designer" />
+<meta property="og:description" content="Product Designer at The Adecco Group specializing in Design Systems and accessibility. Passionate about nature, surfing, and mountains." />
+<meta property="og:image" content="https://i.imgur.com/CXUsVBd.gif" />
 <!-- Twitter -->
-<meta content="summary_large_image" property="twitter:card"/>
-<meta content="https://miguelmatescode.github.io/portfolio/html/about.html" property="twitter:url"/>
-<meta content="About Miguel Mateos - Product Designer" property="twitter:title"/>
-<meta content="Product Designer at The Adecco Group specializing in Design Systems and accessibility." property="twitter:description"/>
-<meta content="https://i.imgur.com/CXUsVBd.gif" property="twitter:image"/>
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://miguelmatescode.github.io/portfolio/html/about.html" />
+<meta property="twitter:title" content="About Miguel Mateos - Product Designer" />
+<meta property="twitter:description" content="Product Designer at The Adecco Group specializing in Design Systems and accessibility." />
+<meta property="twitter:image" content="https://i.imgur.com/CXUsVBd.gif" />
 <!-- Favicon -->
-<link href="../favicon.ico" rel="shortcut icon" type="image/x-icon"/>
-<!-- Preconnect for Performance -->
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&amp;display=swap" rel="stylesheet"/>
-<!-- Bootstrap CSS -->
-<link as="style" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" onload="this.onload=null;this.rel='stylesheet'" rel="preload"/><noscript><link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/></noscript>
-<link as="style" href="../style.css" onload="this.onload=null;this.rel='stylesheet'" rel="preload"/><noscript><link href="../style.css" rel="stylesheet"/></noscript>
-<link href="https://miguelmateoscode.github.io/portfolio2024/html/about.html" rel="canonical"/><link href="../site.webmanifest" rel="manifest"/></head>
-<body><a class="skip-link" href="#main">Saltar al contenido</a>
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- Custom Styles -->
+<link rel="stylesheet" href="../style.css" />
+<link rel="canonical" href="https://miguelmateoscode.github.io/portfolio2024/html/about.html" />
+<link rel="manifest" href="../site.webmanifest" />
+</head>
+<body>
+<a class="skip-link" href="#main">Saltar al contenido</a>
+
 <header>
-<nav aria-label="Main navigation" class="container-fluid">
-<div class="row">
-<div class="col">
-<div class="nav-content">
-<span aria-label="Miguel Mateos Logo" class="logo">M.</span>
-<ul class="nav-list">
-<li><a data-i18n="nav.home" href="../index.html#Home">Inicio</a></li>
-<li><a data-i18n="nav.about" href="./about.html">Sobre mí</a></li>
-</ul>
-<div aria-label="Language" class="lang-switch" role="group">
-<button aria-label="Cambiar a castellano" class="lang-btn" data-i18n-attr="aria-label:nav.lang_es" data-lang="es" type="button">ES</button>
-<button aria-label="Cambiar a inglés" class="lang-btn" data-i18n-attr="aria-label:nav.lang_en" data-lang="en" type="button">EN</button>
-</div>
-</div>
-</div>
-</div>
+<nav aria-label="Main navigation" class="px-4 py-4 border-b border-black bg-white">
+  <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
+    <span class="flex-1 font-extrabold text-xl text-gray-900" aria-label="Miguel Mateos Logo">M.</span>
+    <ul class="nav-list order-last w-full md:order-none md:w-auto list-none flex justify-end gap-4 m-0 p-0">
+      <li><a data-i18n="nav.home" href="../index.html#Home">Inicio</a></li>
+      <li><a data-i18n="nav.about" href="./about.html">Sobre mí</a></li>
+    </ul>
+    <div class="lang-switch flex-shrink-0" aria-label="Language" role="group">
+      <button class="lang-btn" data-lang="es" type="button" data-i18n-attr="aria-label:nav.lang_es" aria-label="Cambiar a castellano">ES</button>
+      <button class="lang-btn" data-lang="en" type="button" data-i18n-attr="aria-label:nav.lang_en" aria-label="Cambiar a inglés">EN</button>
+    </div>
+  </div>
 </nav>
 </header>
+
 <main id="main">
-<div class="spacer-xxl" id="Home"></div>
-<!-- Profile Image Section -->
-<section class="container mt-5 border-bottom">
-<div class="row">
-<div class="col-md-8">
-<img alt="Miguel Mateos - Product Designer portrait showing professional workspace" class="img-profile" decoding="async" fetchpriority="high" height="800" id="profile-image" loading="eager" src="https://i.imgur.com/CXUsVBd.gif" style="height:auto;" width="800"/>
-</div>
-</div>
-<div class="spacer-xl"></div>
-</section>
-<div class="spacer-xxl"></div>
-<!-- About Me Section -->
-<section aria-labelledby="about-heading">
-<div class="container">
-<h2 data-i18n="pages.about.t001" id="about-heading">Un poco sobre mí</h2>
-<div class="spacer-l"></div>
-<article>
-<p data-i18n="pages.about.t002">Actualmente trabajo en UST para The Adecco Group, una compañía internacional con sede en Zúrich, con oficinas en los cinco continentes y más de 10 marcas.</p>
-<p data-i18n="pages.about.t003">Mi foco está en soluciones end-to-end, desde investigación generativa hasta el seguimiento de métricas post-lanzamiento y sus iteraciones, con especial atención al diseño de interacción y comportamiento. Me gusta participar en investigación y product management.</p>
-<p data-i18n="pages.about.t004">Tras haber trabajado en agencias, consultoras y empresas de producto, The Adecco Group ha impulsado mi crecimiento profesional y personal, con logros como lanzar un Sistema de Diseño multimarca que cubre las necesidades de cinco plataformas, mejorar la usabilidad y accesibilidad de la plataforma de la que soy responsable en más de un 70% y migrarla al nuevo sistema TAG DS.</p>
-<p data-i18n="pages.about.t005">El proceso de diseño del DS se basó en metodologías ágiles y decisiones data-driven, considerando implicaciones de usuario, negocio y coste de desarrollo.</p>
-<p>My current goal is to enhance my skills in accessibility and data visualization, aiming to bring valuable insights and inclusivity to our projects. Recently, I have achieved a <a aria-label="View Miguel's accessibility certification on edX" data-i18n="pages.about.t006" href="https://courses.edx.org/certificates/e9bb61ef7dcc4094823099067ddd9f0f" rel="noopener noreferrer" target="_blank">certificación</a> in accessibility, underscoring my dedication to this area. My long-term focus is on improving internal design team processes to be more efficient, increase my seniority, and enhance my craft.</p>
-</article>
-</div>
-</section>
-<div class="spacer-xxl"></div>
-<!-- Hobbies Section -->
-<section aria-labelledby="hobbies-heading">
-<div class="container">
-<h2 data-i18n="pages.about.t007" id="hobbies-heading">Mis hobbies</h2>
-<div class="spacer-l"></div>
-<figure>
-<img alt="Collection of Miguel's hobbies: surfing at the beach, hiking in the mountains, van life adventures, and local food experiences" class="img-fluid w-100" decoding="async" height="900" loading="lazy" src="https://i.imgur.com/swKZkDj.png" style="height:auto;" width="1600"/>
-</figure>
-<div class="spacer-l"></div>
-<article>
-<p>I love nature and dedicate all my free time to activities that involve being in touch with it. Surfing <span aria-label="surfer" data-i18n="pages.about.t008" role="img">🏄🏻</span> revitalizes me with the energy of the sea, while being in the mountains <span aria-label="mountain" data-i18n="pages.about.t009" role="img">🏔️</span> allows me to discover places that no one has ever set foot on before. I also enjoy traveling in my van. But without a doubt, one of the things I enjoy most is exploring and tasting the local flavors <span aria-label="pizza" data-i18n="pages.about.t010" role="img">🍕</span> of each destination. These experiences are not just hobbies, but a lifestyle that nourishes my physical and mental well-being, bringing balance and happiness to my life.</p>
-</article>
-</div>
-</section>
-<div class="spacer-xxl"></div>
-<!-- Latest Posts Section -->
-<section aria-labelledby="latest-posts-heading">
-<div class="container">
-<h2 data-i18n="pages.about.t011" id="latest-posts-heading">Última publicación</h2>
-<div class="row">
-<div class="col-md-6 col-lg-6 p-2">
-<iframe allowfullscreen="" class="bg-light border border-dark" frameborder="0" height="400" loading="lazy" src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7140636010832457729" title="LinkedIn post by Miguel Mateos about design systems and user experience" width="100%"></iframe>
-</div>
-<div class="col-md-6 col-lg-6 p-2">
-<iframe allowfullscreen="" class="bg-light border border-dark" frameborder="0" height="400" loading="lazy" src="https://www.linkedin.com/embed/feed/update/urn:li:share:6953658660300419072" title="LinkedIn post by Miguel Mateos about product design best practices" width="100%"></iframe>
-</div>
-</div>
-</div>
-</section>
-<div class="spacer-xxl"></div>
-<!-- Contact Section -->
-<section aria-labelledby="contact-heading" class="border-top border-dark">
-<div class="container">
-<h2 class="sr-only" data-i18n="pages.about.t012" id="contact-heading">Contacta conmigo</h2>
-<div class="row">
-<div class="col-12 col-md-6 p-2">
-<h3 data-i18n="pages.about.t013">¿Buscas mi CV?</h3>
-<a aria-label="Download Miguel Mateos resume in PDF format" class="mr-5" data-i18n="pages.about.t014" href="../00.CV- Miguel Mateos - EN.pdf" rel="noopener noreferrer" target="_blank">Descargar PDF</a>
-<a aria-label="Visit Miguel Mateos LinkedIn profile" data-i18n="pages.about.t015" href="https://www.linkedin.com/in/miguel-mateos/" rel="noopener noreferrer" target="_blank">Visitar LinkedIn</a>
-</div>
-<div class="col-12 col-md-6 p-2">
-<h3 data-i18n="pages.about.t016">¿Quieres conectar?</h3>
-<a aria-label="Connect with Miguel Mateos on LinkedIn" data-i18n="pages.about.t017" href="https://www.linkedin.com/in/miguel-mateos/" rel="noopener noreferrer" target="_blank">LinkedIn</a>
-</div>
-</div>
-</div>
-</section>
-<div class="spacer-xxl"></div>
+  <div class="spacer-xxl" id="Home"></div>
+
+  <!-- Profile Image Section -->
+  <section class="container mx-auto px-4 mt-12 border-b border-black">
+    <div class="flex flex-wrap">
+      <div class="w-full md:w-2/3">
+        <img
+          alt="Miguel Mateos - Product Designer portrait showing professional workspace"
+          class="img-profile"
+          decoding="async"
+          fetchpriority="high"
+          height="800"
+          id="profile-image"
+          loading="eager"
+          src="https://i.imgur.com/CXUsVBd.gif"
+          width="800"
+        />
+      </div>
+    </div>
+    <div class="spacer-xl"></div>
+  </section>
+
+  <div class="spacer-xxl"></div>
+
+  <!-- About Me Section -->
+  <section aria-labelledby="about-heading">
+    <div class="container mx-auto px-4">
+      <h2 id="about-heading" data-i18n="pages.about.t001">Un poco sobre mí</h2>
+      <div class="spacer-l"></div>
+      <article>
+        <p data-i18n="pages.about.t002">Actualmente trabajo en UST para The Adecco Group, una compañía internacional con sede en Zúrich, con oficinas en los cinco continentes y más de 10 marcas.</p>
+        <p data-i18n="pages.about.t003">Mi foco está en soluciones end-to-end, desde investigación generativa hasta el seguimiento de métricas post-lanzamiento y sus iteraciones, con especial atención al diseño de interacción y comportamiento. Me gusta participar en investigación y product management.</p>
+        <p data-i18n="pages.about.t004">Tras haber trabajado en agencias, consultoras y empresas de producto, The Adecco Group ha impulsado mi crecimiento profesional y personal, con logros como lanzar un Sistema de Diseño multimarca que cubre las necesidades de cinco plataformas, mejorar la usabilidad y accesibilidad de la plataforma de la que soy responsable en más de un 70% y migrarla al nuevo sistema TAG DS.</p>
+        <p data-i18n="pages.about.t005">El proceso de diseño del DS se basó en metodologías ágiles y decisiones data-driven, considerando implicaciones de usuario, negocio y coste de desarrollo.</p>
+        <p>My current goal is to enhance my skills in accessibility and data visualization, aiming to bring valuable insights and inclusivity to our projects. Recently, I have achieved a <a aria-label="View Miguel's accessibility certification on edX" data-i18n="pages.about.t006" href="https://courses.edx.org/certificates/e9bb61ef7dcc4094823099067ddd9f0f" rel="noopener noreferrer" target="_blank">certificación</a> in accessibility, underscoring my dedication to this area. My long-term focus is on improving internal design team processes to be more efficient, increase my seniority, and enhance my craft.</p>
+      </article>
+    </div>
+  </section>
+
+  <div class="spacer-xxl"></div>
+
+  <!-- Hobbies Section -->
+  <section aria-labelledby="hobbies-heading">
+    <div class="container mx-auto px-4">
+      <h2 id="hobbies-heading" data-i18n="pages.about.t007">Mis hobbies</h2>
+      <div class="spacer-l"></div>
+      <figure>
+        <img
+          alt="Collection of Miguel's hobbies: surfing at the beach, hiking in the mountains, van life adventures, and local food experiences"
+          class="w-full h-auto"
+          decoding="async"
+          height="900"
+          loading="lazy"
+          src="https://i.imgur.com/swKZkDj.png"
+          width="1600"
+        />
+      </figure>
+      <div class="spacer-l"></div>
+      <article>
+        <p>I love nature and dedicate all my free time to activities that involve being in touch with it. Surfing <span aria-label="surfer" data-i18n="pages.about.t008" role="img">🏄🏻</span> revitalizes me with the energy of the sea, while being in the mountains <span aria-label="mountain" data-i18n="pages.about.t009" role="img">🏔️</span> allows me to discover places that no one has ever set foot on before. I also enjoy traveling in my van. But without a doubt, one of the things I enjoy most is exploring and tasting the local flavors <span aria-label="pizza" data-i18n="pages.about.t010" role="img">🍕</span> of each destination. These experiences are not just hobbies, but a lifestyle that nourishes my physical and mental well-being, bringing balance and happiness to my life.</p>
+      </article>
+    </div>
+  </section>
+
+  <div class="spacer-xxl"></div>
+
+  <!-- Latest Posts Section -->
+  <section aria-labelledby="latest-posts-heading">
+    <div class="container mx-auto px-4">
+      <h2 id="latest-posts-heading" data-i18n="pages.about.t011">Última publicación</h2>
+      <div class="flex flex-wrap -mx-2">
+        <div class="w-full md:w-1/2 px-2 py-2">
+          <iframe
+            src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7140636010832457729"
+            width="100%"
+            height="400"
+            frameborder="0"
+            allowfullscreen
+            loading="lazy"
+            title="LinkedIn post by Miguel Mateos about design systems and user experience"
+          ></iframe>
+        </div>
+        <div class="w-full md:w-1/2 px-2 py-2">
+          <iframe
+            src="https://www.linkedin.com/embed/feed/update/urn:li:share:6953658660300419072"
+            width="100%"
+            height="400"
+            frameborder="0"
+            allowfullscreen
+            loading="lazy"
+            title="LinkedIn post by Miguel Mateos about product design best practices"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="spacer-xxl"></div>
+
+  <!-- Contact Section -->
+  <section aria-labelledby="contact-heading" class="border-t border-black">
+    <div class="container mx-auto px-4">
+      <h2 id="contact-heading" class="sr-only" data-i18n="pages.about.t012">Contacta conmigo</h2>
+      <div class="flex flex-wrap -mx-2">
+        <div class="w-full md:w-1/2 px-2 py-2">
+          <h3 data-i18n="pages.about.t013">¿Buscas mi CV?</h3>
+          <a class="mr-12" aria-label="Download Miguel Mateos resume in PDF format" data-i18n="pages.about.t014" href="../00.CV- Miguel Mateos - EN.pdf" rel="noopener noreferrer" target="_blank">Descargar PDF</a>
+          <a aria-label="Visit Miguel Mateos LinkedIn profile" data-i18n="pages.about.t015" href="https://www.linkedin.com/in/miguel-mateos/" rel="noopener noreferrer" target="_blank">Visitar LinkedIn</a>
+        </div>
+        <div class="w-full md:w-1/2 px-2 py-2">
+          <h3 data-i18n="pages.about.t016">¿Quieres conectar?</h3>
+          <a aria-label="Connect with Miguel Mateos on LinkedIn" data-i18n="pages.about.t017" href="https://www.linkedin.com/in/miguel-mateos/" rel="noopener noreferrer" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="spacer-xxl"></div>
 </main>
-<footer role="contentinfo">
-<!-- Footer content can be added here -->
-</footer>
-<!-- Bootstrap JS -->
-<script defer="defer" src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script defer="defer" src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-<script defer="defer" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script src="../i18n.js"></script></body>
+
+<footer role="contentinfo"></footer>
+
+<script src="../i18n.js"></script>
+</body>
 </html>

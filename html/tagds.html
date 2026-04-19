@@ -1,204 +1,221 @@
 <!DOCTYPE html>
-
 <html lang="es">
 <head>
-<meta charset="utf-8"/><link as="image" href="https://i.imgur.com/E5LZwPg.png" rel="preload"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta charset="utf-8" />
+<link as="image" href="https://i.imgur.com/E5LZwPg.png" rel="preload" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <!-- SEO Meta Tags -->
 <title>The Adecco Group Design System - Case Study by Miguel Mateos</title>
-<meta content="Case Study TAGDS: sistemas de diseño y escalabilidad." name="description"/>
-<meta content="TAG DS, The Adecco Group, Design System, Multi-brand, Component Library, Time Picker, Accessibility, WCAG, Miguel Mateos" name="keywords"/>
-<meta content="Miguel Mateos" name="author"/>
-<!-- Open Graph / Facebook -->
-<meta content="article" property="og:type"/>
-<meta content="https://miguelmatescode.github.io/portfolio/html/tagds.html" property="og:url"/>
-<meta content="The Adecco Group Design System - Case Study" property="og:title"/>
-<meta content="Multi-brand design system improving usability by 60%, standardizing UI/UX across all Adecco Group platforms." property="og:description"/>
-<meta content="https://i.imgur.com/E5LZwPg.png" property="og:image"/>
+<meta name="description" content="Case Study TAGDS: sistemas de diseño y escalabilidad." />
+<meta name="keywords" content="TAG DS, The Adecco Group, Design System, Multi-brand, Component Library, Time Picker, Accessibility, WCAG, Miguel Mateos" />
+<meta name="author" content="Miguel Mateos" />
+<!-- Open Graph -->
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://miguelmatescode.github.io/portfolio/html/tagds.html" />
+<meta property="og:title" content="The Adecco Group Design System - Case Study" />
+<meta property="og:description" content="Multi-brand design system improving usability by 60%, standardizing UI/UX across all Adecco Group platforms." />
+<meta property="og:image" content="https://i.imgur.com/E5LZwPg.png" />
 <!-- Twitter -->
-<meta content="summary_large_image" property="twitter:card"/>
-<meta content="https://miguelmatescode.github.io/portfolio/html/tagds.html" property="twitter:url"/>
-<meta content="The Adecco Group Design System - Case Study" property="twitter:title"/>
-<meta content="Multi-brand design system improving usability by 60% across all platforms." property="twitter:description"/>
-<meta content="https://i.imgur.com/E5LZwPg.png" property="twitter:image"/>
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://miguelmatescode.github.io/portfolio/html/tagds.html" />
+<meta property="twitter:title" content="The Adecco Group Design System - Case Study" />
+<meta property="twitter:description" content="Multi-brand design system improving usability by 60% across all platforms." />
+<meta property="twitter:image" content="https://i.imgur.com/E5LZwPg.png" />
 <!-- Favicon -->
-<link href="../favicon.ico" rel="shortcut icon" type="image/x-icon"/>
-<!-- Bootstrap CSS -->
-<link as="style" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" onload="this.onload=null;this.rel='stylesheet'" rel="preload"/><noscript><link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/></noscript>
-<link as="style" href="../style.css" onload="this.onload=null;this.rel='stylesheet'" rel="preload"/><noscript><link href="../style.css" rel="stylesheet"/></noscript>
-<link href="https://miguelmateoscode.github.io/portfolio2024/html/tagds.html" rel="canonical"/><link href="../site.webmanifest" rel="manifest"/></head>
-<body><a class="skip-link" href="#main-content">Saltar al contenido</a>
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- Custom Styles -->
+<link rel="stylesheet" href="../style.css" />
+<link rel="canonical" href="https://miguelmateoscode.github.io/portfolio2024/html/tagds.html" />
+<link rel="manifest" href="../site.webmanifest" />
+</head>
+<body>
+<a class="skip-link" href="#main-content">Saltar al contenido</a>
 <a class="sr-only sr-only-focusable" data-i18n="pages.tagds.t001" href="#main-content">Saltar al contenido principal</a>
+
 <header>
-<nav aria-label="Main navigation" class="container-fluid">
-<div class="row">
-<div class="col">
-<div class="nav-content">
-<span aria-label="Miguel Mateos Logo" class="logo">M.</span>
-<ul class="nav-list">
-<li><a data-i18n="nav.home" href="../index.html#Home">Inicio</a></li>
-<li><a data-i18n="nav.about" href="./about.html">Sobre mí</a></li>
-</ul>
-<div aria-label="Language" class="lang-switch" role="group">
-<button aria-label="Cambiar a castellano" class="lang-btn" data-i18n-attr="aria-label:nav.lang_es" data-lang="es" type="button">ES</button>
-<button aria-label="Cambiar a inglés" class="lang-btn" data-i18n-attr="aria-label:nav.lang_en" data-lang="en" type="button">EN</button>
-</div>
-</div>
-</div>
-</div>
+<nav aria-label="Main navigation" class="px-4 py-4 border-b border-black bg-white">
+  <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
+    <span class="flex-1 font-extrabold text-xl text-gray-900" aria-label="Miguel Mateos Logo">M.</span>
+    <ul class="nav-list order-last w-full md:order-none md:w-auto list-none flex justify-end gap-4 m-0 p-0">
+      <li><a data-i18n="nav.home" href="../index.html#Home">Inicio</a></li>
+      <li><a data-i18n="nav.about" href="./about.html">Sobre mí</a></li>
+    </ul>
+    <div class="lang-switch flex-shrink-0" aria-label="Language" role="group">
+      <button class="lang-btn" data-lang="es" type="button" data-i18n-attr="aria-label:nav.lang_es" aria-label="Cambiar a castellano">ES</button>
+      <button class="lang-btn" data-lang="en" type="button" data-i18n-attr="aria-label:nav.lang_en" aria-label="Cambiar a inglés">EN</button>
+    </div>
+  </div>
 </nav>
 </header>
-<div class="container-fluid">
-<div class="row">
-<!-- Sidebar Navigation -->
-<nav aria-label="Case study sections" class="col-md-2 d-none d-md-block sidebar-bg sidebar pl-4">
-<div class="sidebar-sticky pt-3">
-<ul class="nav flex-column">
-<li class="nav-item mb-4">
-<a class="nav-section" data-i18n="pages.tagds.t002" href="#introduccion">Introducción</a>
-</li>
-<li class="nav-item mb-4">
-<a class="nav-section" data-i18n="pages.tagds.t003" href="#proceso">Proceso</a>
-</li>
-<li class="nav-item mb-4">
-<a class="nav-section" data-i18n="pages.tagds.t004" href="#componente">Time Picker</a>
-</li>
-<li class="nav-item mb-4">
-<a class="nav-section" data-i18n="pages.tagds.t005" href="#resultados-impacto">Resultados</a>
-</li>
-<li class="nav-item mb-4">
-<a class="nav-section" data-i18n="pages.tagds.t006" href="#conclusion">Conclusión</a>
-</li>
-</ul>
+
+<div class="flex">
+  <!-- Sidebar Navigation -->
+  <nav aria-label="Case study sections" class="hidden md:flex flex-col w-1/6 flex-shrink-0 bg-white border-r border-black sidebar pl-4">
+    <div class="sidebar-sticky pt-3">
+      <ul class="flex flex-col list-none m-0 p-0">
+        <li class="mb-4"><a class="nav-section" data-i18n="pages.tagds.t002" href="#introduccion">Introducción</a></li>
+        <li class="mb-4"><a class="nav-section" data-i18n="pages.tagds.t003" href="#proceso">Proceso</a></li>
+        <li class="mb-4"><a class="nav-section" data-i18n="pages.tagds.t004" href="#componente">Time Picker</a></li>
+        <li class="mb-4"><a class="nav-section" data-i18n="pages.tagds.t005" href="#resultados-impacto">Resultados</a></li>
+        <li class="mb-4"><a class="nav-section" data-i18n="pages.tagds.t006" href="#conclusion">Conclusión</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="flex-1 min-w-0 px-4 md:px-12" id="main-content">
+    <figure>
+      <img
+        alt="The Adecco Group Design System overview showing component library and multi-brand design tokens"
+        class="w-full h-auto img-portada"
+        decoding="async"
+        fetchpriority="high"
+        height="900"
+        loading="eager"
+        src="https://i.imgur.com/E5LZwPg.png"
+        width="1600"
+      />
+    </figure>
+
+    <div class="spacer-xl" id="Home"></div>
+
+    <!-- Hero Section -->
+    <section class="main-content border-b border-black">
+      <p class="caption-xl" data-i18n="pages.tagds.t007">THE ADECCO GROUP</p>
+      <h1 data-i18n="pages.tagds.t008">Sistema de Diseño de The Adecco Group</h1>
+      <p class="h3" data-i18n="pages.tagds.t009">El sistema de diseño multimarca de The Adecco Group abarca todas las plataformas digitales del grupo.</p>
+      <div class="spacer-xl"></div>
+    </section>
+
+    <div class="spacer-xl"></div>
+
+    <!-- Introduction Section -->
+    <section class="main-content" id="introduccion">
+      <h2 data-i18n="pages.tagds.t010">Introducción</h2>
+      <h3 data-i18n="pages.tagds.t011">Contexto y objetivos</h3>
+      <p data-i18n="pages.tagds.t012">En el corazón de la transformación digital de The Adecco Group estuvo la necesidad de un Sistema de Diseño unificado, llamado TAG DS. Su objetivo era estandarizar componentes UI/UX en todas las plataformas digitales, mejorando cohesión visual, usabilidad y accesibilidad. Facilitó el desarrollo de productos digitales para las distintas marcas del grupo (como Adecco, Akkodis y LHH), agilizando procesos y asegurando una experiencia consistente en todo el portafolio.</p>
+      <div class="spacer-l"></div>
+      <figure>
+        <img alt="Multi-brand strategy showing The Adecco Group's brand portfolio including Adecco, Akkodis, and LHH" class="w-full h-auto img-fullscreen" decoding="async" height="900" loading="lazy" src="https://i.imgur.com/uNLanO6.png" width="1600" />
+      </figure>
+      <div class="spacer-l"></div>
+      <h3 data-i18n="pages.tagds.t013">Retos</h3>
+      <p data-i18n="pages.tagds.t014">Un reto principal fue la diversidad de interfaces existentes, desarrolladas en aislamiento por diferentes equipos, lo que generaba falta de coherencia y estándares de accesibilidad variables. Realizar una auditoría completa fue especialmente difícil por la disparidad de las plataformas. Esta variabilidad dificultó entender el estado actual y planificar una integración cohesiva del Sistema de Diseño.</p>
+      <h3 data-i18n="pages.tagds.t015">Mi rol</h3>
+      <p>As a <em>Product Designer and Design System Contributor</em>, my role was to coordinate the collaborative effort among designers, developers, and stakeholders to lay the groundwork for the design system, from the Discovery phase through to the final Construct phase. This involved documentation and publication on Zeroheight, ensuring the system met both design and business objectives.</p>
+    </section>
+
+    <!-- Process Section -->
+    <section class="main-content" id="proceso">
+      <h2 data-i18n="pages.tagds.t016">Proceso de diseño</h2>
+      <h3 data-i18n="pages.tagds.t017">Investigación y análisis</h3>
+      <div class="spacer-l"></div>
+      <figure>
+        <img alt="Research and analysis phase showing stakeholder interviews, competitor analysis, and user persona workshops" class="w-full h-auto img-fullscreen" decoding="async" height="900" loading="lazy" src="https://i.imgur.com/CXCsGj9.png" width="1600" />
+      </figure>
+      <div class="spacer-l"></div>
+      <p data-i18n="pages.tagds.t018">El proceso comenzó con una fase exhaustiva de investigación y análisis, incluyendo entrevistas con stakeholders, análisis de sistemas de diseño de competidores y workshops con User Personas definidos por el equipo de Research, para entender sus necesidades y pain points.</p>
+      <h3 data-i18n="pages.tagds.t019">Definición de principios de diseño</h3>
+      <div class="spacer-l"></div>
+      <figure>
+        <img alt="Design principles framework centered on accessibility, reusability, and simplicity" class="w-full h-auto img-fullscreen" decoding="async" height="900" loading="lazy" src="https://i.imgur.com/bJD5Szi.png" width="1600" />
+      </figure>
+      <div class="spacer-l"></div>
+      <p data-i18n="pages.tagds.t020">Se establecieron principios de diseño centrados en accesibilidad, reutilización y simplicidad. Fueron cruciales en la creación de todos los componentes, incluido el Time Picker, asegurando que fueran intuitivos y accesibles para todas las personas.</p>
+      <h3 data-i18n="pages.tagds.t021">Herramientas y software</h3>
+      <p data-i18n="pages.tagds.t022">Se usó Figma para diseño y prototipado colaborativo, Zeroheight para documentación de componentes y Storybook para documentar y compartir componentes del sistema con desarrollo.</p>
+    </section>
+
+    <!-- Time Picker Component Section -->
+    <section class="main-content" id="componente">
+      <h2 data-i18n="pages.tagds.t023">Creación del componente Time Picker</h2>
+      <div class="spacer-l"></div>
+      <figure>
+        <img alt="Animated demonstration of the Time Picker component showing interaction states and accessibility features" class="w-full h-auto" decoding="async" height="900" loading="lazy" src="https://i.imgur.com/CN6t4xQ.gif" width="1600" />
+      </figure>
+      <div class="spacer-l"></div>
+      <h3 data-i18n="pages.tagds.t024">Justificación del componente</h3>
+      <p data-i18n="pages.tagds.t025">El Time Picker se diseñó para cubrir la necesidad de introducir horas de forma eficiente y accesible en aplicaciones de gestión del tiempo y planificación. La falta de consistencia en soluciones anteriores generaba una experiencia fragmentada.</p>
+      <h3 data-i18n="pages.tagds.t026">Proceso de diseño y desarrollo</h3>
+      <div class="spacer-l"></div>
+      <figure>
+        <img alt="Time Picker design iterations showing wireframes, prototypes, and usability testing feedback" class="w-full h-auto" decoding="async" height="900" loading="lazy" src="https://i.imgur.com/juJrOcU.png" width="1600" />
+      </figure>
+      <div class="spacer-l"></div>
+      <p data-i18n="pages.tagds.t027">El diseño del Time Picker comenzó con bocetos y wireframes, seguido de prototipos interactivos en Figma. Se realizaron tests de usabilidad para recoger feedback, lo que derivó en iteraciones para mejorar facilidad de uso y accesibilidad. La colaboración estrecha con desarrollo aseguró una implementación técnica coherente con el diseño.</p>
+      <h3 data-i18n="pages.tagds.t028">Integración y estándares</h3>
+      <p data-i18n="pages.tagds.t029">El componente se testó de forma rigurosa para asegurar compatibilidad con los estándares WCAG y una integración fluida con el resto de componentes del sistema, manteniendo cohesión visual y funcional.</p>
+      <div class="spacer-l"></div>
+      <figure>
+        <img alt="Time Picker component structure diagram showing anatomy, states, and technical specifications" class="w-full h-auto img-fullscreen" decoding="async" height="900" loading="lazy" src="https://i.imgur.com/b9BpqNQ.png" width="1600" />
+        <figcaption><small data-i18n="pages.tagds.t030">Estructura del componente</small></figcaption>
+      </figure>
+      <div class="spacer-l"></div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="main-content" id="resultados-impacto">
+      <h2 data-i18n="pages.tagds.t031">Resultados e impacto</h2>
+      <h3 data-i18n="pages.tagds.t032">Adopción y feedback</h3>
+      <p data-i18n="pages.tagds.t033">Desde su lanzamiento, TAG DS ha sido ampliamente adoptado por los equipos de producto, y el Time Picker ha recibido buenas valoraciones por su facilidad de uso y accesibilidad. El sistema ha facilitado la consistencia de UI entre plataformas y ha acelerado el desarrollo de nuevos productos. El Usability Measurement Score ha subido del 45% con TAG DS V.0 al 72% con la última versión, TAG DS V.1.</p>
+      <div class="spacer-l"></div>
+      <figure>
+        <img alt="Usability Measurement Score comparison showing improvement from 45% (TAG DS V.0) to 72% (TAG DS V.1)" class="w-full h-auto img-fullscreen" decoding="async" height="900" loading="lazy" src="https://i.imgur.com/i83jYwO.png" width="1600" />
+        <figcaption><small data-i18n="pages.tagds.t034">Usability Measurement Score de TAG DS</small></figcaption>
+      </figure>
+      <div class="spacer-l"></div>
+      <h3 data-i18n="pages.tagds.t035">Aprendizajes</h3>
+      <p data-i18n="pages.tagds.t036">El proceso subrayó la importancia de la colaboración interdisciplinar y del feedback de usuario en el desarrollo de sistemas de diseño. También se aprendió que una documentación clara y accesible es clave para la adopción y el mantenimiento del sistema.</p>
+      <h3 data-i18n="pages.tagds.t037">El futuro del Sistema de Diseño</h3>
+      <p data-i18n="pages.tagds.t038">Basado en feedback continuo, el sistema de diseño evoluciona constantemente, con planes para ampliar la librería de componentes y mejorar las guías para adaptarse a nuevas tecnologías y necesidades de usuario.</p>
+    </section>
+
+    <!-- Conclusion Section -->
+    <section class="main-content" id="conclusion">
+      <h2 data-i18n="pages.tagds.t039">Conclusión</h2>
+      <p data-i18n="pages.tagds.t040">La creación del Sistema de Diseño de The Adecco Group ha sido un camino de colaboración, innovación y aprendizaje. Con componentes como el Time Picker, establecimos un nuevo estándar de diseño y desarrollo dentro de la compañía, demostrando el poder de un sistema de diseño bien ejecutado para transformar la experiencia y facilitar el desarrollo de producto.</p>
+      <div class="spacer-l"></div>
+      <figure>
+        <iframe
+          src="https://www.linkedin.com/embed/feed/update/urn:li:share:6953658660300419072"
+          width="100%"
+          height="360"
+          frameborder="0"
+          allowfullscreen
+          loading="lazy"
+          title="LinkedIn post announcing the launch of TAG DS Design System"
+        ></iframe>
+        <figcaption><small data-i18n="pages.tagds.t041">Publicación de LinkedIn anunciando el lanzamiento de TAG DS</small></figcaption>
+      </figure>
+      <div class="spacer-l"></div>
+    </section>
+
+    <div class="spacer-xxl"></div>
+
+    <!-- Contact Section -->
+    <section aria-labelledby="contact-heading" class="border-t border-black">
+      <div class="container mx-auto">
+        <h2 id="contact-heading" class="sr-only" data-i18n="pages.tagds.t042">Contacta conmigo</h2>
+        <div class="flex flex-wrap -mx-2">
+          <div class="w-full md:w-1/2 px-2 py-2">
+            <h3 data-i18n="pages.tagds.t043">¿Buscas mi CV?</h3>
+            <a class="mr-12" aria-label="Download Miguel Mateos resume in PDF format" data-i18n="pages.tagds.t044" href="../00.CV- Miguel Mateos - EN.pdf" rel="noopener noreferrer" target="_blank">Descargar PDF</a>
+            <a aria-label="Visit Miguel Mateos LinkedIn profile" data-i18n="pages.tagds.t045" href="https://www.linkedin.com/in/miguel-mateos/" rel="noopener noreferrer" target="_blank">Visitar LinkedIn</a>
+          </div>
+          <div class="w-full md:w-1/2 px-2 py-2">
+            <h3 data-i18n="pages.tagds.t046">¿Quieres conectar?</h3>
+            <a aria-label="Connect with Miguel Mateos on LinkedIn" data-i18n="pages.tagds.t047" href="https://www.linkedin.com/in/miguel-mateos/" rel="noopener noreferrer" target="_blank">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="spacer-xxl"></div>
+  </main>
 </div>
-</nav>
-<!-- Main Content -->
-<main class="col-md-9 ml-sm-auto col-lg-10 px-md-5" id="main-content" role="main">
-<figure>
-<img alt="The Adecco Group Design System overview showing component library and multi-brand design tokens" class="img-fluid w-100 img-portada" decoding="async" fetchpriority="high" height="900" loading="eager" src="https://i.imgur.com/E5LZwPg.png" style="height:auto;" width="1600"/>
-</figure>
-<div class="spacer-xl" id="Home"></div>
-<!-- Hero Section -->
-<section class="main-content border-bottom">
-<p class="caption-xl" data-i18n="pages.tagds.t007">THE ADECCO GROUP</p>
-<h1 data-i18n="pages.tagds.t008">Sistema de Diseño de The Adecco Group</h1>
-<p class="h2" data-i18n="pages.tagds.t009">El sistema de diseño multimarca de The Adecco Group abarca todas las plataformas digitales del grupo.</p>
-<div class="spacer-xl"></div>
-</section>
-<div class="spacer-xl"></div>
-<!-- Introduction Section -->
-<section class="main-content" id="introduccion">
-<h2 data-i18n="pages.tagds.t010">Introducción</h2>
-<h3 data-i18n="pages.tagds.t011">Contexto y objetivos</h3>
-<p data-i18n="pages.tagds.t012">En el corazón de la transformación digital de The Adecco Group estuvo la necesidad de un Sistema de Diseño unificado, llamado TAG DS. Su objetivo era estandarizar componentes UI/UX en todas las plataformas digitales, mejorando cohesión visual, usabilidad y accesibilidad. Facilitó el desarrollo de productos digitales para las distintas marcas del grupo (como Adecco, Akkodis y LHH), agilizando procesos y asegurando una experiencia consistente en todo el portafolio.</p>
-<div class="spacer-l"></div>
-<figure>
-<img alt="Multi-brand strategy showing The Adecco Group's brand portfolio including Adecco, Akkodis, and LHH" class="img-fluid w-100 img-fullscreen" decoding="async" height="900" loading="lazy" src="https://i.imgur.com/uNLanO6.png" style="height:auto;" width="1600"/>
-</figure>
-<div class="spacer-l"></div>
-<h3 data-i18n="pages.tagds.t013">Retos</h3>
-<p data-i18n="pages.tagds.t014">Un reto principal fue la diversidad de interfaces existentes, desarrolladas en aislamiento por diferentes equipos, lo que generaba falta de coherencia y estándares de accesibilidad variables. Realizar una auditoría completa fue especialmente difícil por la disparidad de las plataformas. Esta variabilidad dificultó entender el estado actual y planificar una integración cohesiva del Sistema de Diseño.</p>
-<h3 data-i18n="pages.tagds.t015">Mi rol</h3>
-<p>As a <em>Product Designer and Design System Contributor</em>, my role was to coordinate the collaborative effort among designers, developers, and stakeholders to lay the groundwork for the design system, from the Discovery phase through to the final Construct phase. This involved documentation and publication on Zeroheight, ensuring the system met both design and business objectives.</p>
-</section>
-<!-- Process Section -->
-<section class="main-content" id="proceso">
-<h2 data-i18n="pages.tagds.t016">Proceso de diseño</h2>
-<h3 data-i18n="pages.tagds.t017">Investigación y análisis</h3>
-<div class="spacer-l"></div>
-<figure>
-<img alt="Research and analysis phase showing stakeholder interviews, competitor analysis, and user persona workshops" class="img-fluid w-100 img-fullscreen" decoding="async" height="900" loading="lazy" src="https://i.imgur.com/CXCsGj9.png" style="height:auto;" width="1600"/>
-</figure>
-<div class="spacer-l"></div>
-<p data-i18n="pages.tagds.t018">El proceso comenzó con una fase exhaustiva de investigación y análisis, incluyendo entrevistas con stakeholders, análisis de sistemas de diseño de competidores y workshops con User Personas definidos por el equipo de Research, para entender sus necesidades y pain points.</p>
-<h3 data-i18n="pages.tagds.t019">Definición de principios de diseño</h3>
-<div class="spacer-l"></div>
-<figure>
-<img alt="Design principles framework centered on accessibility, reusability, and simplicity" class="img-fluid w-100 img-fullscreen" decoding="async" height="900" loading="lazy" src="https://i.imgur.com/bJD5Szi.png" style="height:auto;" width="1600"/>
-</figure>
-<div class="spacer-l"></div>
-<p data-i18n="pages.tagds.t020">Se establecieron principios de diseño centrados en accesibilidad, reutilización y simplicidad. Fueron cruciales en la creación de todos los componentes, incluido el Time Picker, asegurando que fueran intuitivos y accesibles para todas las personas.</p>
-<h3 data-i18n="pages.tagds.t021">Herramientas y software</h3>
-<p data-i18n="pages.tagds.t022">Se usó Figma para diseño y prototipado colaborativo, Zeroheight para documentación de componentes y Storybook para documentar y compartir componentes del sistema con desarrollo.</p>
-</section>
-<!-- Time Picker Component Section -->
-<section class="main-content" id="componente">
-<h2 data-i18n="pages.tagds.t023">Creación del componente Time Picker</h2>
-<div class="spacer-l"></div>
-<figure>
-<img alt="Animated demonstration of the Time Picker component showing interaction states and accessibility features" class="img-fluid w-100" decoding="async" height="900" loading="lazy" src="https://i.imgur.com/CN6t4xQ.gif" style="height:auto;" width="1600"/>
-</figure>
-<div class="spacer-l"></div>
-<h3 data-i18n="pages.tagds.t024">Justificación del componente</h3>
-<p data-i18n="pages.tagds.t025">El Time Picker se diseñó para cubrir la necesidad de introducir horas de forma eficiente y accesible en aplicaciones de gestión del tiempo y planificación. La falta de consistencia en soluciones anteriores generaba una experiencia fragmentada.</p>
-<h3 data-i18n="pages.tagds.t026">Proceso de diseño y desarrollo</h3>
-<div class="spacer-l"></div>
-<figure>
-<img alt="Time Picker design iterations showing wireframes, prototypes, and usability testing feedback" class="img-fluid w-100" decoding="async" height="900" loading="lazy" src="https://i.imgur.com/juJrOcU.png" style="height:auto;" width="1600"/>
-</figure>
-<div class="spacer-l"></div>
-<p data-i18n="pages.tagds.t027">El diseño del Time Picker comenzó con bocetos y wireframes, seguido de prototipos interactivos en Figma. Se realizaron tests de usabilidad para recoger feedback, lo que derivó en iteraciones para mejorar facilidad de uso y accesibilidad. La colaboración estrecha con desarrollo aseguró una implementación técnica coherente con el diseño.</p>
-<h3 data-i18n="pages.tagds.t028">Integración y estándares</h3>
-<p data-i18n="pages.tagds.t029">El componente se testó de forma rigurosa para asegurar compatibilidad con los estándares WCAG y una integración fluida con el resto de componentes del sistema, manteniendo cohesión visual y funcional.</p>
-<div class="spacer-l"></div>
-<figure>
-<img alt="Time Picker component structure diagram showing anatomy, states, and technical specifications" class="img-fluid w-100 img-fullscreen" decoding="async" height="900" loading="lazy" src="https://i.imgur.com/b9BpqNQ.png" style="height:auto;" width="1600"/>
-<figcaption><small data-i18n="pages.tagds.t030">Estructura del componente</small></figcaption>
-</figure>
-<div class="spacer-l"></div>
-</section>
-<!-- Results Section -->
-<section class="main-content" id="resultados-impacto">
-<h2 data-i18n="pages.tagds.t031">Resultados e impacto</h2>
-<h3 data-i18n="pages.tagds.t032">Adopción y feedback</h3>
-<p data-i18n="pages.tagds.t033">Desde su lanzamiento, TAG DS ha sido ampliamente adoptado por los equipos de producto, y el Time Picker ha recibido buenas valoraciones por su facilidad de uso y accesibilidad. El sistema ha facilitado la consistencia de UI entre plataformas y ha acelerado el desarrollo de nuevos productos. El Usability Measurement Score ha subido del 45% con TAG DS V.0 al 72% con la última versión, TAG DS V.1.</p>
-<div class="spacer-l"></div>
-<figure>
-<img alt="Usability Measurement Score comparison showing improvement from 45% (TAG DS V.0) to 72% (TAG DS V.1)" class="img-fluid w-100 img-fullscreen" decoding="async" height="900" loading="lazy" src="https://i.imgur.com/i83jYwO.png" style="height:auto;" width="1600"/>
-<figcaption><small data-i18n="pages.tagds.t034">Usability Measurement Score de TAG DS</small></figcaption>
-</figure>
-<div class="spacer-l"></div>
-<h3 data-i18n="pages.tagds.t035">Aprendizajes</h3>
-<p data-i18n="pages.tagds.t036">El proceso subrayó la importancia de la colaboración interdisciplinar y del feedback de usuario en el desarrollo de sistemas de diseño. También se aprendió que una documentación clara y accesible es clave para la adopción y el mantenimiento del sistema.</p>
-<h3 data-i18n="pages.tagds.t037">El futuro del Sistema de Diseño</h3>
-<p data-i18n="pages.tagds.t038">Basado en feedback continuo, el sistema de diseño evoluciona constantemente, con planes para ampliar la librería de componentes y mejorar las guías para adaptarse a nuevas tecnologías y necesidades de usuario.</p>
-</section>
-<!-- Conclusion Section -->
-<section class="main-content" id="conclusion">
-<h2 data-i18n="pages.tagds.t039">Conclusión</h2>
-<p data-i18n="pages.tagds.t040">La creación del Sistema de Diseño de The Adecco Group ha sido un camino de colaboración, innovación y aprendizaje. Con componentes como el Time Picker, establecimos un nuevo estándar de diseño y desarrollo dentro de la compañía, demostrando el poder de un sistema de diseño bien ejecutado para transformar la experiencia y facilitar el desarrollo de producto.</p>
-<div class="spacer-l"></div>
-<figure>
-<iframe allowfullscreen="" class="bg-light border border-dark" frameborder="0" height="360" loading="lazy" src="https://www.linkedin.com/embed/feed/update/urn:li:share:6953658660300419072" title="LinkedIn post announcing the launch of TAG DS Design System" width="100%"></iframe>
-<figcaption><small data-i18n="pages.tagds.t041">Publicación de LinkedIn anunciando el lanzamiento de TAG DS</small></figcaption>
-</figure>
-<div class="spacer-l"></div>
-</section>
-<div class="spacer-xxl"></div>
-<!-- Contact Section -->
-<section aria-labelledby="contact-heading" class="border-top border-dark">
-<div class="container">
-<h2 class="sr-only" data-i18n="pages.tagds.t042" id="contact-heading">Contacta conmigo</h2>
-<div class="row">
-<div class="col-12 col-md-6 p-2">
-<h3 data-i18n="pages.tagds.t043">¿Buscas mi CV?</h3>
-<a aria-label="Download Miguel Mateos resume in PDF format" class="mr-5" data-i18n="pages.tagds.t044" href="../00.CV- Miguel Mateos - EN.pdf" rel="noopener noreferrer" target="_blank">Descargar PDF</a>
-<a aria-label="Visit Miguel Mateos LinkedIn profile" data-i18n="pages.tagds.t045" href="https://www.linkedin.com/in/miguel-mateos/" rel="noopener noreferrer" target="_blank">Visitar LinkedIn</a>
-</div>
-<div class="col-12 col-md-6 p-2">
-<h3 data-i18n="pages.tagds.t046">¿Quieres conectar?</h3>
-<a aria-label="Connect with Miguel Mateos on LinkedIn" data-i18n="pages.tagds.t047" href="https://www.linkedin.com/in/miguel-mateos/" rel="noopener noreferrer" target="_blank">LinkedIn</a>
-</div>
-</div>
-</div>
-</section>
-<div class="spacer-xxl"></div>
-</main>
-</div>
-</div>
-<!-- Bootstrap JS -->
-<script defer="defer" src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script defer="defer" src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
-<script defer="defer" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script src="../i18n.js"></script></body>
+
+<script src="../i18n.js"></script>
+</body>
 </html>
