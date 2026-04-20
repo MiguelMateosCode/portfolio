@@ -1,123 +1,128 @@
-# Sistema de estilos — Tipografía accesible WCAG AA
+# Sistema Tipográfico — Portfolio Miguel Mateos
 
-## Stack y archivo de referencia
+## Fuentes del proyecto
 
-- Archivo CSS maestro: `typography-accessible.css`
-- Archivo de componentes: `style.css`
-- Fuentes: `Source Serif 4` (headings h1–h4) e `Inter` (body, h5, h6)
-- Importadas vía Google Fonts — el `@import` debe estar en la primera línea del CSS
-
-## Cómo leer el sistema antes de tocar nada
-
-Antes de modificar cualquier archivo de estilos, ejecuta:
-
-```bash
-grep -n "font-weight\|font-size\|color\|line-height" typography-accessible.css | head -60
+```html
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
 ```
 
-Esto te muestra los valores reales del sistema. No asumas — lee primero.
+- **Headings H1–H2**: `DM Serif Display` — serif elegante para títulos principales
+- **H3–H6 + body**: `DM Sans` — sans-serif funcional para subtítulos y texto corriente
+- **Archivo maestro**: `typography-base.css` (cargado antes de `style.css` en todos los HTML)
 
 ---
 
-## Reglas del sistema tipográfico
+## Jerarquía tipográfica — valores exactos
 
-### Jerarquía de headings — pesos diferenciados
+| Elemento   | Familia          | Peso | Tamaño (`clamp`)                      | Line-height | Tracking   |
+|------------|------------------|------|---------------------------------------|-------------|------------|
+| Eyebrow    | DM Sans          | 600  | `11px`                                | —           | `0.12em`   |
+| **H1**     | DM Serif Display | 400  | `clamp(2rem, 5vw, 2.8rem)`            | `1.15`      | `-0.02em`  |
+| **H2**     | DM Serif Display | 400  | `clamp(1.5rem, 3.5vw, 2rem)`          | `1.2`       | `-0.015em` |
+| **H3**     | DM Sans          | 600  | `clamp(1rem, 2.5vw, 1.125rem)`        | `1.3`       | `-0.01em`  |
+| **H4**     | DM Sans          | 600  | `1rem`                                | `1.35`      | `0`        |
+| **H5**     | DM Sans          | 500  | `0.9375rem`                           | `1.4`       | `0`        |
+| **H6**     | DM Sans          | 500  | `0.8125rem`                           | `1.4`       | `0.06em`   |
+| Body       | DM Sans          | 400  | `1rem` (nunca menos de `16px`)        | `1.75`      | `0`        |
+| Lead       | DM Sans          | 300  | `clamp(1rem, 2vw, 1.125rem)`          | `1.65`      | `0`        |
+| Small      | DM Sans          | 400  | `0.875rem`                            | `1.6`       | `0`        |
+| Caption    | DM Sans          | 400  | `0.75rem`                             | `1.5`       | `0.04em`   |
 
-| Elemento | Familia        | Peso    | Tamaño (clamp)                   | Tracking     |
-|----------|----------------|---------|----------------------------------|--------------|
-| `h1`     | Source Serif 4 | **800** | clamp(2.25rem, 6vw, 3.5rem)      | -0.025em     |
-| `h2`     | Source Serif 4 | **700** | clamp(1.875rem, 5vw, 2.5rem)     | -0.02em      |
-| `h3`     | Source Serif 4 | **600** | clamp(1.5rem, 4vw, 2rem)         | -0.015em     |
-| `h4`     | Source Serif 4 | **600** | clamp(1.25rem, 3vw, 1.5rem)      | 0em          |
-| `h5`     | Inter          | **500** | clamp(1.125rem, 2.5vw, 1.25rem)  | 0em          |
-| `h6`     | Inter          | **500** | clamp(1rem, 2vw, 1.125rem)       | +0.06em + uppercase |
+> **Regla de diferenciación**: H1–H2 son serif (presencia display). H3–H6 son sans-serif semibold/medium. Body es sans-serif regular. Nunca el mismo peso en dos niveles consecutivos.
 
-**Regla crítica**: Los pesos 800/700/600/500 son la diferenciación visual principal.
-Nunca usar el mismo peso en dos niveles consecutivos de heading.
+---
 
-### Colores de texto — valores exactos
+## Colores — valores exactos (no modificar sin recalcular contraste)
 
 ```css
-/* Modo claro — NO modificar estos valores */
---color-text-heading: #1a1a2e;  /* Ratio: 10.4:1 sobre #ffffff */
---color-text-body:    #2d2d3a;  /* Ratio:  9.1:1 sobre #ffffff */
---color-text-muted:   #4a4a5e;  /* Ratio:  6.2:1 sobre #ffffff */
---color-text-subtle:  #6b6b80;  /* Ratio:  4.6:1 — límite AA  */
+/* Modo claro */
+--color-text-primary:   #1a1a2e;   /* 10.4:1 sobre #ffffff */
+--color-text-secondary: #4a4a5e;   /*  6.2:1 sobre #ffffff */
+--color-text-muted:     #6b6b80;   /*  4.6:1 — límite AA   */
+--color-bg-page:        #ffffff;
+--color-bg-surface:     #f7f7fb;
+
+/* Dark mode — NO usar negro/blanco puros */
+--color-text-primary:   #f0f0f8;   /* >12:1 sobre #121220 */
+--color-text-secondary: #a8a8c0;   /*  >5.5:1 */
+--color-text-muted:     #8a8aa8;   /*  >4.6:1 — límite AA */
+--color-bg-page:        #121220;   /* Azul oscuro — NO #000 */
+--color-bg-surface:     #1e1e30;
 ```
 
 ---
 
-## Dark mode — desactivado intencionalmente
-
-El sitio usa **exclusivamente modo claro**. El fondo es siempre `#ffffff`.
-
-Esto se garantiza con dos mecanismos en `typography-accessible.css`:
-1. `color-scheme: light` en `:root` — indica al navegador que no aplique estilos de sistema
-2. `background-color: #ffffff` explícito en `body` — sobreescribe cualquier override
-
-**No añadir `@media (prefers-color-scheme: dark)`** — si en el futuro se requiere dark mode, debe planificarse como un proyecto separado con validación de contraste completa.
-
----
-
-## Qué hacer cuando los headings no se ven bien
-
-### Diagnóstico rápido
+## Diagnóstico rápido
 
 ```bash
-# 1. Verificar que la fuente está cargada
-grep -n "Source Serif 4\|@import" index.html typography-accessible.css
+# 1. Verificar fuentes cargadas
+grep -n "DM Serif\|DM Sans\|preconnect" index.html
 
-# 2. Verificar que el CSS está enlazado
-grep -n "typography-accessible\|stylesheet" index.html
+# 2. Verificar que no hay overrides
+grep -rn "font-weight\|font-family" *.css | grep -v "typography-base"
 
-# 3. Comprobar que no hay overrides que sobreescriban los headings
-grep -rn "h1\|h2\|h3\|font-weight" *.css | grep -v "typography-accessible"
+# 3. Verificar measure de párrafos
+grep -n "max-width\|measure" typography-base.css
 ```
 
-### Causas frecuentes y soluciones
+### Causas frecuentes
 
-| Síntoma | Causa probable | Solución |
-|---------|----------------|----------|
-| Todos los headings igual de gruesos | `font-weight` sobreescrito globalmente | Buscar `* { font-weight }` o reset agresivo |
-| Fuente serif no carga | `@import` no está en línea 1 del CSS | Mover el `@import` al inicio absoluto |
-| Headings sin contraste en dark mode | `color` heredado de body | Añadir `color: var(--color-text-heading)` explícito en h1–h6 |
-| Tamaños iguales en móvil | `clamp()` con valores muy juntos | Revisar los tres parámetros del clamp |
+| Síntoma | Causa | Solución |
+|---------|-------|----------|
+| H1–H2 no muestran serif | `@import` no es línea 1 del CSS | Mover al inicio absoluto |
+| Todos los headings igual de gruesos | Reset aplana `font-weight` | Buscar `* { font-weight }` |
+| H3 se ve igual que body | Falta `font-weight: 600` | Añadir explícito en h3 |
 
 ---
 
-## Scope de cambios — qué tocar y qué no
+## Scope de cambios
 
 ### ✅ Puedes modificar
+- Colores de acento
+- Valores de `clamp()` si el diseño lo requiere
+- Márgenes y espaciados
 
-- Colores de acento (`--color-accent`, `--color-accent-hover`)
-- Escala de tamaños si el diseño lo requiere (ajustar los `clamp()`)
-- Márgenes y espaciados entre elementos
-- Propiedades de `blockquote`, `code`, tablas
-
-### ❌ No modificar sin justificación explícita
-
-- Los valores hex de `--color-text-*` (están calculados para contraste AA)
-- Los `font-weight` de cada heading (son la diferenciación del sistema)
-- El `font-family` asignado a cada nivel de heading
-- El `line-height` mínimo de 1.5 en body text (requisito WCAG 1.4.12)
-- La propiedad `max-width` en párrafos (límite de ~70ch, requisito WCAG 1.4.8)
+### ❌ No modificar sin justificación
+- Los hex de `--color-text-*` (calculados para contraste AA)
+- Los `font-weight` de cada heading (diferenciación del sistema)
+- El `font-family` de cada nivel (serif vs sans-serif)
+- `line-height: 1.75` en body (requisito WCAG 1.4.12)
+- `max-width: 66ch` en párrafos (requisito WCAG 1.4.8)
 
 ---
 
-## Verificación final antes de dar por hecho cualquier cambio
+## Al añadir un nuevo case study o página
 
-```bash
-# Abrir en navegador y probar los dos modos
-open index.html
+Estructura HTML mínima obligatoria:
 
-# Si tienes acceso a herramientas de contraste, verificar:
-# - Color Contrast Analyzer (App)
-# - Chrome DevTools > Accessibility > Contrast ratio
-# Mínimos: texto normal 4.5:1 · texto grande (>18px) 3:1
+```html
+<!-- Fonts en <head> antes de cualquier CSS -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../typography-base.css" />
+<link rel="stylesheet" href="../style.css" />
+
+<!-- Estructura mínima del contenido -->
+<a href="#main-content" class="sr-only">Saltar al contenido</a>
+<main id="main-content">
+  <article>
+    <span class="eyebrow">Nombre del cliente o categoría</span>
+    <h1>Título del proyecto</h1>
+    <p class="lead">Descripción introductoria de una o dos frases.</p>
+  </article>
+</main>
 ```
 
-Comprueba visualmente en orden:
-1. ¿Se distinguen claramente los 6 niveles de heading solo por su peso y tamaño?
-2. ¿El body text es legible en ambos modos (claro y oscuro)?
-3. ¿Los headings tienen más peso visual que el texto de párrafo?
-4. ¿El modo oscuro usa fondos azul-oscuro, no negro puro?
+---
+
+## Checklist antes de entregar
+
+1. ¿H1 y H2 se renderizan en DM Serif Display (serif)?
+2. ¿H3–H6 en DM Sans (sans-serif)?
+3. ¿Son visualmente distintos H1 > H2 > H3 sin leer el contenido?
+4. ¿El body text (weight 400) es más ligero visualmente que cualquier heading?
+5. ¿Los párrafos tienen `max-width: 66ch` en desktop?
+6. ¿El dark mode usa `#121220` como fondo, no negro puro?
