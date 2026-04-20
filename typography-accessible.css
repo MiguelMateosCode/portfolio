@@ -13,6 +13,8 @@
    2. TOKENS DE DISEÑO — CSS Custom Properties
    ------------------------------------------------------------ */
 :root {
+  color-scheme: light;               /* Fuerza modo claro siempre */
+
   /* Paleta de colores con contraste certificado */
   --color-text-heading:    #1a1a2e;   /* Ratio 10.4:1 sobre #ffffff */
   --color-text-body:       #2d2d3a;   /* Ratio  9.1:1 sobre #ffffff */
@@ -68,19 +70,6 @@
   --paragraph-spacing: 1.5rem;
 }
 
-/* Modo oscuro — valores calculados, NO invertir sin verificar contraste */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-text-heading:  #f0f0f8;   /* Ratio >12:1 sobre #121220 */
-    --color-text-body:     #d8d8e8;   /* Ratio  >9:1 */
-    --color-text-muted:    #a8a8c0;   /* Ratio  >5.5:1 */
-    --color-text-subtle:   #8a8aa8;   /* Ratio  >4.6:1 — límite AA */
-    --color-bg-page:       #121220;   /* Azul muy oscuro — NO negro puro */
-    --color-bg-surface:    #1e1e30;
-    --color-accent:        #60a5fa;   /* Ratio >5.2:1 sobre #121220 */
-    --color-accent-hover:  #93c5fd;
-  }
-}
 
 /* ------------------------------------------------------------
    3. RESET ACCESIBLE BASE
@@ -98,16 +87,16 @@ html {
 }
 
 body {
-  font-family:    var(--font-body);
-  font-size:      var(--text-base);
-  font-weight:    var(--weight-regular);
-  line-height:    var(--line-height-relaxed);
-  color:          var(--color-text-body);
-  background:     var(--color-bg-page);
-  letter-spacing: var(--letter-spacing-normal);
-  word-spacing:   0.05em;
-  margin:         0;
-  padding:        0;
+  font-family:      var(--font-body);
+  font-size:        var(--text-base);
+  font-weight:      var(--weight-regular);
+  line-height:      var(--line-height-relaxed);
+  color:            var(--color-text-body);
+  background-color: #ffffff;         /* Siempre blanco, ignora dark mode */
+  letter-spacing:   var(--letter-spacing-normal);
+  word-spacing:     0.05em;
+  margin:           0;
+  padding:          0;
 }
 
 /* ------------------------------------------------------------

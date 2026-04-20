@@ -47,39 +47,15 @@ Nunca usar el mismo peso en dos niveles consecutivos de heading.
 
 ---
 
-## Dark mode — reglas estrictas
+## Dark mode — desactivado intencionalmente
 
-### El problema común que debes evitar
+El sitio usa **exclusivamente modo claro**. El fondo es siempre `#ffffff`.
 
-❌ **INCORRECTO** — invertir colores sin verificar contraste:
-```css
-@media (prefers-color-scheme: dark) {
-  --color-text-heading: #ffffff;   /* Demasiado brillante */
-  --color-bg-page: #000000;        /* Contraste excesivo — fatiga visual */
-}
-```
+Esto se garantiza con dos mecanismos en `typography-accessible.css`:
+1. `color-scheme: light` en `:root` — indica al navegador que no aplique estilos de sistema
+2. `background-color: #ffffff` explícito en `body` — sobreescribe cualquier override
 
-✅ **CORRECTO** — valores del sistema ya calculados:
-```css
-@media (prefers-color-scheme: dark) {
-  --color-text-heading: #f0f0f8;   /* Blanco suave, ratio >12:1 */
-  --color-text-body:    #d8d8e8;   /* Gris claro, ratio  >9:1  */
-  --color-text-muted:   #a8a8c0;   /* Gris medio, ratio  >5.5:1 */
-  --color-text-subtle:  #8a8aa8;   /* Gris sutil, ratio  >4.6:1 */
-  --color-bg-page:      #121220;   /* Azul muy oscuro — NO negro puro */
-  --color-bg-surface:   #1e1e30;   /* Superficie elevada */
-  --color-accent:       #60a5fa;   /* Azul claro, ratio  >5.2:1 */
-}
-```
-
-### Test de verificación de dark mode
-
-Después de cualquier cambio en dark mode, comprueba visualmente que:
-
-1. Los headings h1–h4 son claramente más brillantes/pesados que el body text
-2. El fondo NO es negro puro (`#000`) — debe ser `#121220` o similar
-3. El texto de acento (links) tiene contraste suficiente sobre el fondo oscuro
-4. Los 4 niveles de texto (heading/body/muted/subtle) son visualmente distintos
+**No añadir `@media (prefers-color-scheme: dark)`** — si en el futuro se requiere dark mode, debe planificarse como un proyecto separado con validación de contraste completa.
 
 ---
 
