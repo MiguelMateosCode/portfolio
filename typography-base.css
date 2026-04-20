@@ -4,7 +4,7 @@
    WCAG AA · contraste mínimo 4.5:1
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap');
 
 /* ------------------------------------------------------------
    TOKENS — CSS Custom Properties
@@ -34,6 +34,7 @@
   --weight-regular:  400;
   --weight-medium:   500;
   --weight-semibold: 600;
+  --weight-bold:     700;
 
   /* Colores — modo claro (contraste AA verificado) */
   --color-text-primary:   #1a1a2e;   /* 10.4:1 sobre #ffffff */
