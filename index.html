@@ -31,7 +31,7 @@
     <!-- Google Fonts: DM Serif Display + DM Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet" />
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -39,6 +39,7 @@
     <!-- Custom Styles -->
     <link rel="stylesheet" href="typography-base.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="home.css" />
 
     <link rel="canonical" href="https://miguelmateoscode.github.io/portfolio2024/" />
     <link rel="manifest" href="site.webmanifest" />
@@ -79,7 +80,7 @@
           </div>
         </div>
 
-        <div class="flex flex-wrap" data-i18n="index.hero.description"></div>
+        <div class="hero-description" data-i18n="index.hero.description"></div>
       </section>
 
       <!-- Case Studies Section -->
@@ -181,7 +182,7 @@
         <div class="spacer-xxl"></div>
 
         <div class="container mx-auto px-4">
-          <h2 id="latest-posts-heading" class="h3" data-i18n="home.last_post">Últimos posts</h2>
+          <h2 id="latest-posts-heading" data-i18n="home.last_post">Últimos posts</h2>
 
           <div class="flex flex-wrap -mx-2">
             <div class="w-full md:w-1/2 px-2 py-2">
@@ -219,10 +220,9 @@
           <h2 id="contact-heading" class="sr-only" data-i18n="pages.index.t013">Contacta conmigo</h2>
 
           <div class="flex flex-wrap -mx-2">
-            <div class="w-full md:w-1/2 px-2 py-2">
-              <h3 data-i18n="pages.index.t014">¿Buscas mi CV?</h3>
+            <div class="w-full md:w-1/2 px-2 py-2 contact-block">
+              <p class="contact-label" data-i18n="pages.index.t014">¿Buscas mi CV?</p>
               <a
-                class="mr-12"
                 href="00.CV- Miguel Mateos - EN.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -238,8 +238,8 @@
               >Visitar LinkedIn</a>
             </div>
 
-            <div class="w-full md:w-1/2 px-2 py-2">
-              <h3 data-i18n="pages.index.t017">¿Quieres conectar?</h3>
+            <div class="w-full md:w-1/2 px-2 py-2 contact-block">
+              <p class="contact-label" data-i18n="pages.index.t017">¿Quieres conectar?</p>
               <a
                 href="https://www.linkedin.com/in/miguel-mateos/"
                 target="_blank"
