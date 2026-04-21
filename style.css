@@ -70,11 +70,6 @@ img {
   transform:  translateY(-2px);
 }
 
-.card:focus-within {
-  outline:        3px solid #0066cc;
-  outline-offset: 3px;
-}
-
 .card-body  { padding: 1rem; }
 .card-title { margin-bottom: 0.5rem; font-size: 1.5rem; }
 .card-text  { color: #6c757d; font-size: 0.875rem; }
@@ -82,6 +77,16 @@ img {
 /* Links en cards — apariencia neutra */
 .text-reset { color: inherit !important; text-decoration: none !important; }
 .text-reset:hover { color: inherit !important; }
+
+/* Foco en cards: la `<a>` envuelve la card desde fuera,
+   :focus-within no aplica — se pinta el anillo sobre .card */
+.text-reset:focus { outline: none; }
+.text-reset:focus-visible { outline: none; }
+.text-reset:focus-visible .card {
+  outline:        3px solid #0066cc;
+  outline-offset: 3px;
+  box-shadow:     0 0 0 6px rgba(0, 102, 204, 0.18);
+}
 
 /* ------------------------------------------------------------
    SPACERS
@@ -417,7 +422,7 @@ footer[role="contentinfo"] {
 .contact-block a {
   font-size:                 15px;
   font-weight:               600;
-  color:                     #1a1a1a;
+  color:                     #0066cc;
   text-decoration:           underline;
   text-underline-offset:     3px;
   text-decoration-thickness: 1px;
@@ -426,5 +431,6 @@ footer[role="contentinfo"] {
 }
 
 .contact-block a:hover {
+  color:                     #004a99;
   text-decoration-thickness: 2px;
 }
