@@ -6,10 +6,12 @@
     "lang_en": "Switch to English"
   },
   "home": {
-    "hero_title": "Product Designer specialized in Design Systems.",
-    "case_studies": "Case Studies",
+    "hero_title": "Product design with a focus on design systems.",
+    "case_studies": "My projects",
     "last_post": "Last post",
-    "coming_soon": "COMING SOON"
+    "coming_soon": "COMING SOON",
+    "case_studies_desc1": "These are some of the projects I have worked on.",
+    "case_studies_desc2": "Each project shows the problem, what I did, and the result."
   },
   "pages": {
     "index": {
@@ -26,14 +28,18 @@
       "t011": "New Case Study",
       "t012": "Coming soon",
       "t013": "Get in touch",
-      "t014": "Looking for my resume?",
-      "t015": "Download PDF",
+      "t014": "Let's talk?",
+      "t015": "Download CV (PDF)",
       "t016": "Visit LinkedIn",
       "t017": "Want to connect?",
       "t018": "LinkedIn",
       "a001": "Switch to Spanish",
       "a002": "Switch to English",
-      "hero_desc": "Specialized in creating complete end-to-end solutions. I’m currently improving user experiences at The Adecco Group through an innovative design system that strengthens accessibility and usability."
+      "hero_desc": "Specialized in creating complete end-to-end solutions. I’m currently improving user experiences at The Adecco Group through an innovative design system that strengthens accessibility and usability.",
+      "t001desc": "I created a design system for five digital platforms across the group.",
+      "t003desc": "I improved the platform used by Adecco recruiters.",
+      "t005desc": "I redesigned the website and built a new FAQ section.",
+      "t007desc": "I improved the usability and accessibility of an online exam monitoring platform."
     },
     "about": {
       "t001": "A bit about me",

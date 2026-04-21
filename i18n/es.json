@@ -6,10 +6,12 @@
     "lang_en": "Cambiar a inglés"
   },
   "home": {
-    "hero_title": "Diseñador de Producto especializado en Sistemas de Diseño.",
-    "case_studies": "Casos de estudio",
+    "hero_title": "Diseño de producto con foco en sistemas de diseño.",
+    "case_studies": "Mis proyectos",
     "last_post": "Últimos posts",
-    "coming_soon": "PRÓXIMAMENTE"
+    "coming_soon": "PRÓXIMAMENTE",
+    "case_studies_desc1": "Estos son algunos de los proyectos en los que he trabajado.",
+    "case_studies_desc2": "Cada proyecto muestra el problema que había, lo que hice y el resultado obtenido."
   },
   "pages": {
     "index": {
@@ -26,14 +28,18 @@
       "t011": "Nuevo case study",
       "t012": "Próximamente",
       "t013": "Contacta conmigo",
-      "t014": "¿Buscas mi CV?",
-      "t015": "Descargar PDF",
+      "t014": "¿Hablamos?",
+      "t015": "Descargar CV en PDF",
       "t016": "Visitar LinkedIn",
       "t017": "¿Quieres conectar?",
       "t018": "LinkedIn",
       "a001": "Cambiar a castellano",
       "a002": "Cambiar a inglés",
-      "hero_desc": "Especializado en crear soluciones completas de principio a fin. Actualmente mejoro la experiencia de usuario en The Adecco Group mediante un sistema de diseño innovador que refuerza la accesibilidad y la usabilidad."
+      "hero_desc": "Especializado en crear soluciones completas de principio a fin. Actualmente mejoro la experiencia de usuario en The Adecco Group mediante un sistema de diseño innovador que refuerza la accesibilidad y la usabilidad.",
+      "t001desc": "Creé un sistema de diseño para cinco plataformas digitales del grupo.",
+      "t003desc": "Mejoré la plataforma que usan las personas reclutadoras de Adecco.",
+      "t005desc": "Rediseñé la web y creé una nueva sección de preguntas frecuentes.",
+      "t007desc": "Mejoré la usabilidad y la accesibilidad de una plataforma de supervisión de exámenes online."
     },
     "about": {
       "t001": "Un poco sobre mí",

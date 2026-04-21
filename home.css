@@ -53,7 +53,7 @@
   color:          #1a1a1a;
   letter-spacing: 0;
   margin-top:     0;
-  margin-bottom:  28px;
+  margin-bottom:  12px;
 }
 
 /* ----------------------------------------------------------
@@ -78,5 +78,28 @@
   line-height: 1.4;
   color:       #888888;
   margin:      0;
+}
+
+/* Descripción breve del resultado en cada card */
+.card-desc {
+  font-size:   13px;
+  font-weight: 400;
+  line-height: 1.5;
+  color:       #444444;
+  margin-top:  6px;
+  margin-bottom: 0;
+}
+
+/* ----------------------------------------------------------
+   SECCIÓN DE PROYECTOS — texto introductorio
+   ---------------------------------------------------------- */
+.section-intro {
+  font-size:     15px;
+  font-weight:   400;
+  line-height:   1.65;
+  color:         #444444;
+  max-width:     650px;
+  margin-top:    0;
+  margin-bottom: 0.4rem;
 }
 
