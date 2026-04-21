@@ -49,10 +49,9 @@ img {
   text-underline-offset:     8px;
 }
 
-.nav-list a:focus {
-  outline:        2px solid #0b0c0c;
-  outline-offset: 2px;
-  box-shadow:     0 0 0 0.25rem rgba(0, 123, 255, 0.5);
+.nav-list a:focus-visible {
+  outline:        3px solid #0066cc;
+  outline-offset: 3px;
 }
 
 /* ------------------------------------------------------------
@@ -72,9 +71,8 @@ img {
 }
 
 .card:focus-within {
-  outline:        2px solid #1d70b8;
-  outline-offset: 2px;
-  box-shadow:     0 0 0 0.25rem rgba(0, 123, 255, 0.5);
+  outline:        3px solid #0066cc;
+  outline-offset: 3px;
 }
 
 .card-body  { padding: 1rem; }
@@ -144,11 +142,10 @@ img {
   color:                     #003078;
 }
 
-.nav-section:focus {
-  outline:         2px solid #0b0c0c;
-  outline-offset:  2px;
-  color:           #0b0c0c;
-  box-shadow:      0 0 0 0.25rem rgba(0, 123, 255, 0.5);
+.nav-section:focus-visible {
+  outline:         3px solid #0066cc;
+  outline-offset:  3px;
+  color:           #1a1a1a;
   text-decoration: none;
 }
 
@@ -178,6 +175,11 @@ iframe {
 }
 
 .lang-btn[aria-pressed="true"] { background: #000; color: #fff; }
+
+.lang-btn:focus-visible {
+  outline:        3px solid #0066cc;
+  outline-offset: 3px;
+}
 
 /* ------------------------------------------------------------
    SKIP LINK

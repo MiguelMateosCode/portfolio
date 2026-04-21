@@ -219,10 +219,11 @@ a:hover {
 }
 
 /* ------------------------------------------------------------
-   FOCO VISIBLE — WCAG 2.4.7
+   FOCO VISIBLE — WCAG 2.4.7 / 2.4.11
+   Anillo azul 3px · contraste 5.7:1 sobre blanco
    ------------------------------------------------------------ */
 :focus-visible {
-  outline:        2px solid currentColor;
+  outline:        3px solid #0066cc;
   outline-offset: 3px;
   border-radius:  2px;
 }
