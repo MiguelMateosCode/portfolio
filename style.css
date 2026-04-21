@@ -270,6 +270,39 @@ ol.about-list { list-style: decimal; }
 .about-list--hobbies { list-style: none; padding-left: 0; }
 .about-list--hobbies li { display: flex; gap: 0.5rem; }
 
+.about-experience {
+  list-style:   none;
+  padding-left: 0;
+  margin-top:   0.5rem;
+}
+
+.about-experience li {
+  padding:       1rem 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.about-experience li:last-child { border-bottom: none; }
+
+.about-experience li strong {
+  font-size:   15px;
+  font-weight: 600;
+  color:       #1a1a1a;
+}
+
+.about-experience li span {
+  font-size:  14px;
+  color:      #888888;
+  margin-left: 0.25rem;
+}
+
+.about-experience li p {
+  font-size:   14px;
+  line-height: 1.6;
+  color:       #444444;
+  margin-top:  0.3rem;
+  margin-bottom: 0;
+}
+
 .about-callout {
   border-left:    3px solid #1a1a1a;
   padding:        0.75rem 1rem;
