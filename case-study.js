@@ -10,8 +10,10 @@
     navLinks.forEach(function (link) {
       if (link.getAttribute('href') === '#' + id) {
         link.classList.add('active');
+        link.setAttribute('aria-current', 'location');
       } else {
         link.classList.remove('active');
+        link.removeAttribute('aria-current');
       }
     });
   }

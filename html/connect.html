@@ -37,8 +37,7 @@
 <link rel="manifest" href="../site.webmanifest" />
 </head>
 <body>
-<a class="skip-link" href="#main-content">Saltar al contenido</a>
-<a class="sr-only sr-only-focusable" data-i18n="pages.connect.t001" href="#main-content">Saltar al contenido principal</a>
+<a class="skip-link" data-i18n="pages.connect.t001" href="#main-content">Saltar al contenido principal</a>
 
 <header>
 <nav aria-label="Main navigation" class="px-4 py-4 border-b border-black bg-white">
@@ -178,6 +177,7 @@
       <div class="spacer-l"></div>
       <figure>
         <video
+          id="connect-demo-video"
           aria-label="Video demonstration of the redesigned Adecco Connect interface showing improved user flows"
           autoplay
           class="w-full h-auto img-fullscreen"
@@ -188,7 +188,16 @@
           <source src="https://i.imgur.com/UJx3l1F.mp4" type="video/mp4" />
           <p>Your browser doesn't support HTML5 video. <a data-i18n="pages.connect.t026" href="https://i.imgur.com/UJx3l1F.mp4">Descargar el vídeo</a> instead.</p>
         </video>
-        <figcaption class="sr-only">Video demonstration of the redesigned Adecco Connect platform interface</figcaption>
+        <figcaption>
+          <button
+            id="connect-video-toggle"
+            aria-controls="connect-demo-video"
+            aria-label="Pausar vídeo"
+            onclick="(function(btn){var v=document.getElementById('connect-demo-video');if(v.paused){v.play();btn.setAttribute('aria-label','Pausar vídeo');btn.textContent='⏸ Pausa';}else{v.pause();btn.setAttribute('aria-label','Reproducir vídeo');btn.textContent='▶ Reproducir';}})(this)"
+            style="font-size:13px;cursor:pointer;background:transparent;border:1px solid #767676;padding:4px 10px;border-radius:4px;margin-top:0.5rem;"
+            type="button"
+          >⏸ Pausa</button>
+        </figcaption>
       </figure>
       <div class="spacer-l"></div>
       <p data-i18n="pages.connect.t027">Integramos el sistema de diseño TAG DS en Adecco Connect. Esto trajo tres mejoras claras:</p>
