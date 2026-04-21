@@ -251,6 +251,10 @@ iframe {
 /* ------------------------------------------------------------
    FOOTER / CONTACT
    ------------------------------------------------------------ */
+footer[role="contentinfo"] {
+  padding-bottom: 4rem;
+}
+
 .contact-label {
   font-family:   var(--font-body);
   font-size:     13px;
