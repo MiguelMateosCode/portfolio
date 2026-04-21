@@ -13,13 +13,13 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://miguelmatescode.github.io/portfolio/html/connect.html" />
 <meta property="og:title" content="Adecco Connect Platform - Case Study" />
-<meta property="og:description" content="How I improved Adecco Connect's usability by 70% through design system implementation and user testing." />
+<meta property="og:description" content="Cómo mejoré Adecco Connect integrando el sistema de diseño TAG DS y realizando pruebas con usuarios reales." />
 <meta property="og:image" content="https://i.imgur.com/CEIQPdH.png" />
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content="https://miguelmatescode.github.io/portfolio/html/connect.html" />
 <meta property="twitter:title" content="Adecco Connect Platform - Case Study" />
-<meta property="twitter:description" content="How I improved Adecco Connect's usability by 70% through design system implementation." />
+<meta property="twitter:description" content="Cómo mejoré Adecco Connect integrando el sistema de diseño TAG DS y realizando pruebas con usuarios reales." />
 <meta property="twitter:image" content="https://i.imgur.com/CEIQPdH.png" />
 <!-- Favicon -->
 <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
@@ -91,8 +91,9 @@
     <!-- Hero Section -->
     <section class="main-content border-b border-black">
       <p class="caption-xl" data-i18n="pages.connect.t008">THE ADECCO GROUP</p>
-      <h1 data-i18n="pages.connect.t009">Plataforma Adecco Connect</h1>
-      <p class="h3" data-i18n="pages.connect.t010">Adecco Connect es una plataforma que centraliza los procesos de selección y la publicación de ofertas para las personas reclutadoras que trabajan en Adecco.</p>
+      <h1 data-i18n="pages.connect.t009">Adecco Connect</h1>
+      <p class="h3" data-i18n="pages.connect.t010a">Adecco Connect es la plataforma que usan las personas reclutadoras de Adecco.</p>
+      <p class="h3" data-i18n="pages.connect.t010b">Les permite gestionar los procesos de selección y publicar ofertas de empleo, todo desde un solo lugar.</p>
       <div class="spacer-xl"></div>
     </section>
 
@@ -101,40 +102,74 @@
     <!-- Introduction Section -->
     <section class="main-content" id="introduccion">
       <h2 data-i18n="pages.connect.t011">Introducción</h2>
-      <h3 data-i18n="pages.connect.t012">Contexto y objetivos</h3>
-      <p data-i18n="pages.connect.t013">Mi rol fue clave para conectar requisitos de cliente con soluciones de diseño efectivas. Tuve un papel importante recogiendo necesidades específicas de distintos países usando Adecco Connect. En colaboración con desarrollo y negocio, traduje esos requisitos en soluciones de diseño accionables.</p>
-      <p data-i18n="pages.connect.t014">El objetivo era mejorar la consistencia de marca y la confianza de usuario asegurando un lenguaje de diseño unificado y reconocible entre plataformas. Además, el sistema aceleró el proceso de desarrollo, permitiendo responder más rápido a demandas del mercado y desplegar funcionalidades de forma eficiente. Por último, su escalabilidad facilitó la expansión digital, asegurando adaptabilidad a nuevas plataformas y tecnologías.</p>
-      <div class="spacer-l"></div>
-      <h3 data-i18n="pages.connect.t015">Retos</h3>
+      <h3 data-i18n="pages.connect.t012">El contexto y los objetivos</h3>
+      <p data-i18n="pages.connect.t013">Mi trabajo consistió en entender qué necesitaban los equipos de Adecco en distintos países. Después, transformé esas necesidades en soluciones de diseño concretas.</p>
+      <p data-i18n="pages.connect.t014">El proyecto tenía tres objetivos:</p>
+      <ol>
+        <li><strong data-i18n="pages.connect.obj_li1_label">Mejorar la coherencia visual:</strong> <span data-i18n="pages.connect.obj_li1_text">que la plataforma tuviera el mismo aspecto en todas partes</span></li>
+        <li><strong data-i18n="pages.connect.obj_li2_label">Acelerar el desarrollo:</strong> <span data-i18n="pages.connect.obj_li2_text">que el equipo técnico pudiera lanzar funciones más rápido</span></li>
+        <li><strong data-i18n="pages.connect.obj_li3_label">Facilitar el crecimiento:</strong> <span data-i18n="pages.connect.obj_li3_text">que la plataforma pudiera adaptarse a nuevas tecnologías y mercados</span></li>
+      </ol>
+
+      <h3 data-i18n="pages.connect.t015">El problema</h3>
       <div class="spacer-l"></div>
       <figure>
         <img alt="Screenshot showing usability issues in the old Adecco Connect interface with inconsistent design patterns" class="w-full h-auto img-fullscreen" decoding="async" height="900" loading="lazy" src="https://i.imgur.com/WTRuM1M.png" width="1600" />
       </figure>
       <div class="spacer-l"></div>
-      <p data-i18n="pages.connect.t016">Adecco Connect tenía varios problemas: no usaban un sistema de diseño, había numerosos errores y problemas de usabilidad, el color rojo se utilizaba de forma incorrecta y la plataforma no era responsive. Para mejorar el producto, identifiqué inconsistencias usando las heurísticas de Nielsen y buenas prácticas de usabilidad y accesibilidad, y presenté los hallazgos a distintos stakeholders.</p>
+      <p data-i18n="pages.connect.t016">Adecco Connect tenía varios problemas graves:</p>
+      <ul>
+        <li data-i18n="pages.connect.prob_li1">No usaba un sistema de diseño común</li>
+        <li data-i18n="pages.connect.prob_li2">Había muchos errores visuales y de usabilidad</li>
+        <li data-i18n="pages.connect.prob_li3">El color rojo se usaba de forma incorrecta (causaba confusión)</li>
+        <li data-i18n="pages.connect.prob_li4">La plataforma no funcionaba bien en móvil (no era responsive)</li>
+      </ul>
+
+      <aside class="about-callout" aria-label="Definición de responsive">
+        <p><strong data-i18n="pages.connect.responsive_label">¿Qué significa "responsive"?</strong> <span data-i18n="pages.connect.responsive_text">Que la web se adapta bien a cualquier tamaño de pantalla: ordenador, tablet o móvil.</span></p>
+      </aside>
+
+      <p data-i18n="pages.connect.t016b">Analicé todos estos problemas usando principios de usabilidad reconocidos internacionalmente. Luego presenté mis conclusiones a los responsables del producto y del negocio.</p>
+
       <h3 data-i18n="pages.connect.t017">Mi rol</h3>
-      <p>As a <em>Product Designer</em>, I played a crucial role in bridging the gap between client requirements and effective design solutions, translating needs into actionable design solutions.</p>
+      <p data-i18n="pages.connect.rol_p">Trabajé como <strong>diseñador de producto</strong>. Me encargué de hacer de puente entre lo que pedían las personas usuarias y las soluciones que diseñamos.</p>
     </section>
 
     <!-- Process Section -->
     <section class="main-content" id="proceso">
       <h2 data-i18n="pages.connect.t018">Proceso de diseño</h2>
-      <h3 data-i18n="pages.connect.t019">Investigación y análisis</h3>
+      <h3 data-i18n="pages.connect.t019">Investigación</h3>
       <div class="spacer-l"></div>
       <figure>
         <img alt="Research and analysis phase documentation showing stakeholder interviews and competitor analysis findings" class="w-full h-auto img-fullscreen" decoding="async" height="900" loading="lazy" src="https://i.imgur.com/CXCsGj9.png" width="1600" />
       </figure>
       <div class="spacer-l"></div>
-      <p data-i18n="pages.connect.t020">El proceso comenzó con una fase exhaustiva de investigación y análisis, con entrevistas a stakeholders y análisis de sistemas de diseño de competidores para entender necesidades y pain points.</p>
-      <h3 data-i18n="pages.connect.t021">Definición de principios de diseño</h3>
+      <p data-i18n="pages.connect.t020">Empezamos investigando antes de diseñar nada. Hicimos:</p>
+      <ul>
+        <li data-i18n="pages.connect.inv_li1">Entrevistas con responsables del negocio</li>
+        <li data-i18n="pages.connect.inv_li2">Análisis de plataformas similares de la competencia</li>
+        <li data-i18n="pages.connect.inv_li3">Revisión de los problemas existentes en la plataforma</li>
+      </ul>
+
+      <h3 data-i18n="pages.connect.t021">Principios de diseño</h3>
       <div class="spacer-l"></div>
       <figure>
         <img alt="Design principles framework focusing on accessibility, reusability, and simplicity" class="w-full h-auto img-fullscreen" decoding="async" height="900" loading="lazy" src="https://i.imgur.com/bJD5Szi.png" width="1600" />
       </figure>
       <div class="spacer-l"></div>
-      <p data-i18n="pages.connect.t022">Se establecieron principios de diseño centrados en accesibilidad, reutilización y simplicidad. Fueron clave en la creación de todos los componentes, incluido el Time Picker, asegurando que fueran intuitivos y accesibles para todas las personas.</p>
-      <h3 data-i18n="pages.connect.t023">Herramientas</h3>
-      <p data-i18n="pages.connect.t024">Se usó Figma para colaboración y prototipado, Zeroheight para documentación de componentes y Storybook para documentar y compartir componentes del sistema con desarrollo.</p>
+      <p data-i18n="pages.connect.t022">Definimos tres principios para guiar el rediseño:</p>
+      <ol>
+        <li><strong data-i18n="pages.connect.princ_li1_label">Accesibilidad:</strong> <span data-i18n="pages.connect.princ_li1_text">que cualquier persona pueda usar la plataforma</span></li>
+        <li><strong data-i18n="pages.connect.princ_li2_label">Reutilización:</strong> <span data-i18n="pages.connect.princ_li2_text">usar los componentes del sistema de diseño TAG DS</span></li>
+        <li><strong data-i18n="pages.connect.princ_li3_label">Simplicidad:</strong> <span data-i18n="pages.connect.princ_li3_text">eliminar lo que no aporta valor</span></li>
+      </ol>
+
+      <h3 data-i18n="pages.connect.t023">Herramientas usadas</h3>
+      <ul>
+        <li><strong>Figma:</strong> <span data-i18n="pages.connect.tool_li1">para diseñar y prototipar</span></li>
+        <li><strong>Zeroheight:</strong> <span data-i18n="pages.connect.tool_li2">para documentar los componentes</span></li>
+        <li><strong>Storybook:</strong> <span data-i18n="pages.connect.tool_li3">para compartir los componentes con el equipo de desarrollo</span></li>
+      </ul>
     </section>
 
     <!-- Solution Section -->
@@ -156,29 +191,38 @@
         <figcaption class="sr-only">Video demonstration of the redesigned Adecco Connect platform interface</figcaption>
       </figure>
       <div class="spacer-l"></div>
-      <p data-i18n="pages.connect.t027">La solución consistió en integrar un sistema de diseño robusto alineado con estándares de usabilidad y accesibilidad. Además, se introdujo una interfaz rediseñada centrada en claridad y engagement. Este enfoque holístico garantizó consistencia, interacciones intuitivas e inclusión.</p>
+      <p data-i18n="pages.connect.t027">Integramos el sistema de diseño TAG DS en Adecco Connect. Esto trajo tres mejoras claras:</p>
+      <ul>
+        <li><strong data-i18n="pages.connect.sol_li1_label">Coherencia visual:</strong> <span data-i18n="pages.connect.sol_li1_text">todos los elementos tienen el mismo aspecto</span></li>
+        <li><strong data-i18n="pages.connect.sol_li2_label">Interacciones más intuitivas:</strong> <span data-i18n="pages.connect.sol_li2_text">los usuarios entienden qué hacer sin pensar</span></li>
+        <li><strong data-i18n="pages.connect.sol_li3_label">Inclusión:</strong> <span data-i18n="pages.connect.sol_li3_text">la plataforma es accesible para más personas</span></li>
+      </ul>
       <div class="spacer-l"></div>
     </section>
 
     <!-- User Testing Section -->
     <section class="main-content" id="user-test">
-      <h2 data-i18n="pages.connect.t028">Tests de usuario y datos</h2>
-      <p data-i18n="pages.connect.t029">La segmentación de participantes incluyó 16 sesiones de tests de usabilidad con usuarios de Connect, explorando el flujo para crear un proceso de selección. Las funcionalidades investigadas incluyeron:</p>
-      <ul class="list-disc pl-6">
+      <h2 data-i18n="pages.connect.t028">Pruebas con usuarios reales</h2>
+      <p data-i18n="pages.connect.t029">Realizamos <strong>16 sesiones de prueba</strong> con personas reclutadoras que usan Adecco Connect. En cada sesión, pedimos a los participantes que completaran tres tareas:</p>
+      <ol>
         <li data-i18n="pages.connect.t030">Configurar un nuevo proceso de selección</li>
-        <li data-i18n="pages.connect.t031">Programar una entrevista en vivo</li>
-        <li data-i18n="pages.connect.t032">Añadir una prueba técnica (hard skill) al proceso</li>
-      </ul>
-      <h3 data-i18n="pages.connect.t033">Hallazgos clave de investigación</h3>
-      <p data-i18n="pages.connect.t034">Los puntos clave de la investigación incluyeron evaluar la experiencia general de Connect y medir la usabilidad y satisfacción de las personas reclutadoras con la nueva funcionalidad. El estudio buscaba descubrir problemas de usabilidad en usuarios reales, destacando:</p>
-      <ul class="list-disc pl-6">
-        <li data-i18n="pages.connect.t035">La tasa de error por clics accidentales en la funcionalidad de arrastrar y soltar vídeo fue del 50%, lo que indica que la función no se percibía como claramente visible</li>
-        <li data-i18n="pages.connect.t036">Aunque las personas participantes valoraron la tarea como fácil, necesitaron 3 clics para lograr el objetivo</li>
-      </ul>
+        <li data-i18n="pages.connect.t031">Programar una entrevista en directo</li>
+        <li data-i18n="pages.connect.t032">Añadir una prueba técnica al proceso</li>
+      </ol>
+
+      <h3 data-i18n="pages.connect.t033">Lo que descubrimos</h3>
+      <p data-i18n="pages.connect.t034">Las pruebas revelaron dos hallazgos importantes:</p>
+
+      <p><strong data-i18n="pages.connect.finding1_label">Problema 1 — La función de arrastrar vídeo no se entendía bien:</strong></p>
+      <p data-i18n="pages.connect.t035">El 50% de los participantes hizo clic en el lugar equivocado al intentar arrastrar un vídeo. La función no era visible ni intuitiva.</p>
+
+      <p><strong data-i18n="pages.connect.finding2_label">Problema 2 — Demasiados pasos para lograr el objetivo:</strong></p>
+      <p data-i18n="pages.connect.t036">Aunque los participantes valoraron la tarea como fácil, necesitaron 3 clics para completarla. Eso es un clic más de lo deseable.</p>
+
       <div class="spacer-l"></div>
       <figure>
         <img alt="Usability measurement scores showing improvements in user satisfaction and task completion rates" class="w-full h-auto img-fullscreen" decoding="async" height="900" loading="lazy" src="https://i.imgur.com/h5BY1qb.png" width="1600" />
-        <figcaption><small data-i18n="pages.connect.t037">Usability Measurement Score de TAG DS</small></figcaption>
+        <figcaption><small data-i18n="pages.connect.t037">Resultados de las pruebas de usabilidad</small></figcaption>
       </figure>
       <div class="spacer-l"></div>
     </section>
@@ -186,22 +230,37 @@
     <!-- Results Section -->
     <section class="main-content" id="resultados">
       <h2 data-i18n="pages.connect.t038">Resultados e impacto</h2>
-      <p data-i18n="pages.connect.t039">La solución, basada en feedback de tests, se centró en una mejor jerarquía tipográfica, mayor separación visual de secciones y un uso más óptimo del espaciado. La jerarquía tipográfica es crucial para comunicar con claridad y mejorar la legibilidad, organizando la información para entender la estructura y enfocarse en puntos clave.</p>
+      <p data-i18n="pages.connect.t039">Aplicamos los hallazgos de las pruebas para mejorar la plataforma. Los cambios se centraron en:</p>
+      <ul>
+        <li data-i18n="pages.connect.res_li1">Mejorar la jerarquía tipográfica (qué texto destaca y qué pasa a un segundo plano)</li>
+        <li data-i18n="pages.connect.res_li2">Añadir más separación visual entre secciones</li>
+        <li data-i18n="pages.connect.res_li3">Mejorar el espaciado para que todo respire mejor</li>
+      </ul>
+
+      <aside class="about-callout" aria-label="Definición de jerarquía tipográfica">
+        <p><strong data-i18n="pages.connect.typo_label">¿Por qué importa la jerarquía tipográfica?</strong> <span data-i18n="pages.connect.typo_text">Cuando los textos tienen distinto tamaño y peso, es más fácil entender la estructura de la página y encontrar lo que buscas.</span></p>
+      </aside>
+
       <div class="spacer-l"></div>
       <figure>
         <img alt="Before and after comparison showing improved typography hierarchy and visual design in the new interface" class="w-full h-auto img-fullscreen" decoding="async" height="900" loading="lazy" src="https://i.imgur.com/KBmYmnv.png" width="1600" />
-        <figcaption><small data-i18n="pages.connect.t040">Usability Measurement Score de TAG DS</small></figcaption>
+        <figcaption><small data-i18n="pages.connect.t040">Comparativa antes y después del rediseño</small></figcaption>
       </figure>
       <div class="spacer-l"></div>
-      <h3 data-i18n="pages.connect.t041">Aprendizajes</h3>
-      <p data-i18n="pages.connect.t042">El proceso resaltó la importancia de la colaboración interdisciplinar y del feedback de usuario en el desarrollo de sistemas de diseño. Una documentación clara y accesible es clave para la adopción y mantenimiento del sistema.</p>
+
+      <h3 data-i18n="pages.connect.t041">Lo que aprendimos</h3>
+      <ul>
+        <li data-i18n="pages.connect.learn_li1">El feedback de las personas usuarias reales es imprescindible</li>
+        <li data-i18n="pages.connect.learn_li2">Una documentación clara facilita el trabajo de todo el equipo</li>
+        <li data-i18n="pages.connect.learn_li3">La colaboración entre diseño, desarrollo y negocio es la clave del éxito</li>
+      </ul>
       <div class="spacer-l"></div>
     </section>
 
     <!-- Conclusion Section -->
     <section class="main-content" id="conclusion">
       <h2 data-i18n="pages.connect.t043">Conclusión</h2>
-      <p data-i18n="pages.connect.t044">En conclusión, el desarrollo e implementación del Sistema de Diseño TAG DS en Adecco Connect supuso un camino transformador, con retos, aprendizajes y avances significativos hacia la visión de ofrecer experiencias de usuario excepcionales. Este proyecto no solo fijó un nuevo estándar de diseño y desarrollo dentro de The Adecco Group, sino que reafirmó el compromiso con la innovación, la calidad y la satisfacción de usuario. Con esta base sólida, hay una gran expectativa por los próximos capítulos de la transformación digital.</p>
+      <p data-i18n="pages.connect.t044">Rediseñar Adecco Connect con TAG DS fue un proceso transformador. No solo mejoró la experiencia de las personas reclutadoras. También estableció un nuevo estándar de diseño en The Adecco Group. Y demostró el compromiso del equipo con la calidad y la satisfacción de las personas usuarias.</p>
       <div class="spacer-l"></div>
     </section>
 
