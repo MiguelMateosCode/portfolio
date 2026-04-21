@@ -12,7 +12,12 @@ img {
   display:   block;
 }
 
-.img-portada,
+.img-portada {
+  aspect-ratio: 16 / 9;
+  object-fit:   cover;
+  transition:   all 0.2s ease-in-out;
+}
+
 .img-profile {
   transition: all 0.2s ease-in-out;
 }
