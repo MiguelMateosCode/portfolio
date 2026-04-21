@@ -32,6 +32,7 @@
 <!-- Custom Styles -->
 <link rel="stylesheet" href="../typography-base.css" />
 <link rel="stylesheet" href="../style.css" />
+<link rel="stylesheet" href="../home.css" />
 <link rel="canonical" href="https://miguelmateoscode.github.io/portfolio2024/html/about.html" />
 <link rel="manifest" href="../site.webmanifest" />
 </head>
@@ -76,8 +77,10 @@
       <div class="w-full md:flex-1 about-intro">
         <p class="caption-xl">MIGUEL MATEOS</p>
         <h1 id="about-heading" data-i18n="pages.about.t001">Un poco sobre mí</h1>
-        <p data-i18n="pages.about.t002">Soy diseñador de producto con más de 6 años de experiencia.</p>
-        <p data-i18n="pages.about.t003">Ahora trabajo en Smowltech, donde lidero el diseño y la accesibilidad digital.</p>
+        <div class="hero-description">
+          <p data-i18n="pages.about.t002">Soy diseñador de producto con más de 6 años de experiencia.</p>
+          <p data-i18n="pages.about.t003">Ahora trabajo en Smowltech, donde lidero el diseño y la accesibilidad digital.</p>
+        </div>
       </div>
     </div>
     <div class="spacer-xl"></div>
@@ -89,10 +92,10 @@
   <section aria-labelledby="what-heading">
     <div class="container mx-auto px-4">
       <h2 id="what-heading" data-i18n="pages.about.what_title">Lo que hago</h2>
-      <div class="spacer-l"></div>
-      <article>
-        <p data-i18n="pages.about.what_p1">Trabajo en todo el proceso: desde la investigación inicial hasta el lanzamiento y el seguimiento posterior.</p>
-        <p data-i18n="pages.about.what_list_label">Me interesa especialmente:</p>
+      <div class="spacer-xl"></div>
+      <div>
+        <p class="section-intro" data-i18n="pages.about.what_p1">Trabajo en todo el proceso: desde la investigación inicial hasta el lanzamiento y el seguimiento posterior.</p>
+        <p class="section-intro" data-i18n="pages.about.what_list_label">Me interesa especialmente:</p>
         <ul class="about-list">
           <li data-i18n="pages.about.what_li1">La accesibilidad digital: que cualquier persona pueda usar el producto, incluidas las que tienen alguna discapacidad</li>
           <li data-i18n="pages.about.what_li2">Los sistemas de diseño: crear reglas y componentes que ayuden al equipo a diseñar mejor y más rápido</li>
@@ -101,7 +104,7 @@
         <aside class="about-callout" aria-label="Definición de sistema de diseño">
           <p><strong data-i18n="pages.about.callout_label">¿Qué es un sistema de diseño?</strong> <span data-i18n="pages.about.callout_text">Es un conjunto de componentes visuales y reglas compartidas. Ayuda a los equipos a crear productos digitales de forma coherente y más rápida.</span></p>
         </aside>
-      </article>
+      </div>
     </div>
   </section>
 
@@ -111,16 +114,16 @@
   <section aria-labelledby="achieved-heading">
     <div class="container mx-auto px-4">
       <h2 id="achieved-heading" data-i18n="pages.about.achieved_title">Lo que he logrado</h2>
-      <div class="spacer-l"></div>
-      <article>
-        <p data-i18n="pages.about.achieved_p1">He trabajado en agencias, consultoras y empresas de producto.</p>
-        <p data-i18n="pages.about.achieved_list_label">Algunos logros concretos:</p>
+      <div class="spacer-xl"></div>
+      <div>
+        <p class="section-intro" data-i18n="pages.about.achieved_p1">He trabajado en agencias, consultoras y empresas de producto.</p>
+        <p class="section-intro" data-i18n="pages.about.achieved_list_label">Algunos logros concretos:</p>
         <ul class="about-list">
           <li data-i18n="pages.about.achieved_li1">Lancé un sistema de diseño para varias marcas en entornos complejos</li>
           <li data-i18n="pages.about.achieved_li2">Mejoré la accesibilidad y la eficiencia de plataformas digitales en más de un 70%</li>
           <li data-i18n="pages.about.achieved_li3">Desarrollé asistentes de IA para tareas de diseño, accesibilidad y documentación</li>
         </ul>
-      </article>
+      </div>
     </div>
   </section>
 
@@ -130,9 +133,9 @@
   <section aria-labelledby="exp-heading">
     <div class="container mx-auto px-4">
       <h2 id="exp-heading" data-i18n="pages.about.exp_title">Mi experiencia</h2>
-      <div class="spacer-l"></div>
-      <article>
-        <p data-i18n="pages.about.t004">He trabajado en empresas de distintos sectores:</p>
+      <div class="spacer-xl"></div>
+      <div>
+        <p class="section-intro" data-i18n="pages.about.t004">He trabajado en empresas de distintos sectores:</p>
         <div class="job">
           <p><strong>Smowltech</strong> — <span class="job-meta">Diseñador de producto (2024 – actualidad)</span></p>
           <p>Creo el sistema de diseño y mejoro la accesibilidad de la plataforma.</p>
@@ -152,7 +155,7 @@
           <p><strong>Dominion Global, D&amp;A Innovative Systems, Thunderfoot, IntegraMedia</strong> — <span class="job-meta">(2017 – 2021)</span></p>
           <p>Diseño de interfaces, maquetación web y diseño gráfico en distintos contextos.</p>
         </div>
-      </article>
+      </div>
     </div>
   </section>
 
@@ -162,8 +165,8 @@
   <section aria-labelledby="edu-heading">
     <div class="container mx-auto px-4">
       <h2 id="edu-heading" data-i18n="pages.about.edu_title">Formación y certificaciones</h2>
-      <div class="spacer-l"></div>
-      <article>
+      <div class="spacer-xl"></div>
+      <div>
         <ul class="about-list">
           <li>Técnico Superior en Diseño Gráfico — Escuela de Artes y Oficios de Salamanca</li>
           <li><a href="https://courses.edx.org/certificates/e9bb61ef7dcc4094823099067ddd9f0f" target="_blank" rel="noopener noreferrer" aria-label="Ver certificación en accesibilidad web (WCAG) en edX">Certificación en accesibilidad web (WCAG)</a></li>
@@ -171,7 +174,7 @@
           <li>Certificación en diseño web adaptable (responsive)</li>
           <li>Certificación en lectores de pantalla VoiceOver y TalkBack</li>
         </ul>
-      </article>
+      </div>
     </div>
   </section>
 
@@ -181,14 +184,14 @@
   <section aria-labelledby="goals-heading">
     <div class="container mx-auto px-4">
       <h2 id="goals-heading" data-i18n="pages.about.goals_title">Mis objetivos ahora</h2>
-      <div class="spacer-l"></div>
-      <article>
+      <div class="spacer-xl"></div>
+      <div>
         <ul class="about-list">
           <li data-i18n="pages.about.goals_li1">Extender la cultura de diseño en Smowltech</li>
           <li data-i18n="pages.about.goals_li2">Mejorar los procesos de accesibilidad en plataformas educativas</li>
           <li data-i18n="pages.about.goals_li3">Crear productos éticos, medibles y sostenibles</li>
         </ul>
-      </article>
+      </div>
     </div>
   </section>
 
@@ -198,18 +201,18 @@
   <section aria-labelledby="hobbies-heading">
     <div class="container mx-auto px-4">
       <h2 id="hobbies-heading" data-i18n="pages.about.t007">Mis hobbies</h2>
-      <div class="spacer-l"></div>
-      <article>
-        <p data-i18n="pages.about.hobbies_intro">La naturaleza es mi espacio favorito. Le dedico todo mi tiempo libre.</p>
-        <p data-i18n="pages.about.hobbies_list_label">Me encanta:</p>
+      <div class="spacer-xl"></div>
+      <div>
+        <p class="section-intro" data-i18n="pages.about.hobbies_intro">La naturaleza es mi espacio favorito. Le dedico todo mi tiempo libre.</p>
+        <p class="section-intro" data-i18n="pages.about.hobbies_list_label">Me encanta:</p>
         <ul class="about-list about-list--hobbies">
           <li><span aria-hidden="true">🏄🏻</span> <span data-i18n="pages.about.hobbies_li1">El surf — me recarga de energía</span></li>
           <li><span aria-hidden="true">🏔️</span> <span data-i18n="pages.about.hobbies_li2">La montaña — descubro lugares a los que casi nadie llega</span></li>
           <li><span aria-hidden="true">🚐</span> <span data-i18n="pages.about.hobbies_li3">Viajar en furgoneta — libertad sobre ruedas</span></li>
           <li><span aria-hidden="true">🍕</span> <span data-i18n="pages.about.hobbies_li4">La gastronomía local — probar la cocina de cada destino</span></li>
         </ul>
-        <p data-i18n="pages.about.hobbies_end">Estas actividades no son solo aficiones. Son una forma de vida que me da equilibrio y bienestar.</p>
-      </article>
+        <p class="section-intro" data-i18n="pages.about.hobbies_end">Estas actividades no son solo aficiones. Son una forma de vida que me da equilibrio y bienestar.</p>
+      </div>
       <div class="spacer-l"></div>
       <figure>
         <img
@@ -231,6 +234,7 @@
   <section aria-labelledby="latest-posts-heading">
     <div class="container mx-auto px-4">
       <h2 id="latest-posts-heading" data-i18n="pages.about.t011">Última publicación</h2>
+      <div class="spacer-xl"></div>
       <div class="flex flex-wrap -mx-2">
         <div class="w-full md:w-1/2 px-2 py-2">
           <iframe
