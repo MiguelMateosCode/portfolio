@@ -13,13 +13,13 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://miguelmatescode.github.io/portfolio/html/smowltech.html" />
 <meta property="og:title" content="Smowltech Platform Improvements - Case Study" />
-<meta property="og:description" content="How I improved Smowltech's proctoring SaaS: clearer live monitoring, stronger accessibility, and faster incident review workflows." />
+<meta property="og:description" content="Cómo mejoré la supervisión en directo, la accesibilidad y la revisión de incidencias en la plataforma de Smowltech." />
 <meta property="og:image" content="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1600&q=80" />
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content="https://miguelmatescode.github.io/portfolio/html/smowltech.html" />
 <meta property="twitter:title" content="Smowltech Platform Improvements - Case Study" />
-<meta property="twitter:description" content="How I improved Smowltech's proctoring SaaS: clearer live monitoring, stronger accessibility, and faster incident review workflows." />
+<meta property="twitter:description" content="Cómo mejoré la supervisión en directo, la accesibilidad y la revisión de incidencias en Smowltech." />
 <meta property="twitter:image" content="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1600&q=80" />
 <!-- Favicon -->
 <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
@@ -91,7 +91,7 @@
     <section class="main-content border-b border-black">
       <p class="caption-xl" data-i18n="pages.smowltech.t007">SMOWLTECH</p>
       <h1 data-i18n="pages.smowltech.t008">Plataforma Smowltech</h1>
-      <p class="h3" data-i18n="pages.smowltech.t009">Mejorando live monitoring, accesibilidad y flujos de revisión de incidencias en un SaaS de proctoring</p>
+      <p class="h3" data-i18n="pages.smowltech.t009">Mejorar la supervisión en directo, la accesibilidad y la revisión de incidencias en una plataforma de vigilancia de exámenes online.</p>
       <div class="spacer-xl"></div>
     </section>
 
@@ -100,53 +100,101 @@
     <!-- Introduction Section -->
     <section class="main-content" id="introduccion">
       <h2 data-i18n="pages.smowltech.t010">Introducción</h2>
-      <h3 data-i18n="pages.smowltech.t011">Contexto y objetivos</h3>
-      <p data-i18n="pages.smowltech.t012">Smowltech ofrece soluciones de proctoring online usadas por universidades y plataformas de formación. El producto incluye live monitoring, señales de estado técnico (cámara, audio, herramientas de lock) y un flujo de revisión de incidencias generadas durante exámenes. Mi rol se centró en mejorar usabilidad y accesibilidad en flujos clave, mientras escalaba la consistencia de UI mediante un sistema de diseño compartido.</p>
-      <div class="spacer-l"></div>
-      <h3 data-i18n="pages.smowltech.t013">Retos</h3>
-      <p data-i18n="pages.smowltech.t014">Las personas operadoras necesitaban tomar decisiones rápidas bajo presión, pero la UI contenía información densa, patrones inconsistentes y gaps de accesibilidad. Esto incrementaba la carga cognitiva durante los exámenes en vivo y ralentizaba la revisión de incidencias después.</p>
+      <h3 data-i18n="pages.smowltech.t011">El contexto</h3>
+      <p data-i18n="pages.smowltech.t012a"><strong>Smowltech</strong> es una empresa que ofrece soluciones de vigilancia para exámenes online. Sus clientes son universidades y plataformas de formación.</p>
+
+      <aside class="about-callout" aria-label="Qué hace Smowltech">
+        <p><strong data-i18n="pages.smowltech.callout_label">¿Qué hace Smowltech?</strong> <span data-i18n="pages.smowltech.callout_text">Permite a los profesores supervisar a los estudiantes durante un examen online. Comprueba que la cámara funciona, que el audio es correcto y que nadie hace trampas.</span></p>
+      </aside>
+
+      <p data-i18n="pages.smowltech.t012b">La plataforma tiene dos partes principales:</p>
+      <ul>
+        <li><strong data-i18n="pages.smowltech.part_li1_label">Supervisión en directo:</strong> <span data-i18n="pages.smowltech.part_li1_text">el operador vigila los exámenes mientras ocurren</span></li>
+        <li><strong data-i18n="pages.smowltech.part_li2_label">Revisión de incidencias:</strong> <span data-i18n="pages.smowltech.part_li2_text">después del examen, el operador revisa los momentos sospechosos</span></li>
+      </ul>
+      <p data-i18n="pages.smowltech.t012c">Mi trabajo se centró en mejorar la usabilidad y la accesibilidad de estas dos partes. También trabajé para que la interfaz fuera más coherente usando un sistema de diseño compartido.</p>
+
       <div class="spacer-l"></div>
       <figure>
         <img alt="Abstract dashboard-like background representing complex operational workflows" class="w-full h-auto img-fullscreen" decoding="async" height="900" loading="lazy" src="https://images.unsplash.com/photo-1562813733-b31f71025d54?auto=format&amp;fit=crop&amp;w=2000&amp;q=80" width="1600" />
       </figure>
       <div class="spacer-l"></div>
-      <p data-i18n="pages.smowltech.t015">El objetivo fue hacer que las señales críticas de monitorización fueran más fáciles de escanear, reducir errores y asegurar que los flujos clave fueran accesibles (teclado, visibilidad de foco, contraste y compatibilidad con tecnologías de asistencia) sin ralentizar el producto.</p>
+
+      <h3 data-i18n="pages.smowltech.t013">El problema</h3>
+      <p data-i18n="pages.smowltech.t014a">Las personas que operan la plataforma trabajan bajo presión. Durante un examen en directo, necesitan tomar decisiones rápidas. Pero la interfaz tenía tres problemas que lo dificultaban:</p>
+      <ul>
+        <li><strong data-i18n="pages.smowltech.prob_li1_label">Demasiada información de golpe:</strong> <span data-i18n="pages.smowltech.prob_li1_text">era difícil saber qué era urgente y qué podía esperar</span></li>
+        <li><strong data-i18n="pages.smowltech.prob_li2_label">Elementos visuales inconsistentes:</strong> <span data-i18n="pages.smowltech.prob_li2_text">cada parte de la plataforma tenía un aspecto diferente</span></li>
+        <li><strong data-i18n="pages.smowltech.prob_li3_label">Problemas de accesibilidad:</strong> <span data-i18n="pages.smowltech.prob_li3_text">la plataforma no era completamente usable con teclado ni para personas con discapacidad visual</span></li>
+      </ul>
+      <p data-i18n="pages.smowltech.t014b">Estos problemas aumentaban el estrés del operador y ralentizaban su trabajo.</p>
+      <p data-i18n="pages.smowltech.t015"><strong data-i18n="pages.smowltech.goal_label">El objetivo:</strong> <span data-i18n="pages.smowltech.goal_text">hacer que la plataforma fuera más clara, más rápida de usar y accesible para todas las personas.</span></p>
     </section>
 
     <!-- Process Section -->
     <section class="main-content" id="proceso">
       <h2 data-i18n="pages.smowltech.t016">Proceso de diseño</h2>
-      <h3 data-i18n="pages.smowltech.t017">Investigación y análisis</h3>
-      <p data-i18n="pages.smowltech.t018">Trabajé con producto e ingeniería para mapear los momentos más críticos durante un examen (live monitoring) y los pasos con más fricción tras el examen (revisión de incidencias). Auditamos patrones de UI actuales, recogimos pain points de operadores y validamos requisitos frente a buenas prácticas de accesibilidad (navegación por teclado, gestión del foco, contraste y mensajes de estado claros).</p>
+      <h3 data-i18n="pages.smowltech.t017">Investigación</h3>
+      <p data-i18n="pages.smowltech.t018a">Trabajé junto a los equipos de producto e ingeniería. Identificamos los momentos más críticos del flujo de trabajo:</p>
+      <ul>
+        <li data-i18n="pages.smowltech.inv_li1">¿Qué pasa durante un examen? ¿Qué necesita el operador en ese momento?</li>
+        <li data-i18n="pages.smowltech.inv_li2">¿Qué pasa después? ¿Qué pasos tienen más fricción en la revisión de incidencias?</li>
+      </ul>
+      <p data-i18n="pages.smowltech.t018b">Auditamos la interfaz actual e identificamos sus puntos débiles. Recogimos los problemas que describían los propios operadores. Y revisamos las buenas prácticas internacionales de accesibilidad.</p>
     </section>
 
     <!-- Solution Section -->
     <section class="main-content" id="solucion">
-      <h2 data-i18n="pages.smowltech.t019">Solución</h2>
+      <h2 data-i18n="pages.smowltech.t019">La solución</h2>
       <div class="spacer-l"></div>
       <figure>
         <img alt="Analytics interface representing clearer hierarchy and faster scanning of key signals" class="w-full h-auto img-fullscreen" decoding="async" height="900" loading="lazy" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&amp;fit=crop&amp;w=2000&amp;q=80" width="1600" />
       </figure>
       <div class="spacer-l"></div>
-      <h3 data-i18n="pages.smowltech.t020">Mejora de la experiencia de usuario</h3>
-      <div class="spacer-l"></div>
-      <p data-i18n="pages.smowltech.t021">Introduje una jerarquía de información más clara en el live monitoring (lo que importa ahora vs. lo que puede esperar), estandaricé componentes mediante el sistema de diseño y reforcé bases de accesibilidad (foco visible, etiquetas consistentes, orden de teclado predecible y mensajes de estado legibles). En la revisión de incidencias, el objetivo fue que la evidencia fuera más fácil de interpretar y más rápida de accionar.</p>
+
+      <h3 data-i18n="pages.smowltech.t020a">Supervisión más clara</h3>
+      <p data-i18n="pages.smowltech.t021a">Reorganicé la información de la pantalla de supervisión en directo. La pregunta guía fue: ¿qué necesita ver el operador ahora mismo, y qué puede esperar? Con esa lógica, lo más urgente quedó destacado y lo secundario, en un segundo plano.</p>
+
+      <h3 data-i18n="pages.smowltech.t020b">Más consistencia visual</h3>
+      <p data-i18n="pages.smowltech.t021b">Estandaricé los componentes visuales usando el sistema de diseño compartido. Esto significa que botones, iconos, colores y mensajes tienen el mismo aspecto en toda la plataforma.</p>
+
+      <h3 data-i18n="pages.smowltech.t020c">Mejoras de accesibilidad</h3>
+      <p data-i18n="pages.smowltech.t021c">Apliqué varias mejoras para que la plataforma sea usable por más personas:</p>
+      <ul>
+        <li><strong data-i18n="pages.smowltech.acc_li1_label">Foco visible:</strong> <span data-i18n="pages.smowltech.acc_li1_text">cuando navegas con teclado, siempre ves dónde estás</span></li>
+        <li><strong data-i18n="pages.smowltech.acc_li2_label">Etiquetas consistentes:</strong> <span data-i18n="pages.smowltech.acc_li2_text">los elementos tienen nombres claros y coherentes</span></li>
+        <li><strong data-i18n="pages.smowltech.acc_li3_label">Orden de navegación lógico:</strong> <span data-i18n="pages.smowltech.acc_li3_text">si usas la tecla Tab, el recorrido tiene sentido</span></li>
+        <li><strong data-i18n="pages.smowltech.acc_li4_label">Mensajes de estado legibles:</strong> <span data-i18n="pages.smowltech.acc_li4_text">los avisos del sistema se entienden fácilmente</span></li>
+      </ul>
+      <p data-i18n="pages.smowltech.t021d">En la revisión de incidencias, reorganicé la información para que las pruebas fueran más fáciles de interpretar y más rápidas de revisar.</p>
       <div class="spacer-l"></div>
     </section>
 
     <!-- Results Section -->
     <section class="main-content" id="resultados">
       <h2 data-i18n="pages.smowltech.t022">Resultados e impacto</h2>
-      <p data-i18n="pages.smowltech.t023">Las mejoras redujeron la carga cognitiva de operadores, hicieron los flujos clave más consistentes y aumentaron la cobertura de accesibilidad en pantallas principales. Internamente, componentes y patrones compartidos mejoraron el handoff diseño-desarrollo y ayudaron a iterar más rápido sin resolver una y otra vez los mismos problemas de UI.</p>
-      <h3 data-i18n="pages.smowltech.t024">Aprendizajes</h3>
-      <p data-i18n="pages.smowltech.t025">Los productos operativos necesitan una priorización implacable de "lo que importa ahora". La accesibilidad y la usabilidad son mucho más fáciles de mantener cuando los patrones se estandarizan y validan pronto (en lugar de arreglarlos después). La colaboración estrecha con ingeniería fue esencial para hacer cambios seguros e incrementales.</p>
+      <p data-i18n="pages.smowltech.t023a">Las mejoras tuvieron un impacto real en el día a día de los operadores:</p>
+      <ul>
+        <li><strong data-i18n="pages.smowltech.res_li1_label">Menos carga mental:</strong> <span data-i18n="pages.smowltech.res_li1_text">la información clave es fácil de ver de un vistazo</span></li>
+        <li><strong data-i18n="pages.smowltech.res_li2_label">Flujos más consistentes:</strong> <span data-i18n="pages.smowltech.res_li2_text">menos confusión al pasar de una pantalla a otra</span></li>
+        <li><strong data-i18n="pages.smowltech.res_li3_label">Mejor accesibilidad:</strong> <span data-i18n="pages.smowltech.res_li3_text">las pantallas principales cumplen con más criterios de accesibilidad</span></li>
+      </ul>
+      <p data-i18n="pages.smowltech.t023b">Para el equipo interno, los componentes compartidos mejoraron la colaboración entre diseño y desarrollo. Iterar y mejorar la plataforma ahora es más rápido: no hay que resolver los mismos problemas visuales una y otra vez.</p>
+
+      <h3 data-i18n="pages.smowltech.t024">Lo que aprendimos</h3>
+      <ul>
+        <li data-i18n="pages.smowltech.learn_li1">En plataformas de uso operativo, priorizar lo que importa ahora es imprescindible</li>
+        <li data-i18n="pages.smowltech.learn_li2">La accesibilidad es mucho más fácil de mantener cuando los patrones se fijan desde el principio</li>
+        <li data-i18n="pages.smowltech.learn_li3">La colaboración estrecha con el equipo de ingeniería es clave para hacer cambios seguros y graduales</li>
+      </ul>
       <div class="spacer-l"></div>
     </section>
 
     <!-- Conclusion Section -->
     <section class="main-content" id="conclusion">
       <h2 data-i18n="pages.smowltech.t026">Conclusión</h2>
-      <p data-i18n="pages.smowltech.t027">Este case study muestra cómo mejorar jerarquía, consistencia y accesibilidad puede hacer flujos de alta presión más seguros y rápidos. Reforzando la base (sistema de diseño + prácticas de accesibilidad) y atacando los momentos más críticos (live monitoring + revisión de incidencias), Smowltech puede escalar funcionalidades manteniendo una experiencia usable para todas las personas.</p>
+      <p data-i18n="pages.smowltech.t027a">Este proyecto demuestra que mejorar la jerarquía visual, la consistencia y la accesibilidad puede hacer que los flujos de alta presión sean más seguros y más rápidos.</p>
+      <p data-i18n="pages.smowltech.t027b">Al fortalecer la base —sistema de diseño y accesibilidad— y atacar los momentos más críticos —supervisión y revisión de incidencias—, Smowltech puede crecer y añadir funciones sin perder la usabilidad.</p>
       <div class="spacer-l"></div>
     </section>
 
