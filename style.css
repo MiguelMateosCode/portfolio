@@ -249,6 +249,42 @@ iframe {
 }
 
 /* ------------------------------------------------------------
+   ABOUT PAGE — lists and callout
+   ------------------------------------------------------------ */
+.about-list {
+  list-style: disc;
+  padding-left: 1.25rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-list li {
+  font-size:     15px;
+  line-height:   1.65;
+  color:         #444444;
+  margin-bottom: 0.4rem;
+}
+
+ol.about-list { list-style: decimal; }
+
+.about-list--hobbies { list-style: none; padding-left: 0; }
+.about-list--hobbies li { display: flex; gap: 0.5rem; }
+
+.about-callout {
+  border-left:    3px solid #1a1a1a;
+  padding:        0.75rem 1rem;
+  margin:         1.5rem 0;
+  background:     #f7f7fb;
+}
+
+.about-callout p {
+  font-size:   14px;
+  line-height: 1.6;
+  color:       #444444;
+  margin:      0;
+}
+
+/* ------------------------------------------------------------
    FOOTER / CONTACT
    ------------------------------------------------------------ */
 footer[role="contentinfo"] {
