@@ -232,6 +232,31 @@ iframe {
 .chip:hover { background-color: #99E5FF; }
 
 /* ------------------------------------------------------------
+   TABLES — case studies
+   ------------------------------------------------------------ */
+.cs-table {
+  width:           100%;
+  border-collapse: collapse;
+  margin:          1rem 0 1.5rem;
+  font-size:       15px;
+}
+
+.cs-table th,
+.cs-table td {
+  padding:      0.6rem 1rem;
+  text-align:   left;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.cs-table th {
+  font-weight:   600;
+  color:         #1a1a1a;
+  border-bottom: 2px solid #1a1a1a;
+}
+
+.cs-table td { color: #444444; }
+
+/* ------------------------------------------------------------
    PRINT
    ------------------------------------------------------------ */
 @media print {
