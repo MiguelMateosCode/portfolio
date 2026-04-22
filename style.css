@@ -163,29 +163,6 @@ iframe {
   border:        1px solid #000;
 }
 
-/* ------------------------------------------------------------
-   LANG SWITCH
-   ------------------------------------------------------------ */
-.lang-switch { display: flex; gap: 0.5rem; align-items: center; }
-
-.lang-btn {
-  border:        1px solid #000;
-  background:    transparent;
-  padding:       6px 10px;
-  border-radius: 6px;
-  font-weight:   600;
-  cursor:        pointer;
-  transition:    all 0.2s ease-in-out;
-  min-width:     44px;
-  min-height:    44px;
-}
-
-.lang-btn[aria-pressed="true"] { background: #000; color: #fff; }
-
-.lang-btn:focus-visible {
-  outline:        3px solid #0066cc;
-  outline-offset: 3px;
-}
 
 /* ------------------------------------------------------------
    SKIP LINK
