@@ -301,6 +301,14 @@ ol.about-list { list-style: decimal; }
 .about-list--hobbies { list-style: none; padding-left: 0; }
 .about-list--hobbies li { display: flex; gap: 0.5rem; }
 
+.about-list a {
+  color:                     #0066cc;
+  text-decoration:           underline;
+  text-underline-offset:     3px;
+  text-decoration-thickness: 1px;
+}
+.about-list a:hover { text-decoration-thickness: 2px; }
+
 .about-experience {
   list-style:   none;
   padding-left: 0;
