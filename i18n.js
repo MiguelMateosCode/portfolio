@@ -9,7 +9,6 @@ function get(obj, path) {
 }
 
 function setTextPreserve(el, value) {
-  // Replace only text nodes, keep child elements (icons, etc.)
   let replaced = false;
   const nodes = Array.from(el.childNodes);
   nodes.forEach((n) => {
@@ -18,7 +17,6 @@ function setTextPreserve(el, value) {
         n.textContent = value;
         replaced = true;
       } else {
-        // Clear any extra text nodes
         n.textContent = n.textContent.replace(/\S/g, "");
       }
     }
@@ -36,14 +34,12 @@ async function setLang(lang) {
 
   document.documentElement.lang = lang;
 
-  // Text nodes
   document.querySelectorAll("[data-i18n]").forEach((el) => {
     const key = el.dataset.i18n;
     const value = get(dict, key);
     if (value != null) setTextPreserve(el, value);
   });
 
-  // Attributes: format "alt:key|title:key2|aria-label:key3"
   document.querySelectorAll("[data-i18n-attr]").forEach((el) => {
     const pairs = el.dataset.i18nAttr.split("|");
     pairs.forEach((pair) => {
@@ -52,20 +48,7 @@ async function setLang(lang) {
       if (attr && value != null) el.setAttribute(attr, value);
     });
   });
-
-  // Buttons state
-  document.querySelectorAll("[data-lang]").forEach((btn) => {
-    btn.setAttribute("aria-pressed", btn.dataset.lang === lang ? "true" : "false");
-  });
-
-  localStorage.setItem("lang", lang);
 }
 
-document.addEventListener("click", (e) => {
-  const btn = e.target.closest("[data-lang]");
-  if (btn) setLang(btn.dataset.lang);
-});
-
-const saved = localStorage.getItem("lang");
 const browser = (navigator.language || "es").slice(0, 2);
-setLang(saved || (supported.includes(browser) ? browser : "es"));
+setLang(supported.includes(browser) ? browser : "es");
