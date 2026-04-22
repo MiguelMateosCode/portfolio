@@ -434,7 +434,8 @@
     }
   },
   "common": {
-    "video_fallback": "Tu navegador no admite vídeo HTML5. Descarga el vídeo en su lugar."
+    "video_fallback": "Tu navegador no admite vídeo HTML5. Descarga el vídeo en su lugar.",
+    "more_projects": "Más proyectos"
   },
   "index": {
     "hero": {
